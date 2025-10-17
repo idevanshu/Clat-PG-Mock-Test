@@ -8,6 +8,7 @@ import random
 import time
 import json
 from datetime import datetime, timedelta
+from collections import defaultdict
 
 st.set_page_config(
     page_title="CLAT PG Mock Test",
@@ -16,10 +17,9 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# ---------------- Custom CSS - Fixed text visibility ----------------
+# ---------------- Custom CSS ----------------
 st.markdown("""
 <style>
-    /* Force light theme background for question area */
     .main {
         background-color: #f8f9fa;
     }
@@ -29,7 +29,6 @@ st.markdown("""
         max-width: 1200px !important;
     }
     
-    /* Buttons */
     .stButton button {
         width: 100%;
         border-radius: 10px;
@@ -45,7 +44,6 @@ st.markdown("""
         color: white;
     }
     
-    /* Radio buttons - FIXED VISIBILITY */
     .stRadio > label {
         color: #1a202c !important;
         font-weight: 600;
@@ -69,7 +67,6 @@ st.markdown("""
         background-color: #f7fafc !important;
     }
     
-    /* Radio label text - HIGH CONTRAST */
     .stRadio label div {
         color: #1a202c !important;
         font-size: 16px !important;
@@ -81,7 +78,6 @@ st.markdown("""
         color: #1a202c !important;
     }
     
-    /* Metrics */
     [data-testid="stMetric"] {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         padding: 16px;
@@ -95,7 +91,6 @@ st.markdown("""
         font-weight: 700;
     }
     
-    /* Question box - WHITE background with BLACK text */
     .question-box {
         background-color: #ffffff !important;
         padding: 28px;
@@ -121,7 +116,27 @@ st.markdown("""
         margin-bottom: 24px !important;
     }
     
-    /* Instructions */
+    .subject-badge {
+        display: inline-block;
+        background: #edf2f7;
+        color: #2d3748;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    
+    .subject-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        margin: 20px 0 10px 0;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
     .instructions-panel {
         background: #ffffff;
         padding: 28px;
@@ -140,16 +155,9 @@ st.markdown("""
         line-height: 1.8;
     }
     
-    /* Info/warning boxes */
-    .stAlert {
-        border-radius: 10px;
-    }
-    
-    /* Hide streamlit branding */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     
-    /* Mobile optimization */
     @media (max-width: 768px) {
         .block-container {
             padding: 0.5rem !important;
@@ -172,7 +180,6 @@ st.markdown("""
         }
     }
     
-    /* Desktop optimization */
     @media (min-width: 769px) {
         .block-container {
             padding: 2rem 3rem !important;
@@ -197,43 +204,53 @@ MARKS_CORRECT = 1.0
 MARKS_NEGATIVE = 0.25
 TARGET_COUNT = 120
 
+SUBJECT_KEYWORDS = {
+    "Constitutional Law": ["constitution", "fundamental rights", "dpsp", "article", "amendment", "judicial review", "preamble", "citizenship"],
+    "Jurisprudence": ["jurisprudence", "legal theory", "natural law", "positivism", "austin", "kelsen", "hart", "dworkin", "pure theory"],
+    "Contract Law": ["contract", "agreement", "offer", "acceptance", "consideration", "breach", "damages", "specific performance"],
+    "Criminal Law": ["ipc", "criminal", "murder", "theft", "cheating", "culpable homicide", "penal code", "offence", "punishment"],
+    "Tort Law": ["tort", "negligence", "nuisance", "defamation", "trespass", "strict liability", "vicarious liability"],
+    "Property Law": ["property", "transfer", "easement", "mortgage", "lease", "possession", "ownership", "immovable"],
+    "Administrative Law": ["administrative", "delegated legislation", "natural justice", "tribunal", "ombudsman", "rule of law"],
+    "Company Law": ["company", "director", "shareholder", "corporate", "board", "companies act", "memorandum", "articles"],
+    "Family Law": ["marriage", "divorce", "maintenance", "custody", "adoption", "hindu marriage", "succession"],
+    "International Law": ["international", "treaty", "sovereignty", "united nations", "icc", "geneva convention", "bilateral"],
+}
+
+SUBJECT_DISTRIBUTION = {
+    "Constitutional Law": 32,
+    "Jurisprudence": 22,
+    "Contract Law": 11,
+    "Criminal Law": 11,
+    "Tort Law": 9,
+    "Property Law": 9,
+    "Administrative Law": 9,
+    "Company Law": 6,
+    "International Law": 5,
+    "Family Law": 6,
+}
+
 CLAT_INSTRUCTIONS = """
 ### 📋 CLAT PG 2026 - Exam Instructions
 
 **General Instructions:**
 
-1. **Duration:** The test is of 2 hours (120 minutes)
-2. **Questions:** The test contains 120 multiple-choice questions
-3. **Marking Scheme:** 
-   - Each correct answer: +1 mark
-   - Each incorrect answer: -0.25 marks (Negative marking)
-   - Unanswered questions: No marks deducted
-4. **Question Type:** All questions are Multiple Choice Questions (MCQs) with four options (A, B, C, D)
+1. **Duration:** 2 hours (120 minutes)
+2. **Questions:** 120 MCQs across various law subjects
+3. **Marking Scheme:** +1 for correct, -0.25 for wrong, 0 for unattempted
+4. **Question Distribution:**
+   - Constitutional Law: ~30-35 questions
+   - Jurisprudence: ~20-25 questions
+   - Contract, Criminal, Tort & other laws: ~60-70 questions
 
-**During the Test:**
+**Subject-wise Navigation:**
 
-- You can navigate between questions using Previous/Next buttons
-- You can skip questions and return to them later
-- Mark your answers carefully - only one option per question
-- Keep track of time using the timer displayed at the top
-- Submit the test when you're done or it will auto-submit when time is up
-
-**Important Rules:**
-
-- Do not refresh the page during the test
-- Ensure stable internet connection
-- No external materials or calculators allowed
-- Focus on accuracy - negative marking applies
-- Manage your time wisely across all 120 questions
-
-**Test Sections (CLAT PG):**
-
-Constitutional Law • Jurisprudence • Contract Law • Tort Law • Criminal Law • Property Law • Administrative Law • International Law
+Questions are organized by subjects. Use the palette to jump between subjects and questions.
 
 **Good Luck! 🎓**
 """
 
-# ------------- Parsing helpers (same) -------------
+# ------------- Helpers -------------
 def normalize_lines(text: str):
     text = text.replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
@@ -259,6 +276,17 @@ def find_answer_in_window(lines, start, window=12):
     if m:
         return LETTERS.index(m.group(1).upper())
     return None
+
+def classify_subject(question_text: str) -> str:
+    question_lower = question_text.lower()
+    scores = {}
+    for subject, keywords in SUBJECT_KEYWORDS.items():
+        score = sum(1 for kw in keywords if kw in question_lower)
+        if score > 0:
+            scores[subject] = score
+    if scores:
+        return max(scores, key=scores.get)
+    return "Other Laws"
 
 def parse_questions_from_text(text: str):
     lines = normalize_lines(text)
@@ -292,10 +320,12 @@ def parse_questions_from_text(text: str):
             continue
 
         ans_idx = find_answer_in_window(lines, j, window=12)
+        q_text = " ".join(stem_parts).strip()
         q = {
-            "question": " ".join(stem_parts).strip(),
+            "question": q_text,
             "options": options,
             "answer_index": ans_idx,
+            "subject": classify_subject(q_text)
         }
         if len(q["question"]) > 10:
             res.append(q)
@@ -328,15 +358,26 @@ def extract_pool_from_folder(folder: str):
             uniq.append(q)
     return uniq
 
-def prepare_exam_set(pool, count=TARGET_COUNT, seed=42):
-    rng = random.Random(seed)
-    if len(pool) == 0:
-        return []
-    if len(pool) <= count:
-        subset = pool[:]
-        rng.shuffle(subset)
-        return subset
-    return rng.sample(pool, count)
+def prepare_exam_set_subjectwise(pool, total_count=TARGET_COUNT):
+    by_subject = defaultdict(list)
+    for q in pool:
+        by_subject[q["subject"]].append(q)
+    
+    selected = []
+    for subject, target in SUBJECT_DISTRIBUTION.items():
+        available = by_subject.get(subject, [])
+        if len(available) >= target:
+            selected.extend(random.sample(available, target))
+        else:
+            selected.extend(available)
+    
+    if len(selected) < total_count:
+        all_remaining = [q for q in pool if q not in selected]
+        need = total_count - len(selected)
+        if all_remaining:
+            selected.extend(random.sample(all_remaining, min(need, len(all_remaining))))
+    
+    return selected[:total_count]
 
 # ---------------- Session state ----------------
 def ensure_state():
@@ -350,7 +391,6 @@ def ensure_state():
 
 ensure_state()
 
-# ---------------- Header ----------------
 st.title("⚖️ CLAT PG Mock Test 2026")
 
 # ---------------- Sidebar ----------------
@@ -358,12 +398,12 @@ with st.sidebar:
     st.markdown("### ⚙️ Test Settings")
     folder = st.text_input("📁 PDF Folder", value=FOLDER)
     duration_min = st.number_input("⏱️ Duration (minutes)", 10, 240, st.session_state["duration_min"], 5)
-    seed = st.number_input("🎲 Random Seed", 0, 9999, 42, 1)
     
     st.markdown("---")
-    prep_clicked = st.button("🔄 Prepare 120 Questions", use_container_width=True, 
+    st.markdown("### 🎯 Actions")
+    prep_clicked = st.button("🔄 Prepare Subject-Wise Test", use_container_width=True, 
                              disabled=st.session_state["stage"] in ["started", "instructions"])
-    reset_clicked = st.button("🔁 Reset Everything", use_container_width=True)
+    reset_clicked = st.button("🔁 Reset", use_container_width=True)
 
 if reset_clicked:
     st.session_state.update(stage="idle", questions=[], answers={}, current=0, end_ts=None, 
@@ -372,36 +412,63 @@ if reset_clicked:
 
 if prep_clicked:
     st.session_state["duration_min"] = int(duration_min)
-    with st.status("🔍 Preparing 120 questions...", expanded=True) as status:
+    with st.status("🔍 Preparing subject-wise test...", expanded=True) as status:
         pool = extract_pool_from_folder(folder)
-        subset = prepare_exam_set(pool, count=TARGET_COUNT, seed=int(seed))
+        subset = prepare_exam_set_subjectwise(pool, total_count=TARGET_COUNT)
         if not subset:
-            st.error("❌ No questions found in PDFs")
+            st.error("❌ No questions found")
             status.update(label="❌ Failed", state="error")
         else:
             st.session_state["questions"] = subset
             st.session_state["answers"] = {}
             st.session_state["current"] = 0
             st.session_state["stage"] = "instructions"
-            st.success(f"✅ Loaded {len(subset)} questions!")
+            
+            by_subj = defaultdict(int)
+            for q in subset:
+                by_subj[q["subject"]] += 1
+            breakdown = ", ".join([f"{s}: {c}" for s, c in sorted(by_subj.items())])
+            st.success(f"✅ Loaded {len(subset)} questions")
+            st.info(f"📊 {breakdown}")
             status.update(label=f"✅ Ready: {len(subset)} questions", state="complete")
     st.rerun()
 
-# --------------- Metrics ---------------
+# --------------- Metrics with Timer ---------------
 def remaining_seconds():
     if not st.session_state.get("end_ts"):
         return None
     return max(0, int(st.session_state["end_ts"] - time.time()))
 
-rem = remaining_seconds() if st.session_state["stage"] == "started" else None
+# Check timeout FIRST before showing anything
+if st.session_state["stage"] == "started":
+    rem = remaining_seconds()
+    if rem is not None and rem <= 0:
+        st.warning("⏰ Time's up! Auto-submitting...")
+        st.session_state["stage"] = "submitted"
+        st.rerun()
 
 col1, col2, col3, col4 = st.columns(4)
+
 with col1:
     st.metric("📊 Status", st.session_state["stage"].title())
+
 with col2:
     st.metric("📝 Questions", f"{len(st.session_state.get('questions', []))}")
+
 with col3:
-    st.metric("⏱️ Time", f"{(rem or 0)//60:02d}:{(rem or 0)%60:02d}")
+    # Timer that counts down from 120:00 to 00:00
+    if st.session_state["stage"] == "started":
+        rem = remaining_seconds()
+        if rem is not None:
+            mins = rem // 60
+            secs = rem % 60
+            timer_icon = "🔴" if rem < 600 else "⏱️"  # Red when < 10 min
+            st.metric(f"{timer_icon} Time Left", f"{mins:02d}:{secs:02d}")
+        else:
+            st.metric("⏱️ Time Left", "120:00")
+    else:
+        st.metric("⏱️ Time Left", "--:--")
+
 with col4:
     attempted = sum(1 for v in st.session_state["answers"].values() if v is not None)
     st.metric("✓ Done", f"{attempted}")
@@ -410,7 +477,7 @@ st.markdown("---")
 
 # --------------- Stages ---------------
 if st.session_state["stage"] == "idle":
-    st.info("👋 Click **'Prepare 120 Questions'** in the sidebar to start")
+    st.info("👋 Click **'Prepare Subject-Wise Test'** to load a test organized by CLAT PG subjects")
 
 elif st.session_state["stage"] == "instructions":
     st.markdown('<div class="instructions-panel">', unsafe_allow_html=True)
@@ -425,16 +492,12 @@ elif st.session_state["stage"] == "instructions":
             st.rerun()
 
 elif st.session_state["stage"] == "started":
-    if rem is not None and rem <= 0:
-        st.warning("⏰ Time's up! Auto-submitting...")
-        st.session_state["stage"] = "submitted"
-        st.rerun()
-
     qs = st.session_state["questions"]
     idx = st.session_state["current"]
     q = qs[idx]
 
-    # Question with HIGH CONTRAST
+    st.markdown(f'<div class="subject-badge">📚 {q["subject"]}</div>', unsafe_allow_html=True)
+    
     st.markdown(f"""
     <div class="question-box">
         <span class="question-number">Question {idx+1} of {len(qs)}</span>
@@ -442,7 +505,6 @@ elif st.session_state["stage"] == "started":
     </div>
     """, unsafe_allow_html=True)
 
-    # Options
     opts = [f"{LETTERS[i]}) {txt}" for i, txt in enumerate(q["options"])]
     saved = st.session_state["answers"].get(idx, None)
     default = 0 if saved is None else (saved + 1)
@@ -464,7 +526,7 @@ elif st.session_state["stage"] == "started":
             st.session_state["current"] = idx - 1
             st.rerun()
     with nav[1]:
-        if st.button("🔢 Palette", use_container_width=True):
+        if st.button("🔢 Subject Palette", use_container_width=True):
             st.session_state["show_palette"] = not st.session_state.get("show_palette", False)
             st.rerun()
     with nav[2]:
@@ -480,20 +542,31 @@ elif st.session_state["stage"] == "started":
             st.rerun()
 
     if st.session_state.get("show_palette", False):
-        st.markdown("### 🔢 Question Navigator")
-        per_row = 10
-        rows = (len(qs) + per_row - 1) // per_row
-        for r in range(rows):
-            cols = st.columns(per_row)
-            for c in range(per_row):
-                k = r * per_row + c
-                if k >= len(qs):
-                    continue
-                attempted = st.session_state["answers"].get(k, None) is not None
-                label = f"{'✓' if attempted else ''}{k+1}"
-                if cols[c].button(label, key=f"j_{k}", use_container_width=True):
-                    st.session_state["current"] = k
-                    st.rerun()
+        st.markdown("### 🔢 Question Palette (Subject-wise)")
+        
+        by_subject = defaultdict(list)
+        for i, q in enumerate(qs):
+            by_subject[q["subject"]].append(i)
+        
+        for subject in sorted(by_subject.keys()):
+            indices = by_subject[subject]
+            st.markdown(f'<div class="subject-header">{subject} ({len(indices)} questions)</div>', unsafe_allow_html=True)
+            
+            per_row = 10
+            rows = (len(indices) + per_row - 1) // per_row
+            for r in range(rows):
+                cols = st.columns(per_row)
+                for c in range(per_row):
+                    pos = r * per_row + c
+                    if pos >= len(indices):
+                        continue
+                    k = indices[pos]
+                    attempted = st.session_state["answers"].get(k, None) is not None
+                    is_current = (k == idx)
+                    label = f"{'✓' if attempted else ''}{k+1}{'←' if is_current else ''}"
+                    if cols[c].button(label, key=f"j_{k}", use_container_width=True):
+                        st.session_state["current"] = k
+                        st.rerun()
 
 elif st.session_state["stage"] == "submitted":
     qs = st.session_state["questions"]
@@ -501,19 +574,27 @@ elif st.session_state["stage"] == "submitted":
     correct = wrong = unattempt = unscored = 0
     score = 0.0
     
+    subject_stats = defaultdict(lambda: {"correct": 0, "wrong": 0, "unattempt": 0, "total": 0})
+    
     for i, q in enumerate(qs):
         chosen = ans.get(i, None)
         true_idx = q.get("answer_index", None)
+        subj = q["subject"]
+        subject_stats[subj]["total"] += 1
+        
         if chosen is None:
             unattempt += 1
+            subject_stats[subj]["unattempt"] += 1
         elif true_idx is None:
             unscored += 1
         elif chosen == true_idx:
             correct += 1
             score += MARKS_CORRECT
+            subject_stats[subj]["correct"] += 1
         else:
             wrong += 1
             score -= MARKS_NEGATIVE
+            subject_stats[subj]["wrong"] += 1
 
     st.balloons()
     st.markdown(f"""
@@ -524,7 +605,7 @@ elif st.session_state["stage"] == "submitted":
     </div>
     """, unsafe_allow_html=True)
     
-    st.markdown("### 📊 Performance")
+    st.markdown("### 📊 Overall Performance")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.metric("✅ Correct", correct)
@@ -535,8 +616,20 @@ elif st.session_state["stage"] == "submitted":
     with col4:
         st.metric("⚠️ Unscored", unscored)
     
+    st.markdown("### 📚 Subject-wise Performance")
+    for subj in sorted(subject_stats.keys()):
+        stats = subject_stats[subj]
+        with st.expander(f"{subj} - {stats['correct']}/{stats['total']} correct"):
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Correct", stats["correct"])
+            with col2:
+                st.metric("Wrong", stats["wrong"])
+            with col3:
+                st.metric("Skipped", stats["unattempt"])
+    
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
-        if st.button("🔄 New Test", type="primary", use_container_width=True):
+        if st.button("🔄 Take Another Test", type="primary", use_container_width=True):
             st.session_state.update(stage="idle", questions=[], answers={}, current=0, end_ts=None, show_palette=False)
             st.rerun()
