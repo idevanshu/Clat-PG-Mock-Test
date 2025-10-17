@@ -1,4 +1,4 @@
-# main.py - CLAT PG Mock Test with proper passage detection
+# main.py - CLAT PG Mock Test with FULL passage extraction
 import streamlit as st
 import pdfplumber
 import re
@@ -46,11 +46,15 @@ st.markdown("""
         background-color: #fffbf0 !important; padding: 26px; border-radius: 12px; 
         border: 3px solid #f59e0b; border-left: 6px solid #d97706; 
         margin: 20px 0; font-size: 16px; line-height: 1.85; color: #1f2937; 
-        max-height: 500px; overflow-y: auto; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2); 
+        max-height: 550px; overflow-y: auto; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2); 
     }
     .passage-box h4 { 
         color: #c2410c !important; margin-top: 0; margin-bottom: 16px; 
         font-size: 19px; font-weight: 800; border-bottom: 2px solid #fdba74; padding-bottom: 8px; 
+    }
+    .passage-box p {
+        margin-bottom: 12px;
+        text-align: justify;
     }
     .question-box { 
         background-color: #141829 !important; padding: 28px; border-radius: 12px; 
@@ -83,7 +87,7 @@ st.markdown("""
     
     @media (max-width: 768px) {
         .block-container { padding: 0.5rem !important; }
-        .passage-box { padding: 18px; font-size: 15px; max-height: 350px; }
+        .passage-box { padding: 18px; font-size: 15px; max-height: 400px; }
         .question-box { padding: 20px; }
         .question-number { font-size: 19px; }
         .question-text { font-size: 17px !important; }
@@ -107,8 +111,8 @@ TARGET_COUNT = 120
 
 SUBJECT_KEYWORDS = {
     "Constitutional Law": ["constitution", "fundamental rights", "dpsp", "article", "amendment", "judicial review", "preamble", "citizenship"],
-    "Jurisprudence": ["jurisprudence", "legal theory", "natural law", "positivism", "austin", "kelsen", "hart", "dworkin", "pure theory"],
-    "Contract Law": ["contract", "agreement", "offer", "acceptance", "consideration", "breach", "damages", "specific performance"],
+    "Jurisprudence": ["jurisprudence", "legal theory", "natural law", "positivism", "austin", "kelsen", "hart", "dworkin", "pure theory", "promissory estoppel"],
+    "Contract Law": ["contract", "agreement", "offer", "acceptance", "consideration", "breach", "damages", "specific performance", "promissory estoppel"],
     "Criminal Law": ["ipc", "criminal", "murder", "theft", "cheating", "culpable homicide", "penal code", "offence", "punishment"],
     "Tort Law": ["tort", "negligence", "nuisance", "defamation", "trespass", "strict liability", "vicarious liability"],
     "Property Law": ["property", "transfer", "easement", "mortgage", "lease", "possession", "ownership", "immovable", "article 300a"],
@@ -154,13 +158,14 @@ Questions are organized by subjects. Use the palette to jump between subjects an
 PASSAGE_KEYWORDS = [
     "article", "section", "constitution", "supreme court", "high court", "judgment",
     "held that", "observed", "scc", "air", "v.", "rights", "liberty", "bail",
-    "property", "article 300a", "criminal", "jurisdiction", "statute", "hindu", "contract"
+    "property", "article 300a", "criminal", "jurisdiction", "statute", "hindu", 
+    "contract", "doctrine", "estoppel", "government", "equity"
 ]
 
 def normalize_lines(text: str):
     text = text.replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"-\n", "", text)
+    text = re.sub(r"-\n", "", text)  # Join hyphenated words
     lines = [ln.strip() for ln in text.split("\n")]
     return [ln for ln in lines if ln]
 
@@ -180,6 +185,7 @@ def strip_option_prefix(s: str, letter: str):
     return re.sub(rf"^\(?{letter}\)?[\.\:\-\)]\s+", "", s, flags=re.IGNORECASE).strip()
 
 def is_question_start(s: str):
+    # Must be at start of line: digit(s) followed by punctuation and space
     return bool(re.match(r"^\d{1,3}[\)\.\:\-]\s+", s.strip()))
 
 def strip_question_prefix(s: str):
@@ -193,12 +199,28 @@ def is_passage_marker(line: str):
     ))
 
 def is_passage_opener(line: str):
+    """Check if line opens a legal/case passage"""
     s = line.strip().lower()
-    if s.startswith("the supreme court of india") or s.startswith("the high court"):
-        return True
+    
+    # Common legal passage openers
+    openers = [
+        "the supreme court of india",
+        "the high court",
+        "we may note that",
+        "the doctrine of",
+        "it is well settled",
+        "it is settled law"
+    ]
+    
+    for opener in openers:
+        if s.startswith(opener):
+            return True
+    
+    # Long prose with legal keywords
     if len(line) > 100 and not is_question_start(line):
         hits = sum(kw in s for kw in PASSAGE_KEYWORDS)
-        return hits >= 2
+        return hits >= 3
+    
     return False
 
 def clean_passage_text(txt: str) -> str:
@@ -210,31 +232,47 @@ def clean_passage_text(txt: str) -> str:
     )
     return txt.strip()
 
-def is_potential_passage_block(lines, start, max_lookahead=40):
-    """Probe forward to capture prose passage ending before a numbered question"""
+def is_potential_passage_block(lines, start, max_lookahead=60):
+    """
+    Probe forward to capture full prose passage ending before numbered question.
+    Increased lookahead to capture longer passages.
+    """
     n = len(lines)
     j = start
     buf = []
     saw_content = False
+    consecutive_short = 0  # Track consecutive very short lines (might indicate end)
     
     while j < n and j < start + max_lookahead:
         s = lines[j].strip()
         
-        # Stop at question start
-        if is_question_start(s):
+        # Hard stop: clear question start (number at beginning)
+        if is_question_start(s) and j > start:
             break
         
-        # Stop at another passage marker
+        # Stop at another passage marker (but not at start)
         if is_passage_marker(s) and j != start:
             break
         
-        # Stop if options appear (means this isn't a passage)
+        # Stop if we hit options (means we're past the passage)
         if any(is_option_line(s, L) for L in LETTERS):
             return None
         
-        if not is_noise(s) and len(s) > 2:
+        # Skip noise but don't break
+        if is_noise(s):
+            j += 1
+            continue
+        
+        # Add meaningful content
+        if len(s) > 2:
             buf.append(s)
             saw_content = True
+            consecutive_short = 0
+        elif len(s) > 0:
+            consecutive_short += 1
+            # If we see too many very short lines, might be end of passage
+            if consecutive_short > 3:
+                break
         
         j += 1
     
@@ -242,8 +280,9 @@ def is_potential_passage_block(lines, start, max_lookahead=40):
         return None
     
     text = " ".join(buf).strip()
-    text = clean_passage_text(text)  # Clean solution artifacts
+    text = clean_passage_text(text)
     
+    # Check for legal content
     hits = sum(kw in text.lower() for kw in PASSAGE_KEYWORDS)
     
     # Valid passage: >200 chars with legal keywords
@@ -252,7 +291,7 @@ def is_potential_passage_block(lines, start, max_lookahead=40):
     
     return None
 
-def find_answer_after_options(lines, start, max_lines=8, prose_len=120):
+def find_answer_after_options(lines, start, max_lines=10, prose_len=100):
     """
     Scan only a few short lines after the 4 options.
     Stop if we hit a new question, passage marker, or long prose.
@@ -274,12 +313,20 @@ def find_answer_after_options(lines, start, max_lines=8, prose_len=120):
             continue
         
         # Hard boundaries - stop searching
-        if is_question_start(s) or is_passage_marker(s) or is_passage_opener(s):
+        if is_question_start(s):
+            return None
+        
+        if is_passage_marker(s):
+            return None
+            
+        if is_passage_opener(s):
             return None
         
         # If long prose starts (likely passage/explanation), stop
-        if len(s) > prose_len and not s.lower().startswith("explanation"):
-            return None
+        if len(s) > prose_len:
+            # Allow "Explanation:" or "Solution:" headers
+            if not re.match(r"^(Explanation|Solution|Detailed\s+Solution)", s, re.IGNORECASE):
+                return None
         
         # Try to match answer patterns
         for pat in patterns:
@@ -304,12 +351,7 @@ def classify_subject(text: str) -> str:
 
 def parse_questions_with_passages(text: str):
     """
-    Robustly parse CLAT-style PDFs:
-    - Detect Roman numeral passages or 'Passage I/II'
-    - Detect 'Supreme Court...' legal narration passages
-    - Detect generic long legal prose immediately preceding questions
-    - Attach each passage to next 3–8 questions, then reset
-    - Clean solution artifacts from passages
+    Robustly parse CLAT-style PDFs with FULL passage extraction
     """
     lines = normalize_lines(text)
     results = []
@@ -319,8 +361,7 @@ def parse_questions_with_passages(text: str):
     current_passage = None
     passage_number = None
     questions_after_passage = 0
-    PASSAGE_MIN_Q = 3
-    PASSAGE_MAX_Q = 8
+    PASSAGE_MAX_Q = 10  # Increased to handle longer question sets
 
     while i < n:
         line = lines[i].strip()
@@ -337,22 +378,28 @@ def parse_questions_with_passages(text: str):
             passage_lines = []
             questions_after_passage = 0
             
+            # Collect passage until we hit a question
             while i < n:
                 s = lines[i].strip()
+                
+                # Stop at next passage or question
                 if is_passage_marker(s) or is_question_start(s):
                     break
-                if not is_noise(s):
+                
+                # Add content
+                if not is_noise(s) and len(s) > 2:
                     passage_lines.append(s)
+                
                 i += 1
             
             text_block = " ".join(passage_lines).strip()
             text_block = clean_passage_text(text_block)
-            current_passage = text_block if len(text_block) >= 120 else None
+            current_passage = text_block if len(text_block) >= 150 else None
             continue
 
         # 2) Recognizable legal opener
         if is_passage_opener(line):
-            probe = is_potential_passage_block(lines, i, max_lookahead=50)
+            probe = is_potential_passage_block(lines, i, max_lookahead=60)
             if probe:
                 current_passage = probe["text"]
                 passage_number = None
@@ -361,7 +408,7 @@ def parse_questions_with_passages(text: str):
                 continue
 
         # 3) Generic prose block immediately before questions
-        probe = is_potential_passage_block(lines, i, max_lookahead=40)
+        probe = is_potential_passage_block(lines, i, max_lookahead=50)
         if probe and not is_question_start(line):
             current_passage = probe["text"]
             passage_number = None
@@ -378,13 +425,14 @@ def parse_questions_with_passages(text: str):
             while j < n:
                 nxt = lines[j].strip()
                 
+                # Stop at options, next question, or passage
                 if (any(is_option_line(nxt, L) for L in LETTERS) or 
                     is_question_start(nxt) or 
                     is_passage_marker(nxt) or 
                     is_passage_opener(nxt)):
                     break
                 
-                if not is_noise(nxt):
+                if not is_noise(nxt) and len(nxt) > 1:
                     stem_parts.append(nxt)
                 
                 j += 1
@@ -403,9 +451,9 @@ def parse_questions_with_passages(text: str):
                 q_text = " ".join(stem_parts).strip()
                 
                 # Use strict answer finder
-                ans_idx = find_answer_after_options(lines, j, max_lines=8, prose_len=120)
+                ans_idx = find_answer_after_options(lines, j, max_lines=10, prose_len=100)
 
-                # Attach passage for next 3–8 questions
+                # Attach passage for next questions
                 if current_passage:
                     questions_after_passage += 1
                     use_passage = current_passage
@@ -624,7 +672,7 @@ elif st.session_state["stage"] == "started":
         st.markdown(f'''
         <div class="passage-box">
             <h4>{title}</h4>
-            <div>{q["passage"]}</div>
+            <p>{q["passage"]}</p>
         </div>
         ''', unsafe_allow_html=True)
 
@@ -769,4 +817,3 @@ elif st.session_state["stage"] == "submitted":
                 current=0, end_ts=None, show_palette=False
             )
             st.rerun()
-
