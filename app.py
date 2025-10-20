@@ -1,4 +1,4 @@
-# main.py - CLAT PG Mock Test with FULL passage extraction
+# main.py - CLAT PG Mock Test with FULL passage extraction and instant feedback
 import streamlit as st
 import pdfplumber
 import re
@@ -9,12 +9,14 @@ import time
 from datetime import datetime, timedelta
 from collections import defaultdict
 
+
 st.set_page_config(
     page_title="CLAT PG Mock Test",
     page_icon="⚖️",
     layout="wide",
     initial_sidebar_state="collapsed"
 )
+
 
 # ---------------- CSS Styling ----------------
 st.markdown("""
@@ -83,6 +85,27 @@ st.markdown("""
     }
     .instructions-panel h3 { color: #e5e7eb !important; }
     .instructions-panel p, .instructions-panel li { color: #cbd5e1 !important; font-size: 15px; line-height: 1.8; }
+    
+    /* Palette button styling */
+    .palette-correct {
+        background: #10b981 !important;
+        color: white !important;
+        border: 2px solid #059669 !important;
+    }
+    
+    .palette-wrong {
+        background: #ef4444 !important;
+        color: white !important;
+        border: 2px solid #dc2626 !important;
+    }
+    
+    .palette-current {
+        background: #f59e0b !important;
+        color: white !important;
+        border: 3px solid #d97706 !important;
+        font-weight: 700 !important;
+    }
+    
     #MainMenu {visibility: hidden;} footer {visibility: hidden;}
     
     @media (max-width: 768px) {
@@ -101,6 +124,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+
 # ---------------- Configuration ----------------
 FOLDER = "questions"
 LETTERS = ["A", "B", "C", "D"]
@@ -108,6 +132,7 @@ DEFAULT_DURATION_MIN = 120
 MARKS_CORRECT = 1.0
 MARKS_NEGATIVE = 0.25
 TARGET_COUNT = 120
+
 
 SUBJECT_KEYWORDS = {
     "Constitutional Law": ["constitution", "fundamental rights", "dpsp", "article", "amendment", "judicial review", "preamble", "citizenship"],
@@ -122,6 +147,7 @@ SUBJECT_KEYWORDS = {
     "International Law": ["international", "treaty", "sovereignty", "united nations", "icc", "geneva convention", "bilateral"],
 }
 
+
 SUBJECT_DISTRIBUTION = {
     "Constitutional Law": 32,
     "Jurisprudence": 22,
@@ -135,10 +161,13 @@ SUBJECT_DISTRIBUTION = {
     "Family Law": 6,
 }
 
+
 CLAT_INSTRUCTIONS = """
 ### 📋 CLAT PG 2026 - Exam Instructions
 
+
 **General Instructions:**
+
 
 1. **Duration:** 2 hours (120 minutes)
 2. **Questions:** 120 MCQs with passage-based comprehension
@@ -146,13 +175,18 @@ CLAT_INSTRUCTIONS = """
 4. **Question Format:**
    - Passages followed by 3–8 questions per passage
    - Read passages carefully before attempting questions
+5. **Instant Feedback:** You will see if your answer is correct or wrong immediately
+
 
 **Subject-wise Navigation:**
 
+
 Questions are organized by subjects. Use the palette to jump between subjects and questions.
+
 
 **Good Luck! 🎓**
 """
+
 
 # ---------------- Parsing Helpers ----------------
 PASSAGE_KEYWORDS = [
@@ -162,12 +196,14 @@ PASSAGE_KEYWORDS = [
     "contract", "doctrine", "estoppel", "government", "equity"
 ]
 
+
 def normalize_lines(text: str):
     text = text.replace("\r", "\n")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"-\n", "", text)  # Join hyphenated words
     lines = [ln.strip() for ln in text.split("\n")]
     return [ln for ln in lines if ln]
+
 
 def is_noise(line: str) -> bool:
     if not line or len(line) < 3:
@@ -178,18 +214,23 @@ def is_noise(line: str) -> bool:
         line, re.IGNORECASE
     ))
 
+
 def is_option_line(s: str, letter: str):
     return bool(re.match(rf"^\(?{letter}\)?[\.\:\-\)]\s+", s, flags=re.IGNORECASE))
 
+
 def strip_option_prefix(s: str, letter: str):
     return re.sub(rf"^\(?{letter}\)?[\.\:\-\)]\s+", "", s, flags=re.IGNORECASE).strip()
+
 
 def is_question_start(s: str):
     # Must be at start of line: digit(s) followed by punctuation and space
     return bool(re.match(r"^\d{1,3}[\)\.\:\-]\s+", s.strip()))
 
+
 def strip_question_prefix(s: str):
     return re.sub(r"^\d{1,3}[\)\.\:\-]?\s*", "", s, flags=re.IGNORECASE).strip()
+
 
 def is_passage_marker(line: str):
     s = line.strip()
@@ -197,6 +238,7 @@ def is_passage_marker(line: str):
         r"^(Passage\s+)?(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|XXI|XXII)\.?\s*$",
         s, re.IGNORECASE
     ))
+
 
 def is_passage_opener(line: str):
     """Check if line opens a legal/case passage"""
@@ -223,6 +265,7 @@ def is_passage_opener(line: str):
     
     return False
 
+
 def clean_passage_text(txt: str) -> str:
     """Remove solution artifacts from passage text"""
     # Remove leading "CORRECT OPTION: X" or "Answer: X"
@@ -231,6 +274,7 @@ def clean_passage_text(txt: str) -> str:
         "", txt, flags=re.IGNORECASE
     )
     return txt.strip()
+
 
 def is_potential_passage_block(lines, start, max_lookahead=60):
     """
@@ -291,14 +335,17 @@ def is_potential_passage_block(lines, start, max_lookahead=60):
     
     return None
 
-def find_answer_after_options(lines, start, max_lines=10, prose_len=100):
+
+def find_answer_after_options(lines, start, max_lines=25, prose_len=200):
     """
-    Scan only a few short lines after the 4 options.
-    Stop if we hit a new question, passage marker, or long prose.
+    Enhanced answer finder - searches deeper and handles more formats
     """
     patterns = [
         r"(?:Correct\s*Option|CORRECT\s*OPTION|Answer|Ans\.?)\s*[:\-]?\s*\(?([ABCD])\)?",
         r"(?:correct\s+answer\s+is)\s*[:\-]?\s*\(?([ABCD])\)?",
+        r"^([ABCD])\s*is\s+correct",  # "A is correct"
+        r"Option\s+\(?([ABCD])\)?\s+is\s+correct",  # "Option A is correct"
+        r"The\s+correct\s+option\s+is\s+\(?([ABCD])\)?",  # "The correct option is A"
     ]
     
     nonempty = 0
@@ -318,14 +365,16 @@ def find_answer_after_options(lines, start, max_lines=10, prose_len=100):
         
         if is_passage_marker(s):
             return None
-            
-        if is_passage_opener(s):
-            return None
         
-        # If long prose starts (likely passage/explanation), stop
+        # Allow longer prose (explanations often contain answers)
+        # Only stop at very long passages (>200 chars)
         if len(s) > prose_len:
-            # Allow "Explanation:" or "Solution:" headers
-            if not re.match(r"^(Explanation|Solution|Detailed\s+Solution)", s, re.IGNORECASE):
+            if not re.match(r"^(Explanation|Solution|Detailed\s+Solution|Answer)", s, re.IGNORECASE):
+                # Check if answer is IN this long line
+                for pat in patterns:
+                    m = re.search(pat, s, re.IGNORECASE)
+                    if m:
+                        return LETTERS.index(m.group(1).upper())
                 return None
         
         # Try to match answer patterns
@@ -338,6 +387,7 @@ def find_answer_after_options(lines, start, max_lines=10, prose_len=100):
     
     return None
 
+
 def classify_subject(text: str) -> str:
     text_lower = text.lower()
     scores = {}
@@ -349,6 +399,7 @@ def classify_subject(text: str) -> str:
         return max(scores, key=scores.get)
     return "Other Laws"
 
+
 def parse_questions_with_passages(text: str):
     """
     Robustly parse CLAT-style PDFs with FULL passage extraction
@@ -358,18 +409,22 @@ def parse_questions_with_passages(text: str):
     i = 0
     n = len(lines)
 
+
     current_passage = None
     passage_number = None
     questions_after_passage = 0
     PASSAGE_MAX_Q = 10  # Increased to handle longer question sets
 
+
     while i < n:
         line = lines[i].strip()
+
 
         # Skip boilerplate noise
         if is_noise(line):
             i += 1
             continue
+
 
         # 1) Explicit Roman numeral/Passage marker
         if is_passage_marker(line):
@@ -397,6 +452,7 @@ def parse_questions_with_passages(text: str):
             current_passage = text_block if len(text_block) >= 150 else None
             continue
 
+
         # 2) Recognizable legal opener
         if is_passage_opener(line):
             probe = is_potential_passage_block(lines, i, max_lookahead=60)
@@ -407,6 +463,7 @@ def parse_questions_with_passages(text: str):
                 i = probe["next_i"]
                 continue
 
+
         # 3) Generic prose block immediately before questions
         probe = is_potential_passage_block(lines, i, max_lookahead=50)
         if probe and not is_question_start(line):
@@ -416,10 +473,12 @@ def parse_questions_with_passages(text: str):
             i = probe["next_i"]
             continue
 
+
         # 4) Question parsing
         if is_question_start(line):
             stem_parts = [strip_question_prefix(line)]
             j = i + 1
+
 
             # Accumulate multi-line question stem
             while j < n:
@@ -437,6 +496,7 @@ def parse_questions_with_passages(text: str):
                 
                 j += 1
 
+
             # Collect 4 options
             options = []
             for L in LETTERS:
@@ -446,12 +506,14 @@ def parse_questions_with_passages(text: str):
                 else:
                     break
 
+
             # Only process if we have all 4 options
             if len(options) == 4:
                 q_text = " ".join(stem_parts).strip()
                 
-                # Use strict answer finder
-                ans_idx = find_answer_after_options(lines, j, max_lines=10, prose_len=100)
+                # Use enhanced answer finder
+                ans_idx = find_answer_after_options(lines, j, max_lines=25, prose_len=200)
+
 
                 # Attach passage for next questions
                 if current_passage:
@@ -468,6 +530,7 @@ def parse_questions_with_passages(text: str):
                     use_passage = None
                     use_passage_number = None
 
+
                 combined = (use_passage or "") + " " + q_text
                 
                 q = {
@@ -482,11 +545,14 @@ def parse_questions_with_passages(text: str):
                 if len(q["question"]) > 10:
                     results.append(q)
 
+
             i = max(i + 1, j)
         else:
             i += 1
 
+
     return results
+
 
 # ---------------- PDF Extraction ----------------
 @st.cache_data(show_spinner=False, ttl=3600)
@@ -509,6 +575,7 @@ def extract_pool_from_folder(folder: str):
             q["source"] = os.path.basename(p)
         pool.extend(qs)
 
+
     # Deduplicate
     seen = set()
     uniq = []
@@ -520,10 +587,12 @@ def extract_pool_from_folder(folder: str):
     
     return uniq
 
+
 def prepare_exam_set_subjectwise(pool, total_count=TARGET_COUNT):
     by_subject = defaultdict(list)
     for q in pool:
         by_subject[q["subject"]].append(q)
+
 
     selected = []
     for subject, target in SUBJECT_DISTRIBUTION.items():
@@ -533,6 +602,7 @@ def prepare_exam_set_subjectwise(pool, total_count=TARGET_COUNT):
         else:
             selected.extend(available)
 
+
     if len(selected) < total_count:
         remaining = [q for q in pool if q not in selected]
         need = total_count - len(selected)
@@ -540,6 +610,7 @@ def prepare_exam_set_subjectwise(pool, total_count=TARGET_COUNT):
             selected.extend(random.sample(remaining, min(need, len(remaining))))
     
     return selected[:total_count]
+
 
 # ---------------- Session State ----------------
 def ensure_state():
@@ -551,10 +622,13 @@ def ensure_state():
     st.session_state.setdefault("duration_min", DEFAULT_DURATION_MIN)
     st.session_state.setdefault("show_palette", False)
 
+
 ensure_state()
+
 
 # ---------------- Main UI ----------------
 st.title("⚖️ CLAT PG Mock Test 2026")
+
 
 # Sidebar
 with st.sidebar:
@@ -571,12 +645,14 @@ with st.sidebar:
     )
     reset_clicked = st.button("🔁 Reset", use_container_width=True)
 
+
 if reset_clicked:
     st.session_state.update(
         stage="idle", questions=[], answers={}, current=0, 
         end_ts=None, duration_min=DEFAULT_DURATION_MIN, show_palette=False
     )
     st.rerun()
+
 
 if prep_clicked:
     st.session_state["duration_min"] = int(duration_min)
@@ -599,12 +675,15 @@ if prep_clicked:
             
             breakdown = ", ".join([f"{s}: {c}" for s, c in sorted(by_subj.items())])
             with_passages = sum(1 for q in subset if q.get("passage"))
+            with_answers = sum(1 for q in subset if q.get("answer_index") is not None)
             
             st.success(f"✅ Loaded {len(subset)} questions")
             st.info(f"📖 Questions with passages: {with_passages}")
+            st.info(f"✓ Questions with answers: {with_answers}")
             st.info(f"📊 {breakdown}")
             status.update(label=f"✅ Ready: {len(subset)} questions", state="complete")
     st.rerun()
+
 
 # Metrics
 def remaining_seconds():
@@ -612,12 +691,14 @@ def remaining_seconds():
         return None
     return max(0, int(st.session_state["end_ts"] - time.time()))
 
+
 if st.session_state["stage"] == "started":
     rem = remaining_seconds()
     if rem is not None and rem <= 0:
         st.warning("⏰ Time's up! Auto-submitting...")
         st.session_state["stage"] = "submitted"
         st.rerun()
+
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
@@ -639,11 +720,14 @@ with col4:
     attempted = sum(1 for v in st.session_state["answers"].values() if v is not None)
     st.metric("✓ Done", f"{attempted}")
 
+
 st.markdown("---")
+
 
 # Stages
 if st.session_state["stage"] == "idle":
     st.info("👋 Click **'Prepare Subject-Wise Test'** to load a test with passage-based questions")
+
 
 elif st.session_state["stage"] == "instructions":
     st.markdown('<div class="instructions-panel">', unsafe_allow_html=True)
@@ -659,12 +743,15 @@ elif st.session_state["stage"] == "instructions":
             st.session_state["stage"] = "started"
             st.rerun()
 
+
 elif st.session_state["stage"] == "started":
     qs = st.session_state["questions"]
     idx = st.session_state["current"]
     q = qs[idx]
 
+
     st.markdown(f'<div class="subject-badge">📚 {q["subject"]}</div>', unsafe_allow_html=True)
+
 
     # Show passage if present
     if q.get("passage") and len(q["passage"]) > 80:
@@ -676,6 +763,7 @@ elif st.session_state["stage"] == "started":
         </div>
         ''', unsafe_allow_html=True)
 
+
     st.markdown(f"""
     <div class="question-box">
         <span class="question-number">Question {idx+1} of {len(qs)}</span>
@@ -683,9 +771,11 @@ elif st.session_state["stage"] == "started":
     </div>
     """, unsafe_allow_html=True)
 
+
     opts = [f"{LETTERS[i]}) {txt}" for i, txt in enumerate(q["options"])]
     saved = st.session_state["answers"].get(idx, None)
     default = 0 if saved is None else (saved + 1)
+
 
     choice = st.radio(
         "Select your answer:",
@@ -694,7 +784,21 @@ elif st.session_state["stage"] == "started":
         key=f"q_{idx}"
     )
     
-    st.session_state["answers"][idx] = None if choice == "⊗ Skip" else LETTERS.index(choice[0])
+    chosen_idx = None if choice == "⊗ Skip" else LETTERS.index(choice[0])
+    st.session_state["answers"][idx] = chosen_idx
+    
+    # Instant feedback
+    true_idx = q.get("answer_index", None)
+    
+    if chosen_idx is not None and true_idx is not None:
+        if chosen_idx == true_idx:
+            st.success(f"✅ **Correct!** +{MARKS_CORRECT} marks")
+        else:
+            st.error(f"❌ **Wrong!** Correct answer: **{LETTERS[true_idx]})** {q['options'][true_idx]}")
+            st.info(f"*-{MARKS_NEGATIVE} marks*")
+    elif chosen_idx is not None and true_idx is None:
+        st.warning("⚠️ Answer key not available for this question")
+
 
     st.markdown("---")
     
@@ -719,8 +823,11 @@ elif st.session_state["stage"] == "started":
             st.session_state["stage"] = "submitted"
             st.rerun()
 
+
+    # Enhanced palette with color coding
     if st.session_state.get("show_palette", False):
         st.markdown("### 🔢 Question Palette (Subject-wise)")
+        st.markdown("**Legend:** ✅ Correct | ❌ Wrong | 🟡 Current | ✓ Attempted | ⊗ Skipped")
         
         by_subject = defaultdict(list)
         for i, qx in enumerate(qs):
@@ -742,18 +849,39 @@ elif st.session_state["stage"] == "started":
                     if pos >= len(indices):
                         continue
                     k = indices[pos]
-                    attempted = st.session_state["answers"].get(k, None) is not None
+                    chosen = st.session_state["answers"].get(k, None)
+                    true = qs[k].get("answer_index", None)
                     is_current = (k == idx)
-                    label = f"{'✓' if attempted else ''}{k+1}{'←' if is_current else ''}"
-                    if cols[c].button(label, key=f"j_{k}", use_container_width=True):
+                    
+                    # Determine button appearance
+                    if is_current:
+                        label = f"🟡 {k+1}"
+                        btn_type = "primary"
+                    elif chosen is not None and true is not None:
+                        if chosen == true:
+                            label = f"✅ {k+1}"
+                            btn_type = "secondary"
+                        else:
+                            label = f"❌ {k+1}"
+                            btn_type = "secondary"
+                    elif chosen is not None:
+                        label = f"✓ {k+1}"
+                        btn_type = "secondary"
+                    else:
+                        label = f"⊗ {k+1}"
+                        btn_type = "secondary"
+                    
+                    if cols[c].button(label, key=f"j_{k}", use_container_width=True, type=btn_type):
                         st.session_state["current"] = k
                         st.rerun()
+
 
 elif st.session_state["stage"] == "submitted":
     qs = st.session_state["questions"]
     ans = st.session_state["answers"]
-    correct = wrong = unattempt = unscored = 0
+    correct = wrong = unattempt = 0
     score = 0.0
+
 
     subject_stats = defaultdict(lambda: {"correct": 0, "wrong": 0, "unattempt": 0, "total": 0})
     
@@ -767,7 +895,8 @@ elif st.session_state["stage"] == "submitted":
             unattempt += 1
             subject_stats[subj]["unattempt"] += 1
         elif true_idx is None:
-            unscored += 1
+            # If no answer key, skip scoring but count as attempted
+            pass
         elif chosen == true_idx:
             correct += 1
             score += MARKS_CORRECT
@@ -776,6 +905,7 @@ elif st.session_state["stage"] == "submitted":
             wrong += 1
             score -= MARKS_NEGATIVE
             subject_stats[subj]["wrong"] += 1
+
 
     st.balloons()
     st.markdown(f"""
@@ -786,16 +916,16 @@ elif st.session_state["stage"] == "submitted":
     </div>
     """, unsafe_allow_html=True)
 
+
     st.markdown("### 📊 Overall Performance")
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.metric("✅ Correct", correct)
     with col2:
         st.metric("❌ Wrong", wrong)
     with col3:
         st.metric("⊗ Skipped", unattempt)
-    with col4:
-        st.metric("⚠️ Unscored", unscored)
+
 
     st.markdown("### 📚 Subject-wise Performance")
     for subj in sorted(subject_stats.keys()):
