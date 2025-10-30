@@ -1,2 +1,6 @@
 streamlit
 pdfplumber
+openai
+pypdfium2
+pytesseract
+Pillow
