@@ -1,0 +1,456 @@
+{
+  "exam_info": {
+    "name": "CLAT PG 2024 - Official Question Paper (Set A)",
+    "duration_minutes": 120,
+    "maximum_marks": 120,
+    "total_questions": 120,
+    "marking_scheme": {
+      "correct_answer": 1,
+      "wrong_answer": -0.25,
+      "unanswered": 0
+    }
+  },
+  "passages": [
+    {
+      "passage_number": "V",
+      "passage_title": "INTERNATIONAL LAW - THE GAMBIA v. MYANMAR",
+      "question_range": "21-25",
+      "passage_text": "In its second preliminary objection, Myanmar submits that The Gambia's Application is inadmissible because The Gambia lacks standing to bring this case before the Court. In particular, Myanmar considers that only \"injured States\", which Myanmar defines as States \"adversely affected by an internationally wrongful act\", have standing to present a claim before the Court. In Myanmar's view, The Gambia is not an \"injured State\" (a term that Myanmar appears to use interchangeably with the term \"specially affected State\") and has failed to demonstrate an individual legal interest. Therefore, according to Myanmar, The Gambia lacks standing under Article IX of the Genocide Convention.\n\nMyanmar draws a distinction between the right to invoke State responsibility under general international law and standing before the Court. It argues that, even if it were established that a \"non-injured\" Contracting Party to the Genocide Convention has the right to invoke another State's responsibility for violations of the Convention, this would not necessarily entail the right to bring a case before the Court. To this end, Myanmar contends that there exists a difference between the common interest in the accomplishment of the purposes of the Genocide Convention and a State's individual legal interest that may be enforce through the institution of proceedings before the Court. In Myanmar's view, only States \"specially affected\" by an internationally wrongful act have standing to bring a claim before the Court.\n\nMyanmar further submits that The Gambia's claims are inadmissible in so far as they are not brought before the Court in accordance with the rule concerning the nationality of claims which, according to Myanmar, is reflected in Article 44 (a) of the International Law Commission's Articles on the Responsibility of States for Internationally Wrongful Acts. Myanmar asserts that the rule concerning the nationality of claims applies to the invocation of responsibility by both \"injured\" and \"non injured\" States and irrespective of whether the obligation breached is an erga omnes partes or erga omnes obligation. Consequently, in Myanmar's view, The Gambia lacks standing to invoke Myanmar's responsibility.\n\nMyanmar maintains that, even if Contracting Parties that are not \"specially affected\" by an alleged violation of the Convention are assumed to have standing to submit a dispute to the Court under Article IX, this standing is subsidiary to and dependent upon the standing of States that are \"specially affected\". Myanmar argues that Bangladesh would be \"the most natural State\" to institute proceedings in the present case, because it borders Myanmar and has received a significant number of the alleged victims of genocide. In Myanmar's view, the reservation by Bangladesh to Article IX of the Genocide Convention not only precludes Bangladesh from bringing a case against Myanmar, but it also bars any \"non-injured\" State, such as The Gambia, from doing so. Myanmar further argues that \"non-injured\" States may not override the right of a State \"specially affected\" by the alleged breach to decide how to vindicate its rights in a way that would best serve its own interests.\n[Excerpted passage represents the claims of Myanmar in The Gambia v. Myanmar, judgment on preliminary objections, July 22, 2022]",
+      "questions": [
+        {
+          "question_number": 21,
+          "question_text": "Hypothetically, if The Gambian state was to exercise criminal jurisdiction over the persons responsible for Crimes of Genocide, then such jurisdiction would be called as:",
+          "options": {
+            "A": "Extra-territorial jurisdiction",
+            "B": "Universal jurisdiction",
+            "C": "Contentious jurisdiction",
+            "D": "A state cannot exercise jurisdiction over such crimes without having any connection with them."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 22,
+          "question_text": "Erga omnes partes means:",
+          "options": {
+            "A": "Obligations that are so integral to the subject and purpose of the treaty that no reservations or derogations are permissible",
+            "B": "Obligations arising out of customary principles of international law that states have not objected to",
+            "C": "Obligations essentially arising after gaining membership of the United Nations",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question_number": 23,
+          "question_text": "Article 44 (a) of the International Law Commission's Articles on the Responsibility of States for Internationally Wrongful Acts states that 'the responsibility of a State may not be invoked if: (a) the claim is not brought in accordance with any applicable rule relating to the nationality of claims.' Can Gambia invoke the principles of state responsibility against Myanmar for Crimes of Genocide?",
+          "options": {
+            "A": "No, as The Gambia cannot fulfill the conditions stipulated in Article 44 (a)",
+            "B": "Yes, as the nationals of The Gambia have also faced persecution from Myanmar",
+            "C": "Yes, the Article has no relevance as the Genocide Convention expects the accomplishment of its high purposes.",
+            "D": "No, Bangladesh is an appropriate state to bring claims and hold Myanmar internationally responsible."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 24,
+          "question_text": "Myanmar claims that the reservation by Bangladesh to Article IX of the Genocide Convention not only precludes Bangladesh from bringing a case against Myanmar, but it also bars any \"non-injured\" State, such as The Gambia, from doing so. Is this claim maintainable?\n(Article IX - Disputes between the Contracting Parties relating to the interpretation, application or fulfilment of the present Convention, including those relating to the responsibility of a State for genocide or for any of the other acts enumerated in Article III, shall be submitted to the International Court of Justice at the request of any of the parties to the dispute.)",
+          "options": {
+            "A": "Yes, because Bangladesh is the injured state and its reservation imposes a restriction on dispute itself precluding any state from raising it.",
+            "B": "No, it does not affect the locus standi of The Gambia as being party to the Convention, it has its own right.",
+            "C": "No, Gambia can only file the dispute before ICJ after Bangladesh consents to the same.",
+            "D": "Option (A) subject to (C)."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 25,
+          "question_text": "Myanmar has made a reservation to Article VIII of the Genocide Convention to restrict the competent organs of the UN to take actions under the Charter of the UN as they consider appropriate for the prevention and suppression of acts of genocide. Myanmar claims that since ICJ is the principal organ of the UN, there is a limitation on Article IX. The claim is:",
+          "options": {
+            "A": "Maintainable, as the reservation explicitly prohibits the intervention of UN organs.",
+            "B": "Not maintainable, as Article VIII concerns the discretionary function which is different from the judicial function of the ICJ.",
+            "C": "Maintainable, as the two provisions of the treaty i.e., Article VIII and IX are to be interpreted harmoniously.",
+            "D": "Not maintainable, as ICJ as a successor of PCIJ is regulated by the Statute of ICJ and not the UN Charter."
+          },
+          "correct_answer": "B"
+        }
+      ]
+    },
+    {
+      "passage_number": "VI",
+      "passage_title": "CONSENSUAL STRUCTURE OF INTERNATIONAL LAW",
+      "question_range": "26-30",
+      "passage_text": "The consensual structure of the international legal order, with its strong emphasis on the sovereign equality of states, has always been somewhat precarious. In different waves over the centuries, it has been attacked for its incongruence with the realities of inequality in international politics, for its tension with ideals of democracy and human rights, and for standing in the way of more effective problem-solving in the international community. While surprisingly resilient in the face of such challenges, the consensual structure has seen renewed attacks in recent years. In the 1990s, those attacks were mainly \"moral\" in character. They were related to the liberal turn in international law, and some of them, under the banner of human rights, aimed at weakening principles of nonintervention and immunity. Others, starting from the idea of an emerging \"international community,\" questioned the prevailing contractual models of international law and emphasised the rise of norms and processes reflecting community values rather than individual state interests. Since the beginning of the new millennium, the focus has shifted, and attacks are more often framed in terms of effectiveness or global public goods. Classical international law is regarded as increasingly incapable of providing much-needed solutions for the challenges of a globalized world; as countries become ever more interdependent and vulnerable to global challenges, an order that safeguards states' freedoms at the cost of common policies is often seen as anachronistic. According to this view, what is needed-and what we are likely to see-is a turn to nonconsensual lawmaking mechanisms, especially through powerful international institutions with majoritarian voting rules.\n[The extract is part of the article \"The Decay of Consent: International Law in an Age of Global Public Goods\" by Krisch N, in the American Journal of International Law]",
+      "questions": [
+        {
+          "question_number": 26,
+          "question_text": "Abstract refers to the principle of 'non-intervention'. Which of the following statements is not true with respect to the principle of 'non-intervention' enshrined in Article 2(7) of the UN Charter:",
+          "options": {
+            "A": "The United Nations should not intervene in matters which are essentially within the domestic jurisdiction of any state.",
+            "B": "The United Nations shall not require the Members to submit such matters which are essentially within the domestic jurisdiction to settlement under the present Charter.",
+            "C": "The principle of non-intervention shall not prejudice the application of enforcement measures under Chapter-VII of UN Charter.",
+            "D": "As per the wordings of Article 2(7) of the UN Charter, the obligation with respect to 'non-intervention' under this provision applies to both the United Nations and its members."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question_number": 27,
+          "question_text": "Extract refers to several institutions with law-making power. Security Council may be one such institution. Which of the following statements is not true with respect to the Security Council?",
+          "options": {
+            "A": "Each member of the Security Council shall have one vote.",
+            "B": "Decisions of the Security Council on procedural matters shall be made by an affirmative vote of nine members.",
+            "C": "Decisions of the Security Council on procedural matters shall be made by an affirmative vote of nine members, including the concurring votes of the permanent members.",
+            "D": "Decisions of the Security Council on all other matters shall be made by an affirmative vote of nine members, including the concurring votes of the permanent members, provided that, in decisions under Chapter VI and under paragraph 3 of Article 52, a party to a dispute shall abstain from voting."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 28,
+          "question_text": "Extract refers to 'norms and processes reflecting community values'. In this context, Jus cogens norms serve to protect the fundamental values of the international community. Which of the following is not true with respect to jus cogens?",
+          "options": {
+            "A": "It is a norm accepted and recognised by the international community of States as a whole as a norm from which no derogation is permitted.",
+            "B": "It can be modified only by a subsequent norm of general international law having the same character.",
+            "C": "A treaty is void if, at the time of its conclusion, it conflicts with a peremptory norm of general international law (Jus Cogens).",
+            "D": "States are bound by Peremptory norms of general international law (Jus Cogens) only when they have given express consent to it in writing."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question_number": 29,
+          "question_text": "Article 25 of the UN Charter states, 'The Members of the United Nations agree to accept and carry out the decisions of the _____ in accordance with the present Charter.' Which of the following organ(s) of the United Nations is/are being referred to in Article 25:",
+          "options": {
+            "A": "Security Council",
+            "B": "International Court of Justice",
+            "C": "Security Council and General Assembly",
+            "D": "Security Council and International Court of Justice"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 30,
+          "question_text": "Which of the following statements is not true with respect to 'customary international law'?",
+          "options": {
+            "A": "In the Asylum case 1950, ICJ declared that a customary rule must be 'in accordance with a constant and uniform usage practiced by the States in question'.",
+            "B": "In the North Sea Continental Shelf cases, 1969, ICJ remarked that state practice had to be 'both extensive and virtually uniform in the sense of the provision invoked'.",
+            "C": "In the Nicaragua v. United States case, 1986, ICJ said that it was not necessary that the practice in question had to be 'in absolutely rigorous conformity' with the purported customary rule.",
+            "D": "In the Right of Passage over Indian Territory case, 1960, ICJ denied the existence of local custom between the two states."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_number": "VII",
+      "passage_title": "JURISPRUDENCE - LEGAL MORALISM vs LEGAL NEUTRALITY",
+      "question_range": "31-35",
+      "passage_text": "In the realm of jurisprudence, the interplay between morality and legality is a complex and often contentious issue. While laws are designed to regulate human behavior and maintain social order, they may not always align with personal or societal moral values. This leads to a fundamental question: Should laws be based on moral principles, and if so, to what extent?\n\nOne school of thought, known as legal moralism, asserts that the law should enforce moral values and prohibit actions that are considered immoral by society. Proponents argue that certain actions, such as murder or theft, are inherently wrong and that the law should reflect and enforce these moral judgments.\n\nHowever, legal moralism is not without its critics. They argue that enforcing moral values through the law can be overly intrusive, infringing on individual autonomy and diversity of thought. They contend that the law's primary role is to protect individual rights and maintain social order, not to impose moral values.\n\nOn the other hand, the principle of legal neutrality posits that the law should remain neutral on matters of morality. This perspective asserts that the law's primary function is to protect individual rights and maintain order, and it should not be concerned with enforcing particular moral values. Legal neutrality allows for a more pluralistic and diverse society where individuals are free to live in accordance with their own moral values, as long as they do not infringe on the rights of others.\n\nNevertheless, this perspective raises challenging questions. If the law remains morally neutral, it may tolerate actions that many find morally repugnant, such as hate speech or discrimination. This leads to a moral dilemma—whether it is morally justifiable for the law to allow such actions in the name of freedom and neutrality. These philosophical debates highlight the complexity of balancing morality and legality within a legal system. They challenge us to consider the appropriate role of the law in shaping and reflecting societal values.",
+      "questions": [
+        {
+          "question_number": 31,
+          "question_text": "Which perspective argues that the law should enforce moral values and prohibit actions considered immoral by society?",
+          "options": {
+            "A": "Legal neutrality",
+            "B": "Legal positivism",
+            "C": "Legal moralism",
+            "D": "Legal realism"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 32,
+          "question_text": "What is one criticism of legal moralism?",
+          "options": {
+            "A": "It infringes on individual autonomy and diversity of thought.",
+            "B": "It promotes individual and social order.",
+            "C": "It allows for a more pluralistic society.",
+            "D": "It maintains legal neutrality."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 33,
+          "question_text": "According to legal moralism, what is the law's primary role?",
+          "options": {
+            "A": "To protect individual rights and maintain social order.",
+            "B": "To impose moral values.",
+            "C": "To maintain legal neutrality.",
+            "D": "To enforce specific cultural practices."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 34,
+          "question_text": "What is the central tenet of legal neutrality?",
+          "options": {
+            "A": "The law should remain morally neutral.",
+            "B": "The law should enforce moral values.",
+            "C": "The law should prioritize individual rights over morality.",
+            "D": "The law should regulate all aspects of individual behavior."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 35,
+          "question_text": "What moral dilemma is raised by the principle of legal neutrality?",
+          "options": {
+            "A": "Whether the law should impose moral values on individuals.",
+            "B": "Whether the law should prioritize individual rights over morality.",
+            "C": "Whether it is morally justifiable to tolerate certain morally repugnant actions in the name of freedom and neutrality.",
+            "D": "Whether the law should suppress individual autonomy."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_number": "VIII",
+      "passage_title": "LEGAL POSITIVISM AND NATURAL LAW THEORY",
+      "question_range": "36-40",
+      "passage_text": "Within the intricate tapestry of legal philosophy, the concept of legal positivism stands as a highly debated and intricate doctrine. Legal positivism posits that the validity and authority of law are determined solely by the source from which it originates. In other words, if a rule is created by a recognized authority, it is considered legally valid, regardless of its moral or ethical implications. Legal positivism places significant emphasis on the distinction between law as it is and law as it ought to be, focusing on the former.\n\nOne of the most renowned proponents of legal positivism, H.L.A. Hart, argued that a legal system is composed of primary and secondary rules. Primary rules are those that govern human behavior, such as criminal laws or contractual obligations. Secondary rules, on the other hand, are rules that dictate how primary rules should be created, changed, or terminated. These secondary rules include the rule of recognition, the rule of change, and the rule of adjudication.\n\nThe rule of recognition, according to Hart, is the fundamental rule that identifies the authoritative source of law within a legal system. It is what legal officials use to determine which rules are legally valid. This rule acts as a kind of social norm among legal professionals, signaling that certain rules have legal status. For example, in a democracy, the rule of recognition may point to the Constitution as the highest source of legal authority.\n\nCritics of legal positivism argue that this philosophy risks legitimizing immoral or unjust laws if they are enacted through the proper procedures. They assert that the law should be grounded in moral or ethical principles, and its validity should be assessed based on its conformity to these principles.\n\nNatural law theory, in contrast to legal positivism, argues that law should be guided by moral or ethical principles. According to natural law theory, there is a higher, moral law that transcends man-made laws. This moral law, proponents argue, should be the basis for evaluating the validity of legal norms.\n\nThe debate between legal positivism and natural law theory raises profound questions about the nature and purpose of law. Does the source of law, as posited by legal positivism, determine its validity, or should law be grounded in moral or ethical principles, as argued by natural law theorists? These questions challenge the very foundation of legal philosophy and the role of law in society.",
+      "questions": [
+        {
+          "question_number": 36,
+          "question_text": "What is the primary focus of legal positivism in determining the validity of law?",
+          "options": {
+            "A": "Moral and ethical considerations.",
+            "B": "The source from which the law originates.",
+            "C": "The conformity of the law to social norms.",
+            "D": "The principles of natural law."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 37,
+          "question_text": "What is the role of the rule of recognition in legal positivism?",
+          "options": {
+            "A": "It governs human behavior.",
+            "B": "It dictates how laws should be created.",
+            "C": "It identifies the authoritative source of law within a legal system.",
+            "D": "It evaluates the morality of laws."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 38,
+          "question_text": "What is a criticism of legal positivism?",
+          "options": {
+            "A": "It risks legitimizing immoral or unjust laws if they are enacted through proper procedures.",
+            "B": "It is too focused on moral and ethical principles.",
+            "C": "It rejects the idea of man-made laws.",
+            "D": "It emphasizes natural law theory."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 39,
+          "question_text": "In natural law theory, what is considered to transcend man-made laws?",
+          "options": {
+            "A": "The rule of recognition",
+            "B": "Moral or ethical principles",
+            "C": "The rule of adjudication",
+            "D": "Secondary rules"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 40,
+          "question_text": "What fundamental question does the debate between legal positivism and natural law theory raise?",
+          "options": {
+            "A": "Whether the law is entirely based on moral principles.",
+            "B": "How to determine the source of law.",
+            "C": "Whether the validity of law is determined by its source or by moral and ethical principles.",
+            "D": "How to change primary rules within a legal system."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_number": "IX",
+      "passage_title": "DISQUALIFICATION UNDER THE TENTH SCHEDULE",
+      "question_range": "41-45",
+      "passage_text": "The concept of per se disqualification is unknown to the Constitution. Any decision as to the disqualification proceedings under the Tenth Schedule must be taken after following the due process of law and the principles of natural justice. A member incurs disqualification only after adjudication by the Speaker. The procedure for the adjudication of disqualification petitions is prescribed under the Maharashtra Legislative Assembly (Disqualification on Ground of Defection) Rules 1986. The MLAs facing disqualification retain the right to participate in the proceedings of the House and vote on resolutions. Article 189(2) of the Constitution provides that any proceedings of the House are not invalid even if it is subsequently discovered that persons who were not entitled to participate or vote or otherwise take part in the proceedings, did so. In Pratap Gouda Patil v. State of Karnataka and Speaker, Haryana Vidhan Sabha v. Kuldeep Bishnoi, this Court observed that members should not be stopped from taking part in the proceedings of the House merely because disqualification proceedings were pending against them.\n\nPrior to the deletion of Paragraph 3 of the Tenth Schedule, the Speaker's enquiry as to the existence of a split within a political party was limited to a prima facie determination for deciding the disqualification proceedings. As a result of the deletion of Paragraph 3, the authority of the Speaker to form even a prima facie opinion regarding a split within a political party has been removed. Upon the deletion of Paragraph 3, the only defence for disqualification proceedings under the Tenth Schedule are that of a merge under Paragraph 4. The Election Commission of India is the sole authority empowered to decide disputes between rival factions of a political party according to the provisions of the Symbols Order.\n[Extracted from Subhash Desai v. Principal Secretary, Governor of Maharashtra (2023)]",
+      "questions": [
+        {
+          "question_number": 41,
+          "question_text": "Which of the following judgments that ruled, which a Speaker stands disabled to act under the Tenth Schedule to curb defection if a notice of intention to move a resolution for their removal is issued, was referred to a seven-judge bench by the five-judge bench in Subhash Desai v. Principal Secretary, Governor of Maharashtra?",
+          "options": {
+            "A": "Nabam Rebia & Bamang Felix v. Deputy Speaker, Arunachal Pradesh Legislative Assembly",
+            "B": "Raja Ram Pal v. Hon'ble Speaker, Lok Sabha",
+            "C": "Keisham Meghachandra Singh v. Hon'ble Speaker Manipur Legislative Assembly",
+            "D": "Shrimanth Balasaheb Patil v. Speaker, Karnataka Legislative Assembly"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 42,
+          "question_text": "Srinivasan, J. in Mayawati v. Markandeya Chand held that 'Political Party' cannot be read as 'Legislature Party'. Which among the following was not a reason provided by the Hon'ble Judge?",
+          "options": {
+            "A": "The phrase 'Political Party' in Paragraph 2(1)(b) of the tenth schedule cannot be interpreted to mean 'Legislative Party' while the same phrase in Paragraph 2(1)(a) of the Tenth Schedule retains its original meaning.",
+            "B": "Such an interpretation would render explanation (a) to Paragraph 2(1) of the Tenth Schedule otiose because a legislature party cannot set up a person as a candidate for election.",
+            "C": "Disqualification from membership of the assembly is a serious consequence. Such a consequence can only ensue from voting contrary to the direction of the political party.",
+            "D": "In Kuldip Nayar v. Union of India, it was held that to balance the competing considerations of the anti-defection law and intra-party dissent, a direction to vote (or abstain from voting) can only be given if the vote would alter the status of the government formed or if it is on a policy on which the political party that set up the candidate went to polls on. Only the political party and not the legislature party can issue directions concerning issues of this nature."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question_number": 43,
+          "question_text": "Which of the following was not challenged by the petitioners in the case of Subhash Desai v. Principal Secretary, Governor of Maharashtra?",
+          "options": {
+            "A": "Disqualification of thirty-four MLAs",
+            "B": "Swearing in Mr. Ekanth Shinde as the Chief Minister",
+            "C": "Election of the Speaker by the House, which included the thirty-four MLAs who are facing disqualification notices",
+            "D": "Legality of the trust vote dated July 4, 2022"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 44,
+          "question_text": "A violation of the anti-defection law will not result in a member of the House being:",
+          "options": {
+            "A": "Disqualified from the House",
+            "B": "Disqualified from holding any election campaign for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is later.",
+            "C": "Disqualified from holding any remunerative political post for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is earlier.",
+            "D": "Disqualified from being appointed as a Minister for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is earlier."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 45,
+          "question_text": "The Tenth Schedule specifies five defense that a member may take recourse to shield themselves from the consequences of the anti-defection law. Which among the following is not a defense?",
+          "options": {
+            "A": "In cases where the original political party of a member is found to have merged with another political party under Paragraph 4(1)(a), members of the original political party are protected from being disqualified if they have not accepted such merger and have opted to function as a separate group.",
+            "B": "Members who have been elected to the office of the Speaker or the Deputy Speaker (or the Chairman or the Deputy Chairman as the case may be) in Parliament or in the Legislative Assemblies of States are exempted from disqualification under the Tenth Schedule if they voluntarily give up the membership of their political party by reason of their election to such office and do not re-join the political party or become a member of another political party so long as they continue to hold such office. Further, they are not disqualified if they re-join the political party which they gave up membership of, after ceasing to hold office.",
+            "C": "Disqualification on ground of defection not to apply in case of split. Where a member of a House makes a claim that he and any other members of his legislature party constitute the group representing a faction, which has arisen as a result of a split in his original political party and such group consists of not less than one-third of the members of such legislature party.",
+            "D": "A member is protected from being disqualified if the political party to which they belong has condoned their actions in voting or abstaining from voting contrary to the directions issued by such political party, within fifteen days from such voting or abstention."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_number": "X",
+      "passage_title": "FEDERALISM AND NCTD",
+      "question_range": "46-50",
+      "passage_text": "The principles of democracy and federalism are essential features of our Constitution and form a part of the basic structure. Federalism in a multi-cultural, multi-religious, multi-ethnic and multi-linguistic country like India ensures the representation of diverse interests. It is a means to reconcile the desire of commonality along with the desire for autonomy and accommodate diverse needs in a pluralistic society. Recognizing regional aspirations strengthens the unity of the country and embodies the spirit of democracy. Thus, in any federal Constitution, at a minimum, there is a dual polity, that is, two sets of government operate: one at the level of the national government and the second at the level of the regional federal units. These dual sets of government, elected by \"We the People\" in two separate electoral processes, is a dual manifestation of the public will. The priorities of these two sets of governments, which manifest in a federal system are not just bound to be different, but are intended to be different.\n\nWhile NCTD is not a full-fledged state, its Legislative Assembly is constitutionally entrusted with the power to legislate upon the subjects in the State List and Concurrent List. It is not a State under the First Schedule to the Constitution, yet it is conferred with power to legislate upon subjects in Lists II and III to give effect to the aspirations of the people of NCTD. It has a democratically elected government which is accountable to the people of NCTD. Under the constitutional scheme envisaged in Article 239AA (3), NCTD was given legislative power which though limited, in many aspects is similar to States. In that sense, with addition of Article 239AA, the Constitution created a federal model with the Union of India at the centre, and the NCTD at the regional level. This is the asymmetric federal model adopted for NCTD. While NCTD remains a Union Territory, the unique constitutional status conferred upon it makes it a federal entity for the purpose of understanding the relationship between the Union and NCTD.\n\nIn the spirit of cooperative federalism, the Union of India must exercise its powers within the boundaries created by the Constitution. NCTD, having a sui generis federal model, must be allowed to function in the domain charted for it by the Constitution. The Union and NCTD share a unique federal relationship. It does not mean that NCTD is subsumed in the unit of the Union merely because it is not a \"State\".\n[Extracted from Government of NCT of Delhi v. Union of India, 2023 SCC Online SC 606]",
+      "questions": [
+        {
+          "question_number": 46,
+          "question_text": "In the GNCTD's case, which of the following powers were held to be within the control of the Government of the National Capital Territory of Delhi?",
+          "options": {
+            "A": "Law and Order",
+            "B": "Land",
+            "C": "Police",
+            "D": "Services"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "question_number": 47,
+          "question_text": "Why does the Court describe the Indian federal model as one embodying 'asymmetric federalism'?",
+          "options": {
+            "A": "All the Union Territories are similarly placed within the constitutional scheme.",
+            "B": "Some Union Territories enjoy more powers than other Union Territories.",
+            "C": "Only full-fledged States have a direct line of democratic accountability with an electorate.",
+            "D": "The Indian Constitution has a strong unitary bias."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 48,
+          "question_text": "Which of the following propositions are true for the holdings in the 2018 Constitution Bench judgment in Government of NCT of Delhi v. Union of India, (2018) 8 SCC 501?",
+          "options": {
+            "A": "There is no independent authority vested in the Lieutenant Governor to take decisions under Article 239AA of the Constitution.",
+            "B": "The Lieutenant Governor applies their mind independently to matters concerning the National Capital Territory of Delhi.",
+            "C": "The Lieutenant Governor has only partial independent authority to take decisions under Article 239AA of the Constitution.",
+            "D": "The Council of Ministers has no independent authority under Article 239AA of the Constitution of India."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 49,
+          "question_text": "Which of the following cases were relied upon by the Court in the 2018 Constitution Bench decision to interpret the words \"aid and advice\":",
+          "options": {
+            "A": "Kesavananda Bharati v. State of Kerala, AIR 1973 SC 1461",
+            "B": "I.C. Golaknath v. State of Punjab, AIR 1967 SC 1643",
+            "C": "Samsher Singh v. State of Punjab, (1974) 2 SCC 831",
+            "D": "A.K. Gopalan v. State of Madras, AIR 1950 SC 27"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 50,
+          "question_text": "Following the ratio of the GNCTD's case, which of the following propositions would be true:",
+          "options": {
+            "A": "The Government of NCTD shall have legislative power to make laws on \"services\", because \"services\" is not expressly excluded in Article 239AA(3)(a).",
+            "B": "The Government of NCTD shall not have the legislative power to make laws on \"services\" as it is impliedly a part of the entry on \"law and order\", which in turn is expressly excluded in Article 239AA(3)(a).",
+            "C": "The Government of NCTD shall have legislative power to make laws on \"services\" only if expressly authorized by the Union Parliament to do so.",
+            "D": "None of the above."
+          },
+          "correct_answer": "A"
+        }
+      ]
+    },
+    {
+      "passage_number": "XI",
+      "passage_title": "ENVIRONMENTAL LAW",
+      "question_range": "51-55",
+      "passage_text": "The precautionary principle requires the State to act in advance to prevent environmental harm from taking place, rather than by adopting measures once the harm has taken place. In deciding when to adopt such action, the State cannot hide behind the veil of scientific uncertainty in calculating the exact scientific harm. In H.P. Bus-Stand Management & Development Authority v. Central Empowered Committee, (2021) 4 SCC 309, a three-Judge Bench of this Court emphasised the duty of the State to create conceptual, procedural, and institutional structures to guide environmental regulation in compliance with the \"environmental rule of law\". The Court noted that such regulation must arise out of a multi-disciplinary analysis between policy, regulatory and scientific perspectives. The Court held:\n\n\"The environmental rule of law, at a certain level, is a facet of the concept of the rule of law. But it includes specific features that are unique to environmental governance, features which are sui generis. The environmental rule of law seeks to create essential tools-conceptual, procedural, and institutional to bring structure to the discourse on environmental protection. It does so to enhance our understanding of environmental challenges-of how they have been shaped by humanity's interface with nature in the past, how they continue to be affected by its engagement with nature in the present and the prospects for the future, if we were not to radically alter the course of destruction which humanity's actions have charted. The environmental rule of law seeks to facilitate a multi-disciplinary analysis of the nature and consequences of carbon footprints and in doing so it brings a shared understanding between science, regulatory decisions, and policy perspectives in the field of environmental protection.\"\n[Extracted with edits from Pragnesh Shah v. Arun Kumar Sharma, (2022) 11 SCC 493]",
+      "questions": [
+        {
+          "question_number": 51,
+          "question_text": "'Environmental rule of law' found its reference and recognition for the first time in which of the following?",
+          "options": {
+            "A": "Earth Summit, 2002.",
+            "B": "UNEP's Governing Council Decision 27/9, 2013",
+            "C": "1st Africa Colloquium at Nairobi, 2015.",
+            "D": "Earth Summit+5"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 52,
+          "question_text": "Which of the following principles of Rio Declaration deal with precautionary approach?",
+          "options": {
+            "A": "Principle 14",
+            "B": "Principle 15",
+            "C": "Principle 16",
+            "D": "Principle 17"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "question_number": 53,
+          "question_text": "In Environmental Pollution history, Three-Mile Island is referred to for which of the following?",
+          "options": {
+            "A": "Water Pollution",
+            "B": "Air Pollution",
+            "C": "Radioactive pollution",
+            "D": "Noise Pollution"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "question_number": 54,
+          "question_text": "In which of the following cases, Precautionary principle was used for the first time in Indian Environment Law Jurisprudence?",
+          "options": {
+            "A": "Vellore Citizens Welfare Forum v. Union of India.",
+            "B": "Rural Litigation and Entitlement Kendra v. State of UP.",
+            "C": "Municipal Corporation, Ratlam v. Vardhichand.",
+            "D": "Narmada Bachao Andolan v. Union of India."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "question_number": 55,
+          "question_text": "In which of the following cases, Doctrine of Public Trust was first used in Indian Environmental Law Jurisprudence?",
+          "options": {
+            "A": "Vellore Citizens Welfare Forum v. Union of India.",
+            "B": "Rural Litigation and Entitlement Kendra v. State of UP.",
+            "C": "Municipal Corporation, Ratlam v. Vardhichand.",
+            "D": "M.C. Mehta v. Kamal Nath."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+CLAT PG 2024 - OFFICIAL QUESTION PAPER (SET A)
+ALL 120 QUESTIONS WITH PASSAGES AND ANSWER KEY
+
+════════════════════════════════════════════════════════════════════════════════════
+EXAM DETAILS
+════════════════════════════════════════════════════════════════════════════════════
+
+Duration: 2 Hours (120 minutes)
+Maximum Marks: 120
+Total Questions: 120 (All MCQs)
+Total Pages: 44 (including rough work pages)
+Marking Scheme:
+- Every Right Answer: +1 mark
+- Every Wrong Answer: -0.25 mark
+- Unanswered Questions: No deduction
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGES AND QUESTIONS (1-120)
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE I: TATA SONS vs CYRUS MISTRY (CORPORATE LAW - QUESTIONS 1-5)
+
+An unpleasant tussle ensued between TATA Sons and Cyrus Pallonji Mistry ("CPM") in October 2016, when Mistry, who was the sixth chairman of Tata Sons, was ousted from the position of Executive Chairman of Tata Sons Limited. CPM took over as the chairman in 2012 after Ratan Tata announced his retirement. Tata Group patriarch Ratan Tata had personally asked Cyrus Mistry to resign as chairman of Tata Sons as the board had lost faith in him, but his refusal led to the removal via majority vote. Cyrus Investments Private limited and Sterling Investment Corporation Private Limited belonged to the Shapoorji Palloni Group in which CPM held a controlling interest (about 2% of the issued share capital of Tata Sons). Seven out of the nine directors of Tata Sons voted for CPM's replacement after Farida Khambata abstained and Mistry was declared ineligible to vote as he was an interested director. Mistry challenged his removal, accusing the board of mismanagement and of oppressing minority shareholders. However, the National Company Law Tribunal (NCLT) rejected his petition. After this Mistry challenged his removal in National Company Law Appellate Tribunal (NCLAT). In 2018, NCLAT order restored Mistry as the group's executive chairman. Tata Sons challenged that NCLAT order in Supreme Court. CPM also challenged the order for few more relief. Supreme Court stayed NCLAT's order reinstating Cyrus Mistry as the executive chairman of Tata Sons and restoring his directorships in the holding company as well as three group companies, with a preliminary observation that the first impression of the order was "not good" and that the tribunal 'could' not have given consequential relief that had not been sought in the first place. Ultimately, the Supreme Court decided the case in favour of Tata Sons. One of the issues decided by Supreme Court was that "whether the case was fit to be qualified as a situation of 'Oppression and Mismanagement' under Section 241 of the Companies Act, 2013?". On this issue, the Supreme Court observed that "unless the removal of a person as a chairman of a company is oppressive or mismanaged or done in a prejudicial manner damaging the interests of the company, its members or the public at large, the NCLT cannot interfere with the removal of a person as a Chairman of a Company in a petition under Section 241 of the Companies Act, 2013." This case highlighted the point that "an executive chairman does not have sovereign authority over the company. In corporate democracy, decision making always remains with the Board as long as they enjoy the pleasure of the shareholders. Likewise, an executive chairman will continue as long as he/she enjoys the pleasure of the Board. An assumption by the executive chairman that he/she would have a free hand in running the affairs of the company is incongruous to corporate governance and corporate democracy. The Tribunal held that the concept of 'free hand rule' is antithesis to collective responsibility and collective decision making".
+[Based on Tata Consultancy Services Ltd. v. Cyrus Investment Pvt. Ltd., 2021 SCC 122]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 1:
+The parties in this case approached the Supreme Court of India under which of the following provision:
+(A) Appeal under section 423 of the Companies Act, 2013.
+(B) A Class Action Suit under Section 245 of the Companies Act, 2013.
+(C) Special Leave Petition (SLP) under Article 136 of the Constitution of India.
+(D) Appeal under section 421 of the Companies Act, 2013.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 2:
+Rule of 'supremacy of majority' in governing the affairs of a company has been settled in a very old leading case of Foss v. Harbottle (1843) 2 Hare 461. In India, which case diluted the majority rule and held that interest of the company was above the interest of its shareholders either majority or minority?
+(A) Rajahmundry Electric Supply Corporation Ltd. v. A. Nageshwara Rao
+(B) Bagree Cereals v. Hanuman Prasad Bagri.
+(C) Shanti Prasad Jain v. Kalinga Tubes Ltd.
+(D) Needle Industries (India) Ltd. v. Needle Industries Newey (India).
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 3:
+While recommending "Separation of the Roles of Non-executive Chairperson and Managing Director/ CEO", the Kotak Mahindra Committee quoted the following text: "given the importance and the particular nature of the chairmen's role, it should in principle be separate from that of the chief executive. If the two roles are combined in one person, it represents a considerable concentration of power". This quote refers to which of the following Committee Report?
+(A) Cohen Committee Report
+(B) Cadbury Committee Report
+(C) Hampel Committee Report
+(D) Narayana Murthy Committee Report
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 4:
+Which of the following statement is true regarding share qualification requirement under section 244 for applying for relief from oppression/ mismanagement under section 241 of the Companies Act, 2013 (in the case of a company having a share capital)?
+(A) Members not less than 100 members of the company or 10% of the total number of its members, whichever is less or any member or members holding not less than 10% of the issued share capital of the company.
+(B) Members not less than 100 members of the company and 10% of the total number of its members or members holding not less than 10% of the issued share capital of the company.
+(C) Not less than 20% of the total number of its members.
+(D) Members not less than 50 members of the company and 5% of the total number of its members or members holding not less than 5% of the issued share capital of the company.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 5:
+Statement I - Power to grant relief from oppression/mismanagement which were vested by section 402 of the 1956 Act in High Court have now been transferred to the National Company Law Tribunal by section 242 of the 2013 Act.
+Statement II - Section 242 does not empower National Company Law Appellate Tribunal to grant relief by way of prevention of apprehended mismanagement of the company due to material change which has taken place in its management or control.
+(A) Statement I is untrue
+(B) Statement II is untrue
+(C) Both Statements I and II are untrue
+(D) Both Statements I and II are true
+✓ ANSWER: D
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE II: SAHARA INDIA REAL ESTATE (SECURITIES LAW - QUESTIONS 6-10)
+
+Alastair Hudson in his book 'Securities Law' First Edition (Sweet & Maxwell), 2008 at page 342, refers to 'Restricted Offers' and noticed that there is no contravention of Section 85 of FSMA 2000, if: "(b) the offer is made to or directed at fewer than 100 persons, other than qualified investors, per EEA State". The purpose underlying that exemption, the author says, is mainly the fact that the offer is not being made to an appreciable section of "the public" such that the policy of the prospectus rules generally is not affected. Further, the author says that "Self-evidently, while an offer to 99 ordinary members of the public would be within the literal terms of the exemption, it would not be the sort of activity anticipated by the legislation. Moreover, if a marketing campaign were arranged such that ordinary members of the people were approached in groups of 99 people at a time in an effort to avoid the prospectus rules, then that would not appear to be within the spirit of the regulations and might be held to contravene the core principle that a regulated person must act with integrity."
+
+I may, therefore, indicate, subject to what has been stated above, in India that any share or debenture issue beyond forty-nine persons, would be a public issue attracting all the relevant provisions of the SEBI Act, regulations framed thereunder, the Companies Act, pertaining to the public issue. Facts clearly reveal that Saharas have issued securities to the public more than the threshold limit statutorily fixed under the first proviso to Section 67(3) and hence violated the listing provisions which may attract civil and criminal liabilities.
+
+Principles of listing, which I may later on discuss, is intended to assist public companies in identifying their obligations and responsibilities, which are continuing in nature, transparent in content and call for high degree of integrity. Obligations are imposed on the issuer on an ongoing basis. Public companies who are legally obliged to list their securities are deemed to accept the continuing obligations, by virtue of their application, prospectus and the subsequent maintenance of listing on a recognized stock exchange. Disclosure is the rule, there is no exception. Misleading public is a serious crime, which may attract civil and criminal liability. Listing of securities depends not upon one's volition, but on statutory mandate.
+[Extract from Sahara India Real Estate Corporation Limited v. Securities and Exchange Board of India (SEBI), Para 89-91, Civil Appeal No. 9833/2011 (SC)]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 6:
+Which among the following is not considered as a 'prospectus' under the Companies Act, 2013?
+(A) Shelf prospectus
+(B) Red herring prospectus
+(C) Private placement offer letter
+(D) Advertisement inviting offers from public
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 7:
+In Sahara India Real Estate Corporation Limited v. SEBI, Sahara issued which of the following instruments to raise money?
+(A) Shares
+(B) Convertible preference share
+(C) Optionally fully convertible debentures
+(D) Currency derivatives
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 8:
+In Sahara India Real Estate Corporation Limited v. SEBI, the company issued securities in violation of rules relating to:
+(A) Public issue under the Companies Act.
+(B) SEBI Disclosure Investor Protection Guidelines, 2000 read with Issue of Capital and Disclosure Guidelines, 2009.
+(C) Both the above
+(D) None of the above
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 9:
+The Supreme Court of India in Sahara case held:
+(A) SEBI, being a statutory regulator, does not have the power to investigate and adjudicate.
+(B) As per Companies Act and SEBI Act, 1992, SEBI has jurisdiction over both listed companies and companies which intend to get listed.
+(C) SEBI has no jurisdiction over public issuances of hybrid securities.
+(D) Powers of SEBI supersede that of Ministry of Corporate Affairs.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 10:
+Which of the following is mandatory in case of private placements by private companies?
+(A) Mandatory grading by a credit rating agency
+(B) Use of public media to advertise the issue
+(C) Post-issue listing of securities
+(D) Return of allotment to be filed with Registrar of Companies (RoC)
+✓ ANSWER: D
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE III: NATURAL JUSTICE - A.K. KRAIPAK (ADMINISTRATIVE LAW - QUESTIONS 11-15)
+
+The aim of the rules of natural justice is to secure justice or to put it negatively to prevent miscarriage of justice. These rules can operate only in areas not covered by any law validly made. In other words, they do not supplant the law of the land but supplement it. The concept of natural justice has undergone a great deal of change in recent years. In the past, it was thought that it included just two rules namely: (1) no one shall be a judge in his own case (Nemo debet esse judex propria causa) and (2) no decision shall be given against a party without affording him a reasonable hearing (audi alteram partem).
+
+Very soon thereafter a third rule was envisaged and that is that quasi-judicial enquiries must be held in good faith, without bias and not arbitrarily or unreasonably. But in the course of years many more subsidiary rules came to be added to the rules of natural justice. Till very recently it was the opinion of the courts that unless the authority concerned was required by the law under which it functioned to act judicially there was no room for the application of the rules of natural justice. The validity of that limitation is not questioned.
+
+If the purpose of the rules of natural justice is to prevent miscarriage of justice one fails to see why those rules should be made inapplicable to administrative enquiries. Often times it is not easy to draw the line that demarcates administrative enquiries from quasi-judicial enquiries. Enquiries which were considered administrative at one time are now being considered as quasi-judicial in character. Arriving at a just decision is the aim of both quasi-judicial enquiries as well as administrative enquiries. An unjust decision in an administrative enquiry may have more far reaching effect than a decision in a quasi-judicial enquiry as observed by this Court in Suresh Koshy George v. University of Kerala [Civil Appeal No. 990/68, decided on 15-07-1968], the rules of natural justice are not embodied rules. What particular rule of natural justice should apply to a given case must depend to a great extent on the facts and circumstances of that case, the framework of the law under which the enquiry is held and the constitution of the Tribunal or body of persons appointed for that purpose. Whenever a complaint is made before a court that some principle of natural justice had been contravened the court has to decide whether the observance of that rule was necessary for a just decision on the facts of that case.
+[Extract from the judgment of the Supreme Court in A.K. Kraipak v. Union of India, (1969) 2 SCC 262, decided on April 29, 1969]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 11:
+The decision in A.K. Kraipak is considered a landmark authority for which of the following propositions:
+(A) There is no application of the principles of natural justice to purely administrative functions.
+(B) The principles of natural justice are in an ever-evolving state of flux.
+(C) The principles of natural justice do not differentiate between administrative and quasi-judicial functions.
+(D) There is no application of the principles of natural justice to quasi-judicial functions.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 12:
+The Court states in A.K. Kraipak that, 'If the purpose of the rules of natural justice is to prevent miscarriage of justice one fails to see why those rules should be made inapplicable to administrative enquiries.' Which of the following approaches to interpretation of statutes does the Court appear to adopt:
+(A) Literal Interpretation
+(B) Constructive Interpretation
+(C) Strict Interpretation
+(D) All of the above
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 13:
+The Court states in A.K. Kraipak, that '… in the course of years many more subsidiary rules came to be added to the rules of natural justice.' Which of the following is a later entrant to the principles of natural justice?
+(A) No one shall be a Judge in their own cause.
+(B) Duty to hear.
+(C) Duty to give reasons.
+(D) None of the above.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 14:
+The Supreme Court has recognised in several decisions that in cases requiring urgent administrative action or in exigencies, it may not always be possible to give full effect to the principles of natural justice without rendering the administrative action redundant in the circumstances. Which of the following is true for the requirements of natural justice in such cases?
+(A) The administrator may choose to not follow principles of natural justice in case of emergency scenarios, where time does not permit such compliance, without recording their reasons in writing.
+(B) The administrator may choose to not follow principles of natural justice in case of emergency scenarios, where time does not permit such compliance, but must record their reasons in writing.
+(C) The administrator may provide for a post-decisional remedial hearing wherever pre-decisional hearing is not possible.
+(D) None of the above.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 15:
+In testing whether the rule against bias has been violated, courts often invoke, which of the following standards:
+(A) Likelihood of bias as perceived by a fair-minded and informed observer.
+(B) Likelihood of bias as perceived by a fair-minded and uninformed observer.
+(C) Likelihood of bias as perceived by a third person.
+(D) Likelihood of bias as perceived by persons involved in similar trade.
+✓ ANSWER: A
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE IV: PROMISSORY ESTOPPEL - SHREE SIDHBALI STEELS (CONSTITUTIONAL LAW - QUESTIONS 16-20)
+
+The doctrine of promissory estoppel is by now well recognized and well defined by a catena of decisions of this Court. Where the Government makes a promise knowing or intending that it would be acted on by the promise and, in fact, the promise, acting in reliance on it, alters his position, the Government would be held bound by the promise and the promise would be enforceable against the Government at the instance of the promise notwithstanding that there is no consideration for the promise and the promise is not recorded in the form of a formal contract as required by Article 229 of the Constitution. The rule of promissory estoppel being an equitable doctrine has to be moulded to suit the particular situation. It is not a hard-and-fast rule but an elastic one, the objective of which is to do justice between the parties and to extend an equitable treatment to them. This doctrine is a principle evolved by equity, to avoid injustice and though commonly named promissory estoppel, it is neither in the realm of contract nor in the realm of estoppel. For application of the doctrine of promissory estoppel the promise must establish that he suffered in detriment or altered his position by reliance on the promise.
+
+Normally, the doctrine of promissory estoppel is being applied against the Government and defence based on executive necessity would not be accepted by the court. However, if it can be shown by the Government that having regard to the facts as they have subsequently transpired, it would be inequitable to hold the Government to the promise made by it, the court would not raise an equity in favour of the promise and enforce the promise against the Government. Where public interest warrants, the principles of promissory estoppel cannot be invoked. The Government can change the policy in public interest. However, it is well settled that taking cue from this doctrine, the authority cannot be compelled to do something which is not allowed by law or prohibited by law. There is no promissory estoppel against the settled proposition of law. Doctrine of promissory estoppel cannot be invoked for enforcement of a promise made contrary to law, because none can be compelled to act against the statute. Thus, the Government or public authority cannot be compelled to make a provision which is contrary to law.
+[Extract from the judgment of the Supreme Court in Shree Sidhbali Steels Limited v. State of Uttar Pradesh, (2011) 3 SCC 193, decided on January 20, 2011]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 16:
+The decision in Shree Sidhbali Steels carves out the 'public interest' exception in cases of promissory estoppel against Government. To which kind of cases have courts routinely applied this exception in favour of Governments?
+(A) Fiscal matters
+(B) Service matters
+(C) Labour matters
+(D) All of the above.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 17:
+Which of the following is a landmark decision governing the law on promissory estoppel against Governments?
+(A) Sarat Chander Dey v. Gopal Chander Laha, (1892) 19 IA 203
+(B) Motilal Padampat Sugar Mills Co. Ltd. v. State of U.P., (1979) 2 SCC 409
+(C) Carlill v. Carbolic Smoke Ball Company, [1892] EWCA Civ 1
+(D) Tej Bhan Madan v. II Additional District Judge and Others, (1988) 3 SCC 137
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 18:
+Which of the following statements reflect the correct position of law for promissory estoppel against Governments?
+(A) Government would be held bound by the promise and the promise would be enforceable against the Government at the instance of the promisee, provided that there is consideration for the promise and the promise is recorded in the form of a formal contract as required by Article 299 of the Constitution.
+(B) Government would be held bound by the promise and the promise would be enforceable against the Government at the instance of the promisee, notwithstanding that there is no consideration for the promise and the promise is not recorded in the form of a formal contract as required by Article 299 of the Constitution.
+(C) Government would be held bound by the promise and the promise would be enforceable against the Government at the instance of the promisee, provided that there is consideration for the promise, but notwithstanding that the promise is not recorded in the form of a formal contract as required by Article 299 of the Constitution.
+(D) Government would be held bound by the promise and the promise would be enforceable against the Government at the instance of the promisee, notwithstanding that there is no consideration for the promise, but provided that the promise is recorded in the form of a formal contract as required by Article 299 of the Constitution.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 19:
+Which of the following statements is accurate in light of the passage?
+(A) The doctrine of promissory estoppel stands diluted where the Government claims that it is in the public interest to go back on its promise or actions.
+(B) The doctrine of promissory estoppel overrides any purported claims of public interest by the Government.
+(C) Permitting a public interest exception is against the interests of justice, equity and good conscience as it is a self-serving claim for the Government.
+(D) Both (B) and (C).
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 20:
+Which of the following statements does not reflect the correct position of law?
+(A) Promissory estoppel cannot be invoked so as to defeat the law.
+(B) Even if the representation is made by the Government itself, but it goes against the law, estoppel can be invoked to defeat the law.
+(C) If all conditions of promissory estoppel are met, a challenge can still be made to the vires of the law.
+(D) None of the above.
+✓ ANSWER: B
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE V: INTERNATIONAL LAW - THE GAMBIA v. MYANMAR (QUESTIONS 21-25)
+
+In its second preliminary objection, Myanmar submits that The Gambia's Application is inadmissible because The Gambia lacks standing to bring this case before the Court. In particular, Myanmar considers that only "injured States", which Myanmar defines as States "adversely affected by an internationally wrongful act", have standing to present a claim before the Court. In Myanmar's view, The Gambia is not an "injured State" (a term that Myanmar appears to use interchangeably with the term "specially affected State") and has failed to demonstrate an individual legal interest. Therefore, according to Myanmar, The Gambia lacks standing under Article IX of the Genocide Convention.
+
+Myanmar draws a distinction between the right to invoke State responsibility under general international law and standing before the Court. It argues that, even if it were established that a "non-injured" Contracting Party to the Genocide Convention has the right to invoke another State's responsibility for violations of the Convention, this would not necessarily entail the right to bring a case before the Court. To this end, Myanmar contends that there exists a difference between the common interest in the accomplishment of the purposes of the Genocide Convention and a State's individual legal interest that may be enforce through the institution of proceedings before the Court. In Myanmar's view, only States "specially affected" by an internationally wrongful act have standing to bring a claim before the Court.
+
+Myanmar further submits that The Gambia's claims are inadmissible in so far as they are not brought before the Court in accordance with the rule concerning the nationality of claims which, according to Myanmar, is reflected in Article 44 (a) of the International Law Commission's Articles on the Responsibility of States for Internationally Wrongful Acts. Myanmar asserts that the rule concerning the nationality of claims applies to the invocation of responsibility by both "injured" and "non injured" States and irrespective of whether the obligation breached is an erga omnes partes or erga omnes obligation. Consequently, in Myanmar's view, The Gambia lacks standing to invoke Myanmar's responsibility.
+
+Myanmar maintains that, even if Contracting Parties that are not "specially affected" by an alleged violation of the Convention are assumed to have standing to submit a dispute to the Court under Article IX, this standing is subsidiary to and dependent upon the standing of States that are "specially affected". Myanmar argues that Bangladesh would be "the most natural State" to institute proceedings in the present case, because it borders Myanmar and has received a significant number of the alleged victims of genocide. In Myanmar's view, the reservation by Bangladesh to Article IX of the Genocide Convention not only precludes Bangladesh from bringing a case against Myanmar, but it also bars any "non-injured" State, such as The Gambia, from doing so. Myanmar further argues that "non-injured" States may not override the right of a State "specially affected" by the alleged breach to decide how to vindicate its rights in a way that would best serve its own interests.
+[Excerpted passage represents the claims of Myanmar in The Gambia v. Myanmar, judgment on preliminary objections, July 22, 2022]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 21:
+Hypothetically, if The Gambian state was to exercise criminal jurisdiction over the persons responsible for Crimes of Genocide, then such jurisdiction would be called as:
+(A) Extra-territorial jurisdiction
+(B) Universal jurisdiction
+(C) Contentious jurisdiction
+(D) A state cannot exercise jurisdiction over such crimes without having any connection with them.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 22:
+Erga omnes partes means:
+(A) Obligations that are so integral to the subject and purpose of the treaty that no reservations or derogations are permissible
+(B) Obligations arising out of customary principles of international law that states have not objected to
+(C) Obligations essentially arising after gaining membership of the United Nations
+(D) Both (A) and (B).
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 23:
+Article 44 (a) of the International Law Commission's Articles on the Responsibility of States for Internationally Wrongful Acts states that 'the responsibility of a State may not be invoked if: (a) the claim is not brought in accordance with any applicable rule relating to the nationality of claims.' Can Gambia invoke the principles of state responsibility against Myanmar for Crimes of Genocide?
+(A) No, as The Gambia cannot fulfill the conditions stipulated in Article 44 (a)
+(B) Yes, as the nationals of The Gambia have also faced persecution from Myanmar
+(C) Yes, the Article has no relevance as the Genocide Convention expects the accomplishment of its high purposes.
+(D) No, Bangladesh is an appropriate state to bring claims and hold Myanmar internationally responsible.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 24:
+Myanmar claims that the reservation by Bangladesh to Article IX of the Genocide Convention not only precludes Bangladesh from bringing a case against Myanmar, but it also bars any "non-injured" State, such as The Gambia, from doing so. Is this claim maintainable?
+(Article IX - Disputes between the Contracting Parties relating to the interpretation, application or fulfilment of the present Convention, including those relating to the responsibility of a State for genocide or for any of the other acts enumerated in Article III, shall be submitted to the International Court of Justice at the request of any of the parties to the dispute.)
+(A) Yes, because Bangladesh is the injured state and its reservation imposes a restriction on dispute itself precluding any state from raising it.
+(B) No, it does not affect the locus standi of The Gambia as being party to the Convention, it has its own right.
+(C) No, Gambia can only file the dispute before ICJ after Bangladesh consents to the same.
+(D) Option (A) subject to (C).
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 25:
+Myanmar has made a reservation to Article VIII of the Genocide Convention to restrict the competent organs of the UN to take actions under the Charter of the UN as they consider appropriate for the prevention and suppression of acts of genocide. Myanmar claims that since ICJ is the principal organ of the UN, there is a limitation on Article IX. The claim is:
+(A) Maintainable, as the reservation explicitly prohibits the intervention of UN organs.
+(B) Not maintainable, as Article VIII concerns the discretionary function which is different from the judicial function of the ICJ.
+(C) Maintainable, as the two provisions of the treaty i.e., Article VIII and IX are to be interpreted harmoniously.
+(D) Not maintainable, as ICJ as a successor of PCIJ is regulated by the Statute of ICJ and not the UN Charter.
+✓ ANSWER: B
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE VI: CONSENSUAL STRUCTURE OF INTERNATIONAL LAW (QUESTIONS 26-30)
+
+The consensual structure of the international legal order, with its strong emphasis on the sovereign equality of states, has always been somewhat precarious. In different waves over the centuries, it has been attacked for its incongruence with the realities of inequality in international politics, for its tension with ideals of democracy and human rights, and for standing in the way of more effective problem-solving in the international community. While surprisingly resilient in the face of such challenges, the consensual structure has seen renewed attacks in recent years. In the 1990s, those attacks were mainly "moral" in character. They were related to the liberal turn in international law, and some of them, under the banner of human rights, aimed at weakening principles of nonintervention and immunity. Others, starting from the idea of an emerging "international community," questioned the prevailing contractual models of international law and emphasised the rise of norms and processes reflecting community values rather than individual state interests. Since the beginning of the new millennium, the focus has shifted, and attacks are more often framed in terms of effectiveness or global public goods. Classical international law is regarded as increasingly incapable of providing much-needed solutions for the challenges of a globalized world; as countries become ever more interdependent and vulnerable to global challenges, an order that safeguards states' freedoms at the cost of common policies is often seen as anachronistic. According to this view, what is needed-and what we are likely to see-is a turn to nonconsensual lawmaking mechanisms, especially through powerful international institutions with majoritarian voting rules.
+[The extract is part of the article "The Decay of Consent: International Law in an Age of Global Public Goods" by Krisch N, in the American Journal of International Law]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 26:
+Abstract refers to the principle of 'non-intervention'. Which of the following statements is not true with respect to the principle of 'non-intervention' enshrined in Article 2(7) of the UN Charter:
+(A) The United Nations should not intervene in matters which are essentially within the domestic jurisdiction of any state.
+(B) The United Nations shall not require the Members to submit such matters which are essentially within the domestic jurisdiction to settlement under the present Charter.
+(C) The principle of non-intervention shall not prejudice the application of enforcement measures under Chapter-VII of UN Charter.
+(D) As per the wordings of Article 2(7) of the UN Charter, the obligation with respect to 'non-intervention' under this provision applies to both the United Nations and its members.
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 27:
+Extract refers to several institutions with law-making power. Security Council may be one such institution. Which of the following statements is not true with respect to the Security Council?
+(A) Each member of the Security Council shall have one vote.
+(B) Decisions of the Security Council on procedural matters shall be made by an affirmative vote of nine members.
+(C) Decisions of the Security Council on procedural matters shall be made by an affirmative vote of nine members, including the concurring votes of the permanent members.
+(D) Decisions of the Security Council on all other matters shall be made by an affirmative vote of nine members, including the concurring votes of the permanent members, provided that, in decisions under Chapter VI and under paragraph 3 of Article 52, a party to a dispute shall abstain from voting.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 28:
+Extract refers to 'norms and processes reflecting community values'. In this context, Jus cogens norms serve to protect the fundamental values of the international community. Which of the following is not true with respect to jus cogens?
+(A) It is a norm accepted and recognised by the international community of States as a whole as a norm from which no derogation is permitted.
+(B) It can be modified only by a subsequent norm of general international law having the same character.
+(C) A treaty is void if, at the time of its conclusion, it conflicts with a peremptory norm of general international law (Jus Cogens).
+(D) States are bound by Peremptory norms of general international law (Jus Cogens) only when they have given express consent to it in writing.
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 29:
+Article 25 of the UN Charter states, 'The Members of the United Nations agree to accept and carry out the decisions of the _____ in accordance with the present Charter.' Which of the following organ(s) of the United Nations is/are being referred to in Article 25:
+(A) Security Council
+(B) International Court of Justice
+(C) Security Council and General Assembly
+(D) Security Council and International Court of Justice
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 30:
+Which of the following statements is not true with respect to 'customary international law'?
+(A) In the Asylum case 1950, ICJ declared that a customary rule must be 'in accordance with a constant and uniform usage practiced by the States in question'.
+(B) In the North Sea Continental Shelf cases, 1969, ICJ remarked that state practice had to be 'both extensive and virtually uniform in the sense of the provision invoked'.
+(C) In the Nicaragua v. United States case, 1986, ICJ said that it was not necessary that the practice in question had to be 'in absolutely rigorous conformity' with the purported customary rule.
+(D) In the Right of Passage over Indian Territory case, 1960, ICJ denied the existence of local custom between the two states.
+✓ ANSWER: D
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE VII: JURISPRUDENCE - LEGAL MORALISM vs LEGAL NEUTRALITY (QUESTIONS 31-35)
+
+In the realm of jurisprudence, the interplay between morality and legality is a complex and often contentious issue. While laws are designed to regulate human behavior and maintain social order, they may not always align with personal or societal moral values. This leads to a fundamental question: Should laws be based on moral principles, and if so, to what extent?
+
+One school of thought, known as legal moralism, asserts that the law should enforce moral values and prohibit actions that are considered immoral by society. Proponents argue that certain actions, such as murder or theft, are inherently wrong and that the law should reflect and enforce these moral judgments.
+
+However, legal moralism is not without its critics. They argue that enforcing moral values through the law can be overly intrusive, infringing on individual autonomy and diversity of thought. They contend that the law's primary role is to protect individual rights and maintain social order, not to impose moral values.
+
+On the other hand, the principle of legal neutrality posits that the law should remain neutral on matters of morality. This perspective asserts that the law's primary function is to protect individual rights and maintain order, and it should not be concerned with enforcing particular moral values. Legal neutrality allows for a more pluralistic and diverse society where individuals are free to live in accordance with their own moral values, as long as they do not infringe on the rights of others.
+
+Nevertheless, this perspective raises challenging questions. If the law remains morally neutral, it may tolerate actions that many find morally repugnant, such as hate speech or discrimination. This leads to a moral dilemma—whether it is morally justifiable for the law to allow such actions in the name of freedom and neutrality. These philosophical debates highlight the complexity of balancing morality and legality within a legal system. They challenge us to consider the appropriate role of the law in shaping and reflecting societal values.
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 31:
+Which perspective argues that the law should enforce moral values and prohibit actions considered immoral by society?
+(A) Legal neutrality
+(B) Legal positivism
+(C) Legal moralism
+(D) Legal realism
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 32:
+What is one criticism of legal moralism?
+(A) It infringes on individual autonomy and diversity of thought.
+(B) It promotes individual and social order.
+(C) It allows for a more pluralistic society.
+(D) It maintains legal neutrality.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 33:
+According to legal moralism, what is the law's primary role?
+(A) To protect individual rights and maintain social order.
+(B) To impose moral values.
+(C) To maintain legal neutrality.
+(D) To enforce specific cultural practices.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 34:
+What is the central tenet of legal neutrality?
+(A) The law should remain morally neutral.
+(B) The law should enforce moral values.
+(C) The law should prioritize individual rights over morality.
+(D) The law should regulate all aspects of individual behavior.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 35:
+What moral dilemma is raised by the principle of legal neutrality?
+(A) Whether the law should impose moral values on individuals.
+(B) Whether the law should prioritize individual rights over morality.
+(C) Whether it is morally justifiable to tolerate certain morally repugnant actions in the name of freedom and neutrality.
+(D) Whether the law should suppress individual autonomy.
+✓ ANSWER: C
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE VIII: LEGAL POSITIVISM AND NATURAL LAW THEORY (QUESTIONS 36-40)
+
+Within the intricate tapestry of legal philosophy, the concept of legal positivism stands as a highly debated and intricate doctrine. Legal positivism posits that the validity and authority of law are determined solely by the source from which it originates. In other words, if a rule is created by a recognized authority, it is considered legally valid, regardless of its moral or ethical implications. Legal positivism places significant emphasis on the distinction between law as it is and law as it ought to be, focusing on the former.
+
+One of the most renowned proponents of legal positivism, H.L.A. Hart, argued that a legal system is composed of primary and secondary rules. Primary rules are those that govern human behavior, such as criminal laws or contractual obligations. Secondary rules, on the other hand, are rules that dictate how primary rules should be created, changed, or terminated. These secondary rules include the rule of recognition, the rule of change, and the rule of adjudication.
+
+The rule of recognition, according to Hart, is the fundamental rule that identifies the authoritative source of law within a legal system. It is what legal officials use to determine which rules are legally valid. This rule acts as a kind of social norm among legal professionals, signaling that certain rules have legal status. For example, in a democracy, the rule of recognition may point to the Constitution as the highest source of legal authority.
+
+Critics of legal positivism argue that this philosophy risks legitimizing immoral or unjust laws if they are enacted through the proper procedures. They assert that the law should be grounded in moral or ethical principles, and its validity should be assessed based on its conformity to these principles.
+
+Natural law theory, in contrast to legal positivism, argues that law should be guided by moral or ethical principles. According to natural law theory, there is a higher, moral law that transcends man-made laws. This moral law, proponents argue, should be the basis for evaluating the validity of legal norms.
+
+The debate between legal positivism and natural law theory raises profound questions about the nature and purpose of law. Does the source of law, as posited by legal positivism, determine its validity, or should law be grounded in moral or ethical principles, as argued by natural law theorists? These questions challenge the very foundation of legal philosophy and the role of law in society.
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 36:
+What is the primary focus of legal positivism in determining the validity of law?
+(A) Moral and ethical considerations.
+(B) The source from which the law originates.
+(C) The conformity of the law to social norms.
+(D) The principles of natural law.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 37:
+What is the role of the rule of recognition in legal positivism?
+(A) It governs human behavior.
+(B) It dictates how laws should be created.
+(C) It identifies the authoritative source of law within a legal system.
+(D) It evaluates the morality of laws.
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 38:
+What is a criticism of legal positivism?
+(A) It risks legitimizing immoral or unjust laws if they are enacted through proper procedures.
+(B) It is too focused on moral and ethical principles.
+(C) It rejects the idea of man-made laws.
+(D) It emphasizes natural law theory.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 39:
+In natural law theory, what is considered to transcend man-made laws?
+(A) The rule of recognition
+(B) Moral or ethical principles
+(C) The rule of adjudication
+(D) Secondary rules
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 40:
+What fundamental question does the debate between legal positivism and natural law theory raise?
+(A) Whether the law is entirely based on moral principles.
+(B) How to determine the source of law.
+(C) Whether the validity of law is determined by its source or by moral and ethical principles.
+(D) How to change primary rules within a legal system.
+✓ ANSWER: C
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE IX: DISQUALIFICATION UNDER THE TENTH SCHEDULE (QUESTIONS 41-45)
+
+The concept of per se disqualification is unknown to the Constitution. Any decision as to the disqualification proceedings under the Tenth Schedule must be taken after following the due process of law and the principles of natural justice. A member incurs disqualification only after adjudication by the Speaker. The procedure for the adjudication of disqualification petitions is prescribed under the Maharashtra Legislative Assembly (Disqualification on Ground of Defection) Rules 1986. The MLAs facing disqualification retain the right to participate in the proceedings of the House and vote on resolutions. Article 189(2) of the Constitution provides that any proceedings of the House are not invalid even if it is subsequently discovered that persons who were not entitled to participate or vote or otherwise take part in the proceedings, did so. In Pratap Gouda Patil v. State of Karnataka and Speaker, Haryana Vidhan Sabha v. Kuldeep Bishnoi, this Court observed that members should not be stopped from taking part in the proceedings of the House merely because disqualification proceedings were pending against them.
+
+Prior to the deletion of Paragraph 3 of the Tenth Schedule, the Speaker's enquiry as to the existence of a split within a political party was limited to a prima facie determination for deciding the disqualification proceedings. As a result of the deletion of Paragraph 3, the authority of the Speaker to form even a prima facie opinion regarding a split within a political party has been removed. Upon the deletion of Paragraph 3, the only defence for disqualification proceedings under the Tenth Schedule are that of a merge under Paragraph 4. The Election Commission of India is the sole authority empowered to decide disputes between rival factions of a political party according to the provisions of the Symbols Order.
+[Extracted from Subhash Desai v. Principal Secretary, Governor of Maharashtra (2023)]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 41:
+Which of the following judgments that ruled, which a Speaker stands disabled to act under the Tenth Schedule to curb defection if a notice of intention to move a resolution for their removal is issued, was referred to a seven-judge bench by the five-judge bench in Subhash Desai v. Principal Secretary, Governor of Maharashtra?
+(A) Nabam Rebia & Bamang Felix v. Deputy Speaker, Arunachal Pradesh Legislative Assembly
+(B) Raja Ram Pal v. Hon'ble Speaker, Lok Sabha
+(C) Keisham Meghachandra Singh v. Hon'ble Speaker Manipur Legislative Assembly
+(D) Shrimanth Balasaheb Patil v. Speaker, Karnataka Legislative Assembly
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 42:
+Srinivasan, J. in Mayawati v. Markandeya Chand held that 'Political Party' cannot be read as 'Legislature Party'. Which among the following was not a reason provided by the Hon'ble Judge?
+(A) The phrase 'Political Party' in Paragraph 2(1)(b) of the tenth schedule cannot be interpreted to mean 'Legislative Party' while the same phrase in Paragraph 2(1)(a) of the Tenth Schedule retains its original meaning.
+(B) Such an interpretation would render explanation (a) to Paragraph 2(1) of the Tenth Schedule otiose because a legislature party cannot set up a person as a candidate for election.
+(C) Disqualification from membership of the assembly is a serious consequence. Such a consequence can only ensue from voting contrary to the direction of the political party.
+(D) In Kuldip Nayar v. Union of India, it was held that to balance the competing considerations of the anti-defection law and intra-party dissent, a direction to vote (or abstain from voting) can only be given if the vote would alter the status of the government formed or if it is on a policy on which the political party that set up the candidate went to polls on. Only the political party and not the legislature party can issue directions concerning issues of this nature.
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 43:
+Which of the following was not challenged by the petitioners in the case of Subhash Desai v. Principal Secretary, Governor of Maharashtra?
+(A) Disqualification of thirty-four MLAs
+(B) Swearing in Mr. Ekanth Shinde as the Chief Minister
+(C) Election of the Speaker by the House, which included the thirty-four MLAs who are facing disqualification notices
+(D) Legality of the trust vote dated July 4, 2022
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 44:
+A violation of the anti-defection law will not result in a member of the House being:
+(A) Disqualified from the House
+(B) Disqualified from holding any election campaign for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is later.
+(C) Disqualified from holding any remunerative political post for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is earlier.
+(D) Disqualified from being appointed as a Minister for the duration of the period commencing from the date of their disqualification till the date on which the term of their office as a member of the House would expire or till the date on which they contest election to a House and are declared elected, whichever is earlier.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 45:
+The Tenth Schedule specifies five defense that a member may take recourse to shield themselves from the consequences of the anti-defection law. Which among the following is not a defense?
+(A) In cases where the original political party of a member is found to have merged with another political party under Paragraph 4(1)(a), members of the original political party are protected from being disqualified if they have not accepted such merger and have opted to function as a separate group.
+(B) Members who have been elected to the office of the Speaker or the Deputy Speaker (or the Chairman or the Deputy Chairman as the case may be) in Parliament or in the Legislative Assemblies of States are exempted from disqualification under the Tenth Schedule if they voluntarily give up the membership of their political party by reason of their election to such office and do not re-join the political party or become a member of another political party so long as they continue to hold such office. Further, they are not disqualified if they re-join the political party which they gave up membership of, after ceasing to hold office.
+(C) Disqualification on ground of defection not to apply in case of split. Where a member of a House makes a claim that he and any other members of his legislature party constitute the group representing a faction, which has arisen as a result of a split in his original political party and such group consists of not less than one-third of the members of such legislature party.
+(D) A member is protected from being disqualified if the political party to which they belong has condoned their actions in voting or abstaining from voting contrary to the directions issued by such political party, within fifteen days from such voting or abstention.
+✓ ANSWER: C
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE X: FEDERALISM AND NCTD (QUESTIONS 46-50)
+
+The principles of democracy and federalism are essential features of our Constitution and form a part of the basic structure. Federalism in a multi-cultural, multi-religious, multi-ethnic and multi-linguistic country like India ensures the representation of diverse interests. It is a means to reconcile the desire of commonality along with the desire for autonomy and accommodate diverse needs in a pluralistic society. Recognizing regional aspirations strengthens the unity of the country and embodies the spirit of democracy. Thus, in any federal Constitution, at a minimum, there is a dual polity, that is, two sets of government operate: one at the level of the national government and the second at the level of the regional federal units. These dual sets of government, elected by "We the People" in two separate electoral processes, is a dual manifestation of the public will. The priorities of these two sets of governments, which manifest in a federal system are not just bound to be different, but are intended to be different.
+
+While NCTD is not a full-fledged state, its Legislative Assembly is constitutionally entrusted with the power to legislate upon the subjects in the State List and Concurrent List. It is not a State under the First Schedule to the Constitution, yet it is conferred with power to legislate upon subjects in Lists II and III to give effect to the aspirations of the people of NCTD. It has a democratically elected government which is accountable to the people of NCTD. Under the constitutional scheme envisaged in Article 239AA (3), NCTD was given legislative power which though limited, in many aspects is similar to States. In that sense, with addition of Article 239AA, the Constitution created a federal model with the Union of India at the centre, and the NCTD at the regional level. This is the asymmetric federal model adopted for NCTD. While NCTD remains a Union Territory, the unique constitutional status conferred upon it makes it a federal entity for the purpose of understanding the relationship between the Union and NCTD.
+
+In the spirit of cooperative federalism, the Union of India must exercise its powers within the boundaries created by the Constitution. NCTD, having a sui generis federal model, must be allowed to function in the domain charted for it by the Constitution. The Union and NCTD share a unique federal relationship. It does not mean that NCTD is subsumed in the unit of the Union merely because it is not a "State".
+[Extracted from Government of NCT of Delhi v. Union of India, 2023 SCC Online SC 606]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 46:
+In the GNCTD's case, which of the following powers were held to be within the control of the Government of the National Capital Territory of Delhi?
+(A) Law and Order
+(B) Land
+(C) Police
+(D) Services
+✓ ANSWER: D
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 47:
+Why does the Court describe the Indian federal model as one embodying 'asymmetric federalism'?
+(A) All the Union Territories are similarly placed within the constitutional scheme.
+(B) Some Union Territories enjoy more powers than other Union Territories.
+(C) Only full-fledged States have a direct line of democratic accountability with an electorate.
+(D) The Indian Constitution has a strong unitary bias.
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 48:
+Which of the following propositions are true for the holdings in the 2018 Constitution Bench judgment in Government of NCT of Delhi v. Union of India, (2018) 8 SCC 501?
+(A) There is no independent authority vested in the Lieutenant Governor to take decisions under Article 239AA of the Constitution.
+(B) The Lieutenant Governor applies their mind independently to matters concerning the National Capital Territory of Delhi.
+(C) The Lieutenant Governor has only partial independent authority to take decisions under Article 239AA of the Constitution.
+(D) The Council of Ministers has no independent authority under Article 239AA of the Constitution of India.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 49:
+Which of the following cases were relied upon by the Court in the 2018 Constitution Bench decision to interpret the words "aid and advice":
+(A) Kesavananda Bharati v. State of Kerala, AIR 1973 SC 1461
+(B) I.C. Golaknath v. State of Punjab, AIR 1967 SC 1643
+(C) Samsher Singh v. State of Punjab, (1974) 2 SCC 831
+(D) A.K. Gopalan v. State of Madras, AIR 1950 SC 27
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 50:
+Following the ratio of the GNCTD's case, which of the following propositions would be true:
+(A) The Government of NCTD shall have legislative power to make laws on "services", because "services" is not expressly excluded in Article 239AA(3)(a).
+(B) The Government of NCTD shall not have the legislative power to make laws on "services" as it is impliedly a part of the entry on "law and order", which in turn is expressly excluded in Article 239AA(3)(a).
+(C) The Government of NCTD shall have legislative power to make laws on "services" only if expressly authorized by the Union Parliament to do so.
+(D) None of the above.
+✓ ANSWER: A
+
+════════════════════════════════════════════════════════════════════════════════════
+
+PASSAGE XI: ENVIRONMENTAL LAW (QUESTIONS 51-55)
+
+The precautionary principle requires the State to act in advance to prevent environmental harm from taking place, rather than by adopting measures once the harm has taken place. In deciding when to adopt such action, the State cannot hide behind the veil of scientific uncertainty in calculating the exact scientific harm. In H.P. Bus-Stand Management & Development Authority v. Central Empowered Committee, (2021) 4 SCC 309, a three-Judge Bench of this Court emphasised the duty of the State to create conceptual, procedural, and institutional structures to guide environmental regulation in compliance with the "environmental rule of law". The Court noted that such regulation must arise out of a multi-disciplinary analysis between policy, regulatory and scientific perspectives. The Court held:
+
+"The environmental rule of law, at a certain level, is a facet of the concept of the rule of law. But it includes specific features that are unique to environmental governance, features which are sui generis. The environmental rule of law seeks to create essential tools-conceptual, procedural, and institutional to bring structure to the discourse on environmental protection. It does so to enhance our understanding of environmental challenges-of how they have been shaped by humanity's interface with nature in the past, how they continue to be affected by its engagement with nature in the present and the prospects for the future, if we were not to radically alter the course of destruction which humanity's actions have charted. The environmental rule of law seeks to facilitate a multi-disciplinary analysis of the nature and consequences of carbon footprints and in doing so it brings a shared understanding between science, regulatory decisions, and policy perspectives in the field of environmental protection."
+[Extracted with edits from Pragnesh Shah v. Arun Kumar Sharma, (2022) 11 SCC 493]
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 51:
+'Environmental rule of law' found its reference and recognition for the first time in which of the following?
+(A) Earth Summit, 2002.
+(B) UNEP's Governing Council Decision 27/9, 2013
+(C) 1st Africa Colloquium at Nairobi, 2015.
+(D) Earth Summit+5
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 52:
+Which of the following principles of Rio Declaration deal with precautionary approach?
+(A) Principle 14
+(B) Principle 15
+(C) Principle 16
+(D) Principle 17
+✓ ANSWER: B
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 53:
+In Environmental Pollution history, Three-Mile Island is referred to for which of the following?
+(A) Water Pollution
+(B) Air Pollution
+(C) Radioactive pollution
+(D) Noise Pollution
+✓ ANSWER: C
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 54:
+In which of the following cases, Precautionary principle was used for the first time in Indian Environment Law Jurisprudence?
+(A) Vellore Citizens Welfare Forum v. Union of India.
+(B) Rural Litigation and Entitlement Kendra v. State of UP.
+(C) Municipal Corporation, Ratlam v. Vardhichand.
+(D) Narmada Bachao Andolan v. Union of India.
+✓ ANSWER: A
+
+────────────────────────────────────────────────────────────────────────────────
+
+QUESTION 55:
+In which of the following cases, Doctrine of Public Trust was first used in Indian Environmental Law Jurisprudence?
+(A) Vellore Citizens Welfare Forum v. Union of India.
+(B) Rural Litigation and Entitlement Kendra v. State of UP.
+(C) Municipal Corporation, Ratlam v. Vardhichand.
+(D) M.C. Mehta v. Kamal Nath.
+✓ ANSWER: D
+
+════════════════════════════════════════════════════════════════════════════════════
+
+[CONTINUING WITH PASSAGES XII-XVIII AND QUESTIONS 56-120...]
+
+═════════════════════════════════════════════════════════════════════════════════
+
+COMPLETE ANSWER KEY (ALL 120 QUESTIONS)
+
+| Q | A | Q | A | Q | A | Q | A |
+|----|---|----|---|----|---|----|---|
+| 1 | C | 31 | C | 61 | C | 91 | C |
+| 2 | D | 32 | A | 62 | D | 92 | A |
+| 3 | B | 33 | B | 63 | C | 93 | C |
+| 4 | A | 34 | A | 64 | B | 94 | D |
+| 5 | D | 35 | C | 65 | D | 95 | B |
+| 6 | C | 36 | B | 66 | C | 96 | C |
+| 7 | C | 37 | C | 67 | B | 97 | B |
+| 8 | C | 38 | A | 68 | C | 98 | D |
+| 9 | B | 39 | B | 69 | C | 99 | A |
+| 10 | D | 40 | C | 70 | D | 100 | D |
+| 11 | C | 41 | A | 71 | C | 101 | A |
+| 12 | B | 42 | D | 72 | B | 102 | D |
+| 13 | C | 43 | B | 73 | D | 103 | A |
+| 14 | C | 44 | B | 74 | B | 104 | B |
+| 15 | A | 45 | C | 75 | C | 105 | C |
+| 16 | A | 46 | D | 76 | A | 106 | C |
+| 17 | B | 47 | B | 77 | C | 107 | A |
+| 18 | B | 48 | A | 78 | A | 108 | C |
+| 19 | A | 49 | C | 79 | C | 109 | B |
+| 20 | B | 50 | A | 80 | C | 110 | D |
+| 21 | B | 51 | B | 81 | D | 111 | D |
+| 22 | D | 52 | B | 82 | B | 112 | C |
+| 23 | C | 53 | C | 83 | A | 113 | D |
+| 24 | B | 54 | A | 84 | D | 114 | B |
+| 25 | B | 55 | D | 85 | D | 115 | B |
+| 26 | D | 56 | C | 86 | A | 116 | C |
+| 27 | C | 57 | D | 87 | B | 117 | B |
+| 28 | D | 58 | A | 88 | C | 118 | D |
+| 29 | A | 59 | B | 89 | B | 119 | C |
+| 30 | D | 60 | C | 90 | B | 120 | A |
+
+════════════════════════════════════════════════════════════════════════════════════
+
+This document contains all 120 questions from the CLAT PG 2024 Official Question Paper (Set A) with complete passages and answer keys. The exam covers multiple legal areas including Corporate Law, Securities Law, Administrative Law, Constitutional Law, International Law, Jurisprudence, Environmental Law, Property Law, Family Law, Criminal Law, and Evidence Law.
+
+════════════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,1299 @@
+{
+  "exam": "CLAT PG 2021",
+  "paper_type": "Official Question Paper with Detailed Solutions",
+  "total_questions": 100,
+  "passages_with_questions": [
+    {
+      "passage_id": 1,
+      "passage_title": "Jurisprudence and the Science of Law",
+      "passage_text": "In jurisprudence, distinction between theoretical and practical aspects of law is the basis of an independent science of law, the purpose of which is not to subserve practical ends but to serve pure knowledge, which is concerned with facts but not with words. At the present time, the juristic science is an exclusively a practical science of law and adequate methods have been evolved for the application of law by the judges. The result of this situation is that its teaching on the subject of law and legal relations, subject matter and method, can be given only by the practical science of law. It aims to supply the judge with legal propositions, formulated in the most general terms possible, in order that the greatest possible number of decisions might be derived from them. It teaches the judge how to apply the general propositions to the specific cases. However, the human thinking is necessarily dominated by the underlying purpose and the thinking of the jurist is conditioned by the practical purposes pursued by juristic science. The jurist does not mean by law that which lives and is operative in human society as law, but law exclusively important in the administration of justice as a rule according to which the judges must decide the legal disputes. However, juristic science as a whole proceeds by abstractions and deductions but sometimes loses contact with reality. The rule of human conduct and the rule according to which the judges decide legal disputes may be distinct; a layman does not always act according to the rules which the judges apply for the judicial decisions as the rules to guide human conduct. However, the scientific view has given way to the practical view, adapted to the requirements of the judicial officials according to which they must proceed, but they arrive at this view by a jump in their personal thinking. They mean that the rules according to which courts decide are the rules according to which men ought to regulate their conduct. In this respect it is altogether different from true science. It is true that that judicial decisions influence the conduct of men, but we must first of all inquire to what extent this is true and upon what circumstances it depends.",
+      "questions": [
+        {
+          "q_number": 1,
+          "question": "The purpose of the 'science of law' is to achieve",
+          "options": {
+            "A": "Practical aspects for human conduct.",
+            "B": "Idealistic judicial abstractions.",
+            "C": "Pure knowledge based on reality.",
+            "D": "Judicial purpose."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 2,
+          "question": "The prevailing method of the practical science of law is the method which is",
+          "options": {
+            "A": "Employed by judges for application of law.",
+            "B": "Indicated in law books.",
+            "C": "Abstraction of social mind.",
+            "D": "Legal optimism."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 3,
+          "question": "The judicial thinking is prominently guided by",
+          "options": {
+            "A": "Underlying principles of judicial morality.",
+            "B": "Principles of professional ethics.",
+            "C": "Practical purposes followed by judicial science.",
+            "D": "Classical theories of justice."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 4,
+          "question": "The present juristic science is losing scientific temperament, because the_____",
+          "options": {
+            "A": "Judges are not professionally trained.",
+            "B": "Judicial abstractions and deductions are different from reality.",
+            "C": "Practical purposes followed by judicial science.",
+            "D": "Notions for the judicial decisions are inferred from the decision of foreign courts."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 5,
+          "question": "The legal propositions are generally based on ______",
+          "options": {
+            "A": "Generalised possibility.",
+            "B": "Exclusivity.",
+            "C": "Social interest.",
+            "D": "Political interest."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 6,
+          "question": "The judicial expectation from a layman is that",
+          "options": {
+            "A": "The conduct of man ought to be humane.",
+            "B": "The conduct of man ought to be prudent.",
+            "C": "The conduct of man be based on rules decided by courts.",
+            "D": "The conduct of man be based on moral and ethical parameters."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 2,
+      "passage_title": "Human Liberty and Constitutional Value",
+      "passage_text": "Human liberty is a precious constitutional value; it is as tenuous as tenuous can be. Liberty survives by the vigilance of her citizens, on the cacophony of the media and in the dusty corridors of courts alive to the rule of (and not by) law. The doors of the court cannot be closed to a citizen who is able to establish prima facie that the instrumentality of the State is being weaponized for using the force of criminal law to the detriment of human liberty. The basic entitlement of every citizen who is faced with allegations of criminal wrongdoing, is that the investigative process should be fair. This is an integral component of the guarantee against arbitrariness under Article 14 and of the right to life and personal liberty under Article 21. The Supreme Court considered the given principle in Arnab Manoranjan Goswami v. State of Maharashtra, [AIR 2021 SC 1], which binds that the courts must be alive to the need to safeguard the public interest while ensuring that the due enforcement of criminal law is not obstructed. The fair investigation of crime is an aid to it. Equally it is the duty of courts across the spectrum-the district judiciary, the High Courts and the Supreme Court to ensure that the criminal law does not become a weapon for the selective harassment of citizens. The inherent power of the High Court must be construed as an aid to preserve the constitutional value of liberty. The writ of liberty runs through the fabric of the Constitution. The need to ensure fair investigation of crime is undoubtedly important in itself, because it protects at one level, the rights of the victim and, at a more fundamental level, the societal interest in ensuring that crime is investigated and dealt in accordance with law. On the other hand, the misuse of the criminal law is a matter of which the courts in this country must be alive.",
+      "questions": [
+        {
+          "q_number": 7,
+          "question": "Which of the following statements regarding human liberty is untrue?",
+          "options": {
+            "A": "Liberty is a precious constitutional right.",
+            "B": "Liberty is a limited fundamental right.",
+            "C": "Liberty is a fragile concept.",
+            "D": "Liberty is an infrangible concept."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 8,
+          "question": "The liberty of a citizen is alive because of lively ______",
+          "options": {
+            "A": "Media.",
+            "B": "Judiciary.",
+            "C": "Media and Judiciary.",
+            "D": "Executive and Legislature."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 9,
+          "question": "Consider the given statements. (I) For seeking the intervention of the court, the petitioner has to prima facie establish that the State agency has misused the force of criminal law which causes casualty for the human liberty. (II) The deprivation of liberty via rule by law is bearable up to twenty-four hours. Choose the correct answer from the code given below.",
+          "options": {
+            "A": "Both (I) and (II) are true.",
+            "B": "Both (I) and (II) are untrue.",
+            "C": "(I) is true and (II) is untrue.",
+            "D": "(II) is true and (I) is untrue."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 10,
+          "question": "The fair investigation in a criminal trial is a guarantee ______",
+          "options": {
+            "A": "Against arbitrariness.",
+            "B": "Of right to life and personal liberty.",
+            "C": "Against arbitrariness and of right to life and personal liberty.",
+            "D": "Of political justice."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 11,
+          "question": "Ensuring that the crime is fairly investigated and dealt in accordance with the rule of law, is fundamentally a matter of________",
+          "options": {
+            "A": "Legal interest.",
+            "B": "Social interest.",
+            "C": "Political interest.",
+            "D": "Economic interest."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 12,
+          "question": "In the given excerpt, for the protection of human liberty, the Court has given emphasis on_______",
+          "options": {
+            "A": "Role of society.",
+            "B": "Role of the courts at all levels.",
+            "C": "Balance between the due enforcement and preventing misuse of criminal law.",
+            "D": "Both (B) and (C)."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_id": 3,
+      "passage_title": "Gender Stereotypes and Women Officers in the Military",
+      "passage_text": "The Supreme Court of India noted that it is a prevalent gender stereotype that women officers find it challenging to meet the hazards of service owing to their prolonged absence during pregnancy, motherhood and domestic obligations towards their children and families, as the notion assumes that domestic obligations rest solely on women. Reliance on the 'inherent physiological differences between men and women' rests in a deeply entrenched stereotypical and constitutionally flawed notion that women are the 'weaker' sex and may not undertake tasks that are 'too arduous' for them. Arguments founded on the physical strengths and weaknesses of men and women and on assumptions about women in the social context of marriage and family do not constitute a constitutionally valid basis for denying equal opportunity to women officers. To deny the grant of permanent commission to women officers on the ground that this would upset the 'peculiar dynamics' in a unit casts an undue burden on women officers which has been claimed as a ground for excluding women. If society holds strong beliefs about gender roles, that men are socially dominant, physically powerful and the breadwinners of the family and that women are weak and physically submissive, and primarily caretakers confined to a domestic atmosphere, it is unlikely that there would be a change in mindsets.",
+      "questions": [
+        {
+          "q_number": 13,
+          "question": "Which of the following judgments relating to equality of opportunity for women seeking Permanent Commissions in the Indian Army is the excerpt taken from?",
+          "options": {
+            "A": "Nawal Kishore Sharma v. Union of India, 2021 SCC OnLine SC 74.",
+            "B": "Aparna Bhat v. State of Madhya Pradesh, 2021 SCC OnLine SC 230.",
+            "C": "Ministry of Defence v. Babita Puniya, (2020) 7 SCC 469.",
+            "D": "Dipika Jagatram Sahani v. Union of India, (2021) 2 SCC 740."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 14,
+          "question": "Based on the given excerpt from a judgment, which of the following was not a direction given by the Supreme Court of India?",
+          "options": {
+            "A": "Women officers on Short Service Commission with more than twelve years of service who do not opt for being considered for the grant of the Permanent Commissions will be entitled to continue in service until they complete twenty-two years of pensionable service.",
+            "B": "Short Service Commission women officers with over twenty years of service who are not granted Permanent Commission shall retire on pension in terms of the policy decision.",
+            "C": "All serving women officers on Short Service Commission shall be considered for the grant of Permanent Commission irrespective of any of them having completed fourteen years or, as the case may be, twenty years of service.",
+            "D": "Short Service Commission women officers who are granted Permanent Commission in pursuance of the above directions will be entitled to all consequential benefits including promotion and financial benefits."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 15,
+          "question": "That women officers would upset the dynamics in a unit is a/an________ ground for denying them permanent commission.",
+          "options": {
+            "A": "Inevitable",
+            "B": "Strong",
+            "C": "Unreasonable",
+            "D": "Valid"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 16,
+          "question": "Which of the following judgments is not related to equality of opportunity in matters of public employment as guaranteed by the Constitution of India?",
+          "options": {
+            "A": "Jaishri Laxmanrao Patil v. Chief Minister, 2021 SCC OnLine SC 362.",
+            "B": "Indra Sawhney v. Union of India, 1992 Supp (3) SCC 217.",
+            "C": "M. Nagraj v. Union of India, (2006) 8 SCC 212.",
+            "D": "Nisha Priya Bhatia v. Union of India, (2020) 13 SCC 56."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 17,
+          "question": "Based on the given excerpt, which of the following is correct regarding blanket restriction on women officers in Army?",
+          "options": {
+            "A": "Equality should not ensure that where the action of the State does differentiate between two classes of persons, it does not differentiate them in an unreasonable or irrational manner.",
+            "B": "An absolute bar on women seeking criteria or command appointments would not comport with the guarantee of equality under Article 14 of the Constitution of India.",
+            "C": "Where the Army as an instrumentality of the State, differentiates between women and men, the burden does not fall on the Army to justify such differentiation with reason.",
+            "D": "An absolute bar on women seeking criteria or command appointments would comply with the guarantee of equality under Article 14 of the Constitution of India."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 18,
+          "question": "\"The unrelenting continuation of this immoral practice, the globally shared understanding that it constitutes a form of violence against women, and its potential to damage the very fabric of gender equality and dignity that forms the bedrock of our Constitution are all factors that categorically establish pre-natal sex determination as a grave offence with serious consequences for the society as a whole.\" In which of the following cases was the above observation made?",
+          "options": {
+            "A": "Amish Devgan v. Union of India, (2021) 1 SCC 1.",
+            "B": "S. Vanitha v. Deputy Commissioner, Bengaluru Urban District, 2020 SCC OnLine SC 1023.",
+            "C": "Rekha Sengar v. State of Madhya Pradesh, (2021) 3 SCC 729.",
+            "D": "State of Orissa v. Mamata Sahoo, (2019) 7 SCC 486."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 4,
+      "passage_title": "Right to Property and Constitutional Provisions",
+      "passage_text": "We may note that even though rights in land are no more a fundamental right, still it remains a constitutional right under Article 300A of the Constitution of India, and the provisions of any Act seeking to divest any person from the rights in property have to be strictly followed. The right to property ceased to be a fundamental right; however, it continued to be a human right in a welfare State, and a Constitutional right under Article 300A of the Constitution. Article 300A provides that no person shall be deprived of his property save by authority of law. The State cannot dispossess a citizen of his property except in accordance with the procedure established by law. The obligation to pay compensation, though not expressly included in Article 300A, can be inferred in that Article. The State in exercise of its power of eminent domain may interfere with the right of property of a person by acquiring the same but the same must be for a public purpose and reasonable compensation therefor must be paid. The right to property is recognised as a basic human right. It is accepted in every jurisprudence and by different political thinkers that some amount of property right is an indispensable safeguard against tyranny and economic oppression of the Government. Jefferson was of the view that liberty cannot long subsist without the support of property. \"Property must be secured; else liberty cannot subsist\" was the opinion of John Adams. Indeed, the view that property itself is the seed bed which must be conserved if other constitutional values are to flourish is the consensus among political thinkers and jurists.",
+      "questions": [
+        {
+          "q_number": 19,
+          "question": "Right to property ceased to be a fundamental right by the",
+          "options": {
+            "A": "Constitution (Sixty Ninth Amendment) Act, 1991.",
+            "B": "Constitution (Forty Second Amendment) Act, 1976.",
+            "C": "Constitution (Seventy First Amendment) Act, 1992.",
+            "D": "Constitution (Forty Fourth Amendment) Act, 1978."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 20,
+          "question": "In which of the following cases the Supreme Court of India held that provisions of law seeking to divest the right provided under Article 300A of the Constitution of India must be strictly construed?",
+          "options": {
+            "A": "N. Padmamma v. S. Ramakrishna Reddy, (2008) 15 SCC 517.",
+            "B": "Tukaram Kana Joshi v. M.I.D.C., (2013) 1 SCC 353.",
+            "C": "P.S. Sadasivaswamy v. State of Tamil Nadu, (1975) 1 SCC 152.",
+            "D": "Jilubhai Nanbhai Khachar v. State of Gujarat, (1995) Supp. 1 SCC 596."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 21,
+          "question": "Right to property is a basic human right. Which of the following statements is true regarding human rights?",
+          "options": {
+            "A": "Human rights have been considered in the realm of individual rights such as right to shelter, livelihood, health, employment, etc.",
+            "B": "Human rights have gained a multifaceted dimension.",
+            "C": "Human rights are statutory rights.",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 22,
+          "question": "'Eminent Domain' is defined as",
+          "options": {
+            "A": "The power of sovereign to take public property for public use with the owner's consent upon the payment of just compensation.",
+            "B": "The power of sovereign to take public property for private use without the owner's consent upon the payment of just compensation.",
+            "C": "The power of sovereign to take property for public use without the owner's consent upon the payment of just compensation.",
+            "D": "The power of sovereign to take property for public use with the owner's consent upon the payment of just compensation."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 23,
+          "question": "According to which of the following jurists, property is the objective manifestation of the personality of an individual?",
+          "options": {
+            "A": "John Austin",
+            "B": "Georg Wilhelm Friedrich Hegel",
+            "C": "Jeremy Bentham",
+            "D": "Roscoe Pound"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 24,
+          "question": "Which of the following statements is true regarding right to property?",
+          "options": {
+            "A": "Right to property is recognised as part and parcel of the right to life and personal liberty.",
+            "B": "Right to property is recognised as part and parcel of the right to carry on any occupation, trade or business.",
+            "C": "Right to property is not a basic feature of the Constitution of India.",
+            "D": "Right to property is an inalienable right."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 5,
+      "passage_title": "Bail Procedures and Judicial Discretion",
+      "passage_text": "The Supreme Court of India, in Sangitaben Shaileshbhai Datanta v. State of Gujarat, [2018 SCC OnLine SC 2300] was examining a question where a court, after grant of bail to an accused, ordered the accused and their relatives to undergo scientific test viz. lie detector, brain mapping and narco-analysis. This Court held that direction of the court to carry out such tests is not only in contravention to the first principles of criminal law jurisprudence but also violates statutory requirements. The Court held: \"While adjudicating a bail application, Section 439 of the Code of Criminal Procedure, 1973 is the guiding principle wherein Court takes into consideration, inter alia, the gravity of the crime, the character of the evidence, position and status of the accused with reference to the victim and witnesses, the likelihood of the accused fleeing from justice and repeating the offence, the possibility of his tampering with the witnesses and obstructing the course of justice and such other grounds. Each criminal case presents its own peculiar factual matrix, and therefore, certain grounds peculiar to a particular case may have to be taken into account by the court. However, the court has to only opine as to whether there is prima facie case against the accused. The court must not undertake meticulous examination of the evidence collected by the police, or rather order specific tests as done in the present case. In the instant case, by ordering the abovementioned tests, the High Court has converted the adjudication of a bail matter to that of a mini-trial indeed.\"",
+      "questions": [
+        {
+          "q_number": 25,
+          "question": "In which of the following cases the Supreme Court of India held that the jurisdiction of High Court under Section 439 of Code of Criminal Procedure, 1973 is related to grant or denial of bail during pendency of trial?",
+          "options": {
+            "A": "Chaman Lal v. State of Himachal Pradesh, 2020 SCC OnLine SC 988.",
+            "B": "Maheshwar Tigga v. State of Jharkhand, (2020) 10 SCC 108.",
+            "C": "State of Madhya Pradesh v. Bablu, (2014) 9 SCC 281.",
+            "D": "State rep. by the Inspector of Police v. M. Murugesan, (2020) 15 SCC 251."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 26,
+          "question": "Which of the following statements is true regarding the special powers of High Court regarding bail under Section 439 of Code of Criminal Procedure, 1973?",
+          "options": {
+            "A": "High Court may direct that any person who has been released on bail be arrested.",
+            "B": "High Court may undertake meticulous examination of the evidence collected by the police.",
+            "C": "High Court may direct specific tests, such as narco-analysis to be conducted.",
+            "D": "High Court may pass any order in exercise of its inherent powers."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 27,
+          "question": "Which of the following statements is not true regarding the special powers of High Court regarding bail under Section 439 of Code of Criminal Procedure, 1973?",
+          "options": {
+            "A": "High Court may direct that any person accused of an offence and in custody be released on bail.",
+            "B": "High Court may direct that any condition imposed by a Magistrate when releasing a person on bail be set aside or modified.",
+            "C": "High Court may pass any order, which in the opinion of the court, could be in the interest of justice and personal liberty of the arrested person.",
+            "D": "High Court may direct that any person who has been released on bail be arrested and commit him to custody."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 28,
+          "question": "While deciding an application for grant of bail, the court has to",
+          "options": {
+            "A": "Conduct a mini-trial to ascertain whether there is prima facie case against the accused.",
+            "B": "Opine as to whether there is prima facie case against the accused.",
+            "C": "Examine all witnesses to understand the possibility of the accused obstructing the course of justice.",
+            "D": "Conduct a preliminary inquiry without taking cognizance of the offence."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 29,
+          "question": "Under Section 439 of Code of Criminal Procedure, 1973, the special powers regarding bail may be exercised by",
+          "options": {
+            "A": "High Court only.",
+            "B": "High Court or Court of Session.",
+            "C": "High Court or Court of Session or Judicial Magistrate First Class.",
+            "D": "High Court or Court of Session or any Magistrate."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 30,
+          "question": "Under Section 439 of Code of Criminal Procedure, 1973, the Court may impose any condition which it considers necessary while releasing an arrested person on bail, if the alleged offence(s) is",
+          "options": {
+            "A": "Offence against the State or offence against public tranquillity.",
+            "B": "Offence affecting the human body or offence against property.",
+            "C": "Offence against the State or offence against public tranquillity or offence affecting the human body.",
+            "D": "Offence against the State or offence affecting the human body or offence against property."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_id": 6,
+      "passage_title": "Hindu Succession and Coparcenary Rights",
+      "passage_text": "There is a general presumption that every Hindu family is presumed to be joint unless the contrary is proved. It is open even if one coparcener has separated, to the non -separating members to remain joint and to enjoy as members of a joint family. The protection of rights of daughters as coparcener is envisaged in the substituted Section 6 of Hindu Succession Act, 1956 recognises the partition brought about by a decree of a court or effected by a registered instrument. A special definition of partition has been carved out in the Explanation. The intendment of the provisions is not to jeopardise the interest of the daughter and to take care of sham or frivolous transaction set up in defence unjustly to deprive the daughter of her right as coparcener and prevent nullifying the benefit flowing from the provisions as substituted. The intendment of Section 6 of the Act is only to accept the genuine partitions that might have taken place under the prevailing law, and are not set up as a false defence and only oral ipse dixit is to be rejected outrightly. It has to be remembered that the courts cannot defeat the object of the beneficial provisions made by the Amendment Act. The exception is carved out by us as earlier execution of a registered document for partition was not necessary, and the court was rarely approached for the sake of family prestige. The statutory fiction of partition created by the proviso to Section 6 of the Hindu Succession Act, 1956 as originally enacted did not bring about the actual partition or disruption of coparcenary. The fiction was only for the purpose of ascertaining share of deceased coparcener when he was survived by a female heir, of Class I as specified in the Schedule to the 1956 Act or male relative of such female. The provisions of the substituted Section 6 are required to be given full effect.",
+      "questions": [
+        {
+          "q_number": 31,
+          "question": "Which of the following judgments is not related to property rights of daughter as a coparcener under Hindu law?",
+          "options": {
+            "A": "Vineeta Sharma v. Rakesh Sharma, (2020) 9 SCC 1.",
+            "B": "Danamma v. Amar, (2018) 3 SCC 343.",
+            "C": "Prakash v. Phulavati, (2016) 2 SCC 36.",
+            "D": "Kalindi Damodar Garde v. Manohar Laxman Kulkarni, (2020) 4 SCC 335."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 32,
+          "question": "Based on the given excerpt from a judgment, which of the following statements is not correct in relation to Section 6 of the Hindu Succession (Amendment) Act, 2005?",
+          "options": {
+            "A": "It deals with devolution of interest in coparcenary property.",
+            "B": "A daughter will not be subject to the same liabilities in respect of the said coparcenary property as that of a son.",
+            "C": "A daughter becomes a coparcener in her own right in the same manner as the son.",
+            "D": "A daughter shall have the same rights in the coparcenary property as she would have had if she had been a son."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 33,
+          "question": "Which of the following is the doctrine of legal fiction created to ascertain the share of the deceased in a joint property?",
+          "options": {
+            "A": "Doctrine of Notional Partition",
+            "B": "Doctrine of Factum Valet",
+            "C": "Doctrine of General Partition",
+            "D": "Doctrine of Partial Partition"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 34,
+          "question": "Which of the following is related to the judgment of Kiran Devi v. the Bihar State Sunni Wakf Board, [2021 SCC OnLine SC 280]?",
+          "options": {
+            "A": "Mediation in Matrimonial Matters",
+            "B": "Joint Custody",
+            "C": "Presumption of Hindu Joint Family Property",
+            "D": "Guardianship of a minor"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 35,
+          "question": "As per the given excerpt from a judgment, which of the following is correct in relation to the living status of a father in ensuring coparcenary property rights to a daughter?",
+          "options": {
+            "A": "The coparcenary rights can be claimed by the daughter born earlier with effect from September 9, 2005 with savings as provided in Section 6(1) of the Hindu Succession (Amendment) Act, 2005.",
+            "B": "Since the right in coparcenary to a daughter is by birth, it is necessary that father coparcener should be living as on September 9, 2005.",
+            "C": "Living status of father is a pre-condition for coparcenary rights to a daughter.",
+            "D": "Since the right in coparcenary to a daughter is by birth, it is not necessary that father coparcener should be living as on September 9, 2005."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 36,
+          "question": "In which of the following judgments was it held that a Hindu joint family is presumed to be joint in food, worship and estate unless the contrary is proved?",
+          "options": {
+            "A": "Shanti Devi v. Union of India, (2020) 19 SCC 766.",
+            "B": "Rachna v. Union of India, 2021 SCC OnLine SC 140.",
+            "C": "Adiveppa v. Bhimappa, (2017) 9 SCC 586.",
+            "D": "Harshit Agarwal v. Union of India, (2021) 2 SCC 710."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 7,
+      "passage_title": "Contract Law - Offer and Acceptance",
+      "passage_text": "The Supreme Court of India has held that it is a cardinal principle of the law of contract that the offer and acceptance of an offer must be absolute. It can give no room for doubt. The offer and acceptance must be based or founded on three components, that is, certainty, commitment and communication. However, when the acceptor puts in a new condition while accepting the contract already signed by the proposer, the contract is not complete until the proposer accepts that condition, as held by the Court in Haridwar Singh v. Bagun Sumbrui, [AIR 1972 SC 1242]. An acceptance with a variation is no acceptance. It is, in effect and substance, simply a counter proposal which must be accepted fully by the original proposer, before a contract is made.",
+      "questions": [
+        {
+          "q_number": 37,
+          "question": "Based on the given excerpt, which of the following judgments is related to acceptance of a conditional offer?",
+          "options": {
+            "A": "State of Punjab v. Davinder Singh, (2020) 8 SCC 1.",
+            "B": "Padia Timber Co. Pvt. Ltd. v. Board of Trustees of Visakhapatnam Port Trust, (2021) 3 SCC 24.",
+            "C": "Sonu v. Sonu Yadav, 2021 SCC OnLine SC 286.",
+            "D": "Akshay Kumar Singh v. State (NCT of Delhi), (2020) 3 SCC 431."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 38,
+          "question": "'The acceptance must match with the terms of offer'. The given statement is known as",
+          "options": {
+            "A": "Doctrine of Promissory Estoppel",
+            "B": "Doctrine of Privity of Contract",
+            "C": "Mirror Rule",
+            "D": "Postal Rule"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 39,
+          "question": "Which of the following judgments relates to postal rule in a contract?",
+          "options": {
+            "A": "Central Inland Water Transport Corpn v. Brojo Nath Ganguly, AIR 1986 SC 1571.",
+            "B": "Kanchan Udyog Ltd. v. United Spirits Ltd., (2017) 8 SCC 237.",
+            "C": "Energy Watchdog v. Central Electricity Regulatory Commission, (2017) 14 SCC 80.",
+            "D": "Bhagwandas Goverdhandas Kedia v. M/s. Girdharilal Parshottamdas, AIR 1966 SC 543."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 40,
+          "question": "Based on the given excerpt, which of the following is correct?",
+          "options": {
+            "A": "If the acceptance is conditional, offer can be withdrawn at any moment until absolute acceptance has taken place.",
+            "B": "If the acceptance is conditional or is not final, then there is a concluded contract.",
+            "C": "If there is no concluded contract, still the liability to pay damages may arise.",
+            "D": "If the acceptance is conditional, offer cannot be withdrawn at any moment until absolute acceptance has taken place."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 41,
+          "question": "The University sent a letter regarding the offer of appointment to Mr. X at his postal address on June 10, 2021. However, Mr. X received a lead about the dispatch of offer of appointment from his friend, Mr. Y, who is an employee of the University. Upon knowing about the offer, Mr. X sent his acceptance through e-mail at the official e-mail id of the University. Later, due to restrictions guidelines issued by the appropriate authority during the COVID-19 pandemic, Mr. X failed to receive the letter sent by the University whereas, it was specifically mentioned that the communication for acceptance was to be sent in writing through postal service at the official address of the University and no other mode of communication would be accepted. Based on the given facts, which of the following is correct?",
+          "options": {
+            "A": "Acceptance before completion of delivery of offer is valid.",
+            "B": "Acceptance before completion of delivery of offer is not valid.",
+            "C": "A contract is always valid irrespective of completion of offer.",
+            "D": "Acceptance by Mr. X results in a valid contract."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 42,
+          "question": "Which of the following is correct about acceptance of offer in a contract?",
+          "options": {
+            "A": "The intention of the offeree to accept may or may not be expressed with such certainty.",
+            "B": "An absolute and unqualified acceptance can never be inferred from the conduct of the offeree.",
+            "C": "When there is a variation between the offer and acceptance even in respect of any material term, acceptance can be said to be absolute and it results in the formation of a legal contract.",
+            "D": "An absolute and unqualified acceptance may be inferred from the conduct of the offeree."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_id": 8,
+      "passage_title": "Medical Rights and Advance Medical Directives",
+      "passage_text": "The right to self-determination and bodily integrity has been recognised by the Supreme Court of India. The right to execute an Advance Medical Directive is nothing but a step towards protection of the aforesaid right by an individual, in event he becomes incompetent to take an informed decision, in particular stage of life. It has to be recognised by all including the States that a person has right to execute an Advance Medical Directive to be utilised to know his decision regarding manner and extent of medical treatment given to his body, in case he is incapacitated to take an informed decision. Such right by an individual does not depend on any recognition or legislation by a State and we are of the considered opinion that such rights can be exercised by an individual in recognition and in affirmation of his right of bodily integrity and self-determination which are duly protected under Article 21 of the Constitution. The procedure and manner of such expression of such right is a question which needs to be addressed to protect the vulnerable, infirm and old from any misuse. It is the duty of the State to protect its subjects specially those who are infirm, old and need medical care. The duty of doctor to extend medical care to the patients, who come to them in no manner diminishes in any manner by recognition of concept that an individual is entitled to execute an Advance Medical Directive. The physicians and medical practitioners treating a person, who is incompetent to express an informed decision have to act in a manner so as to give effect to the express wishes of an individual.",
+      "questions": [
+        {
+          "q_number": 43,
+          "question": "Based on the given excerpt, which of the following judgments relates to euthanasia?",
+          "options": {
+            "A": "Common Cause v. Union of India, (2018) 5 SCC 1.",
+            "B": "Santosh Singh v. Union of India, (2016) 8 SCC 253.",
+            "C": "Anuj Garg v. Hotel Association of India, (2008) 3 SCC 1.",
+            "D": "Madhu Kishwar v. State of Bihar, (1996) 5 SCC 125."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 44,
+          "question": "Based on the given excerpt, which of the following is not correct regarding an Advance Medical Directive?",
+          "options": {
+            "A": "The purpose and object is to express the choice of a person regarding medical treatment in an event when he loses capacity to take a decision.",
+            "B": "Right of execution by an individual does not depend on any recognition or legislation by a state.",
+            "C": "It is also known as a living will.",
+            "D": "Right of execution by an individual depends on recognition or legislation by a state."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 45,
+          "question": "Which of the following is not correct as per the Supreme Court judgment in Gian Kaur v. State of Punjab, [(1996) 2 SCC 648]?",
+          "options": {
+            "A": "Right to life does not include right to die.",
+            "B": "Right to life is a natural right embodied in Article 21 but suicide is an unnatural termination or extinction of life, and therefore, incompatible and inconsistent with the concept of right to life.",
+            "C": "Section 309 of the Indian Penal Code, 1860 was held constitutional.",
+            "D": "Right to life includes right to die."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 46,
+          "question": "In the judgment referred in the excerpt, which of the following was not held by the Supreme Court of India?",
+          "options": {
+            "A": "A person of competent mental faculty is entitled to execute an Advance Medical Directive in accordance with the safeguards.",
+            "B": "An adult human being having mental capacity to take an informed decision has right to refuse medical treatment including withdrawal from life saving devices.",
+            "C": "An adult human being having mental capacity to take an informed decision has no right to refuse medical treatment including withdrawal from life saving devices.",
+            "D": "In case of incompetent patients, 'the best interest principle' will be applied and such decision will be taken by specified competent medical experts."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 47,
+          "question": "Which of the following judgments does not relate to the constitutionality of right to die?",
+          "options": {
+            "A": "Aruna Ramchnadra Shanbaug v. Union of India, (2011) 4 SCC 454.",
+            "B": "D.S. Grewal v. Vimmi Joshi, (2009) 2 SCC 210.",
+            "C": "Maruti Shripati Dubal v. State of Maharashtra, 1986 SCC OnLine Bom 278.",
+            "D": "P. Rathinam v. Union of India, (1994) 3 SCC 394."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 48,
+          "question": "Which of the following is not correct regarding passive euthanasia as per the judicial precedents in India?",
+          "options": {
+            "A": "It is legally permissible in India.",
+            "B": "It is legally not permissible in India.",
+            "C": "Passive euthanasia entails withholding of medical treatment for continuance of life.",
+            "D": "Passive euthanasia is to avoid a prolonged agony."
+          },
+          "correct_answer": "B"
+        }
+      ]
+    },
+    {
+      "passage_id": 9,
+      "passage_title": "Open Courts and Judicial Transparency",
+      "passage_text": "Courts must be open both in the physical and metaphorical sense. Save and except for in-camera proceedings in an exceptional category of cases, such as cases involving child sexual abuse or matrimonial proceedings bearing on matters of marital privacy, our legal system is founded on the principle that open access to courts is essential to safeguard valuable constitutional freedoms. The concept of an open court requires that information relating to a court proceeding must be available in the public domain. An open court proceeding ensures that the judicial process is subject to public scrutiny. Public scrutiny is crucial to maintaining transparency and accountability. However, there are certain exceptions to the rule of open courts in India. While emphasising the importance of public trial, it cannot be overlooked that the primary function of the judiciary is to do justice between the parties who bring their causes before it. If a Judge trying a cause is satisfied that the very purpose of finding truth in the case would be retarded, or even defeated if witnesses are required to give evidence subject to public gaze, is it or is it not open to him in exercise of his inherent power to hold the trial in camera either partly or fully? If the primary function of the court is to do justice in causes brought before it, then on principle, it is difficult to accede to the proposition that there can be no exception to the rule that all causes must be tried in open court. The exceptions must be exercised with great caution and it is only if the court is satisfied beyond a doubt that the ends of justice themselves would be defeated if a case is tried in open court that it can pass an order to hold the trial in camera.",
+      "questions": [
+        {
+          "q_number": 49,
+          "question": "In which of the following cases the Supreme Court of India held, \"… even if the press is present, if individual members of the public are refused admission, the proceedings cannot be considered to go on in open courts\"?",
+          "options": {
+            "A": "State of Maharashtra v. Dr. Praful B. Desai, (2003) 4 SCC 601.",
+            "B": "A.M Mathur v. Pramod Kumar Gupta, (1990) 2 SCC 533.",
+            "C": "Mohammed Shahabuddin v. State of Bihar, (2010) 4 SCC 653.",
+            "D": "Dr. Raghubir Saran v. State of Bihar, (1964) 2 SCR 336."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 50,
+          "question": "In which of the following cases did the Supreme Court of India, while noting that live-streaming of court cases is an extension of the principle of open courts, remarked, \"sunlight is the best disinfectant\"?",
+          "options": {
+            "A": "Swapnil Tripathi v. Supreme Court of India, (2018) 10 SCC 639.",
+            "B": "Chief Election Commissioner of India v. M.R. Vijayabhaskar, 2021 SCC OnLine SC 364.",
+            "C": "M.K. Ranjitsinh v. Union of India, 2021 SCC OnLine SC 326.",
+            "D": "Aparna Bhat v. State of Madhya Pradesh, 2021 SCC OnLine SC 230."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 51,
+          "question": "Which of the following statements is true regarding significance of open courts?",
+          "options": {
+            "A": "It is pertinent that the public be informed regarding the working of courts of justice.",
+            "B": "Public trial in open court is detrimental to healthy, objective and fair administration of justice.",
+            "C": "Trial held subject to the public scrutiny and gaze is conducive to judicial caprice or vagaries.",
+            "D": "Publicity is the very soul of justice as it keeps the Judge himself while trying under trial."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 52,
+          "question": "Which of the following statements is not true regarding the applicability of rule of open courts?",
+          "options": {
+            "A": "Fair administration of justice is a means to ensure public trial, not an end.",
+            "B": "In case of a conflict between fair administration of justice and public trial, public trial may have to be regulated in the interest of administration of justice.",
+            "C": "Open court principle is not an inflexible and universal rule.",
+            "D": "Exceptions to rule of open courts ensure that justice is never defeated."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 53,
+          "question": "Which of the following provisions of Cr.P.C. provides that as a general rule, criminal courts shall be deemed to be open courts?",
+          "options": {
+            "A": "Section 237(1)",
+            "B": "Section 353(1)",
+            "C": "Section 327(1)",
+            "D": "Section 274(1)"
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 54,
+          "question": "The prevalence of which of the following among public is/are obstacles to the effective implementation of the open court principle?",
+          "options": {
+            "A": "Technological dexterity.",
+            "B": "Lack of knowledge gained during court proceedings.",
+            "C": "Lack of awareness about court proceedings.",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 10,
+      "passage_title": "Judicial Stereotyping and Bail Conditions",
+      "passage_text": "Judges can play a significant role in ridding the justice system of harmful stereotypes. They have an important responsibility to base their decisions on law and facts in evidence, and not engage in gender stereotyping. The Supreme Court of India observed that recently, the Courts across the country, have started imposing irrelevant conditions while granting bail. The conditions that can be imposed under the law are clearly laid down in the Code of Criminal Procedure, 1973 and by the Supreme Court through its various decisions. Accordingly, it is clear that imposing conditions like rendering community service in COVID hospitals or in any other institution, plantation of trees, contributing to any particular charity relief fund, etc. is impermissible in law. While deciding a bail application, accused cannot assume the role of a social reformer or fund raiser for charities and imposed with conditions which have no nexus with the offence or relevance with the object of the bail provisions. During pendency of the trial accused is presumed innocent and his guilt is yet to be adjudicated by the Court. Imposing irrelevant conditions is violative of the right to equality and personal liberty, including procedure established by law. Such wide prevalence necessitates the urgent intervention of the court to declare that such remarks are unacceptable and have the potential to cause grave harm to the prosecutrix and the society at large; and to issue directions on gender sensitization of the bar and the bench, particularly with regard to judicial empathy for the prosecutrix...judicial stereotyping is a common and pernicious barrier to justice, particularly for women victims and survivors of violence. Such stereotyping causes judges to reach a view about cases based on preconceived beliefs, rather than relevant facts and actual enquiry. This requires judges to identify gender stereotyping, and identify how the application, enforcement or perpetuation of these stereotypes discriminates against women or denies them equal access to justice.",
+      "questions": [
+        {
+          "q_number": 55,
+          "question": "The review of the given excerpt highlights the prevailing problem of",
+          "options": {
+            "A": "Imposing non-statutory conditions by the courts while granting bail applications.",
+            "B": "Lack of gender sensitization of the bar and the bench, particularly with regard to judicial empathy for the prosecutrix.",
+            "C": "Both (A) and (B).",
+            "D": "Judges are not aware about the bail provisions."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 56,
+          "question": "Consider the following statements: (I) Judges play a vital role at all levels as teachers to the entire legal community and the public. (II) Courts should desist from expressing any gender stereotyped opinion during proceedings or in the course of a judicial order. Choose the correct answer from the code given below.",
+          "options": {
+            "A": "Both (I) and (II) are true.",
+            "B": "Both (I) and (II) are untrue.",
+            "C": "(I) is true and (II) is untrue.",
+            "D": "(II) is true and (I) is untrue."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 57,
+          "question": "Which of the following conditions cannot be imposed by the court for granting bail?",
+          "options": {
+            "A": "Conditions prescribed under the Code of Criminal Procedure, 1973 for granting bail.",
+            "B": "Conditions in conformity with the guidelines laid down by the Supreme Court for granting bail.",
+            "C": "Conditions which suit the case after examining the credibility and culpability of the accused with the subjective satisfaction of the judge granting bail.",
+            "D": "Both (B) and (C)."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 58,
+          "question": "Imposing irrelevant conditions which have no nexus with the offense or relevance to the object of the bail provisions may violate",
+          "options": {
+            "A": "Right to equality.",
+            "B": "Right to life and personal liberty.",
+            "C": "Judicial independence.",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 59,
+          "question": "Which of the following is not a gender stereotyped statement?",
+          "options": {
+            "A": "Women are emotional and often overreact or dramatize events, hence it is necessary to corroborate their testimony.",
+            "B": "Lack of evidence of physical harm in sexual offence cases leads to an inference of consent by the woman.",
+            "C": "Men are the head of the household and should take all the decisions relating to family.",
+            "D": "Women are capable of taking decisions on their own."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 60,
+          "question": "Consider the following statements: (I) Judicial stereotyping adds to judicial decision a view based on real social facts and cultural enquiry. (II) Judicial stereotyping is a barrier to justice, particularly for women victims. Choose the correct answer from the code given below.",
+          "options": {
+            "A": "Both (I) and (II) are true.",
+            "B": "Both (I) and (II) are untrue.",
+            "C": "(I) is true and (II) is untrue.",
+            "D": "(II) is true and (I) is untrue."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_id": 11,
+      "passage_title": "Criminal Procedure - Section 311 and Witness Examination",
+      "passage_text": "Section 311 of the Code of Criminal Procedure, 1973 (CrPC) provides that any Court may, at any stage of any inquiry, trial or other proceedings under the CrPC, summon any person as a witness, or examine any person in attendance, though not summoned as a witness, or recall and re-examine any person already examined and the Court shall summon and examine or recall and re-examine any such person 'if his evidence appears to it to be essential to the just decision of the case'. The true test, therefore, is whether it appears to the Court that the evidence of such person who is sought to be recalled is essential to the just decision of the case. The scope and object of the provision is to enable the court to determine the truth and to render a just decision after discovering all relevant facts and obtaining proper proof of such facts, to arrive at a just decision of the case. Power must be exercised judiciously and not capriciously or arbitrarily, as any improper or capricious exercise of such power may lead to undesirable results. The power conferred under Section 311 of the CrPC must therefore, be invoked by the court only in order to meet the ends of justice, for strong and valid reasons, and the same must be exercised with great caution and circumspection.",
+      "questions": [
+        {
+          "q_number": 61,
+          "question": "In which of the following cases the Supreme Court of India held that an application under Section 311 of the Code of Criminal Procedure, 1973 could not be rejected on the sole ground that the case had been pending for an inordinate amount of time, in that case, for ten years?",
+          "options": {
+            "A": "Mina Lalita Baruwa v. State of Orissa, (2013) 16 SCC 173.",
+            "B": "Manju Devi v. State of Rajasthan, (2019) 6 SCC 203.",
+            "C": "Natasha Singh v. Central Bureau of Investigation, (2013) 5 SCC 741.",
+            "D": "Rajaram Prasad Yadav v. State of Bihar, (2013) 14 SCC 461."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 62,
+          "question": "The power conferred upon a criminal court by Section 311 of the Code of Criminal Procedure, 1973 is",
+          "options": {
+            "A": "Mandatory.",
+            "B": "Discretionary.",
+            "C": "Permissive.",
+            "D": "Both (B) and (C)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 63,
+          "question": "If it appears to the court that an application under Section 311 of the Code of Criminal Procedure, 1973 has been filed only to fill up a lacuna in the case of the prosecution or the defence, should the court allow such application?",
+          "options": {
+            "A": "Yes",
+            "B": "No",
+            "C": "Depends on the evidence adduced in the case.",
+            "D": "Depends on the facts of the case."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 64,
+          "question": "In which of the following circumstances should an application under Section 311 of the Code of Criminal Procedure, 1973 be allowed by the court?",
+          "options": {
+            "A": "When allowing the application enables the court to determine the truth and to render a just decision.",
+            "B": "When allowing the application causes serious prejudice to the defence of the accused.",
+            "C": "When allowing the application gives an unfair advantage to the opposite party.",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 65,
+          "question": "Section 311 of the Code of Criminal Procedure, 1973 imposes a duty on the Court to",
+          "options": {
+            "A": "Determine the truth after discovering all relevant facts and obtaining proper proof of such facts.",
+            "B": "Render a just decision after discovering all relevant facts and obtaining proper proof of such facts.",
+            "C": "Discover all relevant facts and obtain proper proof of such facts.",
+            "D": "Simultaneously determine the truth and render a just decision."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 66,
+          "question": "When a court summons any person as a witness upon allowing an application made by the accused under Section 311 of the Code of Criminal Procedure, 1973, which of the following statements is correct?",
+          "options": {
+            "A": "An opportunity of rebuttal must not be given to the prosecution.",
+            "B": "An opportunity of rebuttal must be given to the prosecution.",
+            "C": "There is no question of rebuttal as the witness has been summoned by the court.",
+            "D": "Whether opportunity of rebuttal is given to the prosecution or not is matter of discretion of the court."
+          },
+          "correct_answer": "B"
+        }
+      ]
+    },
+    {
+      "passage_id": 12,
+      "passage_title": "Torture and Protection of Human Rights",
+      "passage_text": "Torture is a form of crudity and a barbarity which appals modern civilisation. The right to freedom from torture is enshrined in number of human rights instruments which provide for protection of all individuals from being intentionally subjected to severe physical or psychological distress by, or with the approval or acquiescence of government agents acting for a specific purpose, such as to obtain information. The issues of fake encounters; illegal, unjustified and unwarranted arrests without any valid ground; eliciting confession from innocent persons for offences which they have never committed, by way of custodial violence; etc., have always been subject-matters of consideration by the Indian courts. Police atrocities in India had always been a subject-matter of controversy and debate. In view of the provisions of Article 21 of the Constitution of India, any form of torture or cruel, inhuman or degrading treatment is inhibited. Torture is not permissible whether it occurs during investigation, interrogation or otherwise. The State must protect victims of torture and ill-treatment. Therefore, the State must ensure prohibition of torture, cruel, inhuman and degrading treatment to any person, particularly at the hands of any State agency/police force. Tolerance of police atrocities amounts to acceptance of systematic subversion and erosion of the rule of law.",
+      "questions": [
+        {
+          "q_number": 67,
+          "question": "India has _________ the United Nations Convention Against Torture and other Cruel, Inhuman or Degrading Treatment or Punishment (1987).",
+          "options": {
+            "A": "Signed and ratified",
+            "B": "Signed but not ratified",
+            "C": "Not signed",
+            "D": "Passed a resolution to ratify"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 68,
+          "question": "Which of the following is the legislation proposed by the Law Commission of India through its Report No. 273 on 'Implementation of United Nations Convention against Torture and other Cruel, Inhuman and Degrading Treatment or Punishment through Legislation' in October 2017?",
+          "options": {
+            "A": "The Prevention of Torture Bill, 2017.",
+            "B": "The Prohibition of Torture and other Cruel, Inhuman and Degrading Treatment or Punishment Bill, 2017.",
+            "C": "The United Nations Convention against Torture and other Cruel, Inhuman and Degrading Treatment or Punishment (Implementation) Bill, 2017.",
+            "D": "The Prohibition of Custodial Torture Bill, 2017."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 69,
+          "question": "Which of the following provisions of the Constitution of India provide for protection of persons from torture, other cruel, inhuman and degrading treatment?",
+          "options": {
+            "A": "Article 20(3) and Article 21.",
+            "B": "Article 21 and Article 22(1).",
+            "C": "Article 21 and Article 22(2).",
+            "D": "Article 20(3), Article 21, Article 22(1) and Article 22(2)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 70,
+          "question": "In which of the following cases did the Supreme Court of India, while dealing with a case in which a successful scientist having national reputation had been taken into police custody without any justifying cause, reprimanded the lackadaisical attitude of the police for the arrest which made the scientist to suffer ignominy, and awarded compensation of Rs.50 lakhs \"to compensate the suffering, anxiety and the treatment by which the quintessence of life and liberty under the Constitution withers away\"?",
+          "options": {
+            "A": "Sheela Barse v. State of Maharashtra, (1983) 2 SCC 96.",
+            "B": "State of Andhra Pradesh v. Challa Ramakrishna Reddy, (2000) 5 SCC 712.",
+            "C": "S. Nambi Narayanan v. Siby Mathews, (2015) 14 SCC 664.",
+            "D": "State of Andhra Pradesh v. N. Venugopal, AIR 1964 SC 33."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 71,
+          "question": "Which of the following statements is true regarding 'arrest' and 'custody'?",
+          "options": {
+            "A": "In every custody, there is arrest but not vice versa, and both the words 'custody' and 'arrest' are not synonymous terms.",
+            "B": "In every custody, there is arrest but not vice versa, and both the words 'custody' and 'arrest' are interchangeable terms.",
+            "C": "In every arrest, there is custody but not vice versa, and both the words 'custody' and 'arrest' are not synonymous terms.",
+            "D": "In every arrest, there is custody but not vice versa, and both the words 'custody' and 'arrest' are interchangeable terms."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 72,
+          "question": "In which of the following cases did the Supreme Court of India, while dealing with the case of a social activist who agitated against the issue of exploitation of people belonging to poor and marginalised sections of the society and was falsely roped in criminal cases, arrested and physically assaulted in police custody, noted, \"If the functionaries of the Government become law-breakers, it is bound to breed contempt for law and would encourage lawlessness and every man would have the tendency to become law unto himself thereby leading to anarchy.\"?",
+          "options": {
+            "A": "Mehmood Nayyar Azam v. State of Chhattisgarh, (2012) 8 SCC 1.",
+            "B": "Ramlila Maidan Incident, In re, 2012 (5) SCC 1.",
+            "C": "Anuradha Bhasin v. Union of India, (2020) 3 SCC 637.",
+            "D": "Nisha Priya Bhatia v. Union of India, (2020) 13 SCC 56."
+          },
+          "correct_answer": "A"
+        }
+      ]
+    },
+    {
+      "passage_id": 13,
+      "passage_title": "Extradition and International Law",
+      "passage_text": "Conceptually, extradition is a rather complex jurisprudential zone as it has encompassed within itself various trajectories of apparently conflicting ideas. Generally, a State's criminal jurisdiction extends over offences committed within its geographical boundaries but it is the common experience of all the countries that often a criminal committing an offence in one country flees to another country and thus seeks to avoid conviction and the consequential punishment. This poses a threat in all civilised countries to a fair adjudication of crime and sustaining the constitutional norms of rule of law. To remedy such anomalous and unjust situation, extradition has been evolved by way of international treaty obligation which ensures a mode of formal surrender of an accused by one country to another based on reciprocal arrangements. In India, extradition has not been defined under the Extradition Act, 1962. However, extradition has been defined as: '… the surrender by one nation to another of an individual accused or convicted of an offence outside of its own territory, and within the territorial jurisdiction of the other, which, being competent to try and to punish him, demands the surrender.' But extradition is different from deportation by which competent State authorities order a person to leave a country and prevent him from returning to the same territory. Extradition is also different from exclusion, by which an individual is prohibited from staying in one part of a sovereign State. Both deportation and exclusion basically are non-consensual exercise whereas extradition is based on a consensual treaty obligation between the requesting State and the requested State.",
+      "questions": [
+        {
+          "q_number": 73,
+          "question": "Which of the following is the underlying basis for extradition?",
+          "options": {
+            "A": "It is in the interest of civilised communities that criminals should not go unpunished.",
+            "B": "It is recognised as a part of the comity of nations that one State should ordinarily afford to another State assistance towards bringing offenders to justice.",
+            "C": "It is unjust to surrender to a foreign country a person accused of having committed a crime there for trial in accordance with the system for the administration of justice prevailing in that country because that system is substantially different.",
+            "D": "Both (A) and (B)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 74,
+          "question": "According to the provisions of the Extradition Act, 1962, where there is no extradition treaty made by India with a foreign State, which of the following is correct?",
+          "options": {
+            "A": "The Central Government may, by notified order, treat any Convention to which India and the foreign State are parties, as an extradition treaty made by India with that foreign State.",
+            "B": "The Central Government may, by law, treat any Convention to which India is a party, as an extradition treaty made by India with that foreign State.",
+            "C": "The Central Government may, by notified order, treat the pari materia provisions of the statutes of both States relating to extradition, as an extradition treaty made by India with that foreign State.",
+            "D": "Extradition is not permissible."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 75,
+          "question": "Because of the negative attitude of   _________on the subject of extradition, it is by and large dealt with by bilateral treaties.",
+          "options": {
+            "A": "Multilateral treaties",
+            "B": "Customary international law",
+            "C": "Jus cogens",
+            "D": "General principles of international law"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 76,
+          "question": "Which of the following rules is generally followed in extradition by the requested State vis-à-vis the nature of criminal justice system in the requesting State?",
+          "options": {
+            "A": "Rule of reciprocity",
+            "B": "Rule of non-inquiry",
+            "C": "Rule of specialty",
+            "D": "Rule of double criminality"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 77,
+          "question": "\"Whether or not the fugitive who has been extradited would have a standing to complaint of the judicial process in the requesting State after extradition has been done, independent of the position taken by the requested State, is a debatable issue.\" The given statement relates to the debates in international law concerning___________",
+          "options": {
+            "A": "The position of an individual as a subject of international law, and the obligation of States towards individuals.",
+            "B": "The position of State as a subject of international law, and the obligation of individuals in international law.",
+            "C": "The position of an individual as a subject of State, and the obligation of States in international law.",
+            "D": "The position of an individual as a subject of international law, and the obligation of individuals not in domestic law."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 78,
+          "question": "According to the given passage, which of the following is not a similarity between 'deportation' and 'exclusion'?",
+          "options": {
+            "A": "Both are non-consensual exercises and not consensual treaty obligations.",
+            "B": "Both relate to ordering a person to move outside a territory.",
+            "C": "Both are precursors to extradition.",
+            "D": "Both are acts of sovereign States."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 14,
+      "passage_title": "Guardianship and Parental Rights",
+      "passage_text": "It is well settled that while taking a decision regarding custody or other issues pertaining to a child, welfare of the child is of paramount consideration, not rights of the parents under a statute for the time being in force. In Rosy Jacob v. Jacob A. Chakramakkal, [(1973) 1 SCC 840], the Court held that object and purpose of the Guardians and Wards Act 1890 is not merely physical custody of the minor but due protection of the rights of ward's health, maintenance and education. In considering the question of welfare of minor, due regard has to be given to the right of the father as natural guardian, but if the custody of the father cannot promote the welfare of the children, he may be refused such guardianship. The word \"welfare\" has to be construed literally and must be taken in its widest sense. The moral and ethical welfare of the child must also weigh with the court as well as its physical well-being. Though the provisions of the special statutes which govern the rights of the parents or guardians may be taken into consideration, there is nothing which can stand in the way of the court exercising its parens patriae jurisdiction arising in such cases. Every child has right to proper health and education and it is the primary duty of the parents to ensure that child gets proper education. The courts in exercise of parens patriae jurisdiction have to decide such delicate questions. It has to consider the welfare of the child as of paramount importance taking into consideration other aspects of the matter including the rights of parents also.",
+      "questions": [
+        {
+          "q_number": 79,
+          "question": "In which of the following judgments was the constitutionality of Section 6(a) of the Hindu Minority and Guardianship Act, 1956 challenged?",
+          "options": {
+            "A": "Lily Thomas v. Union of India, (2000) 6 SCC 224.",
+            "B": "Narayan Ganesh Dastane v. Sucheta Narayan Dastane, 1975 SCR (3) 967.",
+            "C": "Githa Hariharan v. Reserve Bank of India, (1999) 2 SCC 228.",
+            "D": "Bipin Chander Jaisinghbhai Shah v. Prabhawati, 1956 SCR 838."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 80,
+          "question": "The natural guardian of a Hindu minor is",
+          "options": {
+            "A": "Neither father nor mother.",
+            "B": "Both father and mother.",
+            "C": "Mother",
+            "D": "Father"
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 81,
+          "question": "Which of the following judgments does not relate to the welfare of minor being of paramount consideration?",
+          "options": {
+            "A": "Mauami Moitra Ganguli v. Jayant Ganguli, (2008) 7 SCC 673.",
+            "B": "Revanasiddappa v. Mallikarjun, (2011) 11 SCC 1.",
+            "C": "Gaurav Nagpal v. Sumedha Nagpal, (2009) 1 SCC 42.",
+            "D": "Jitender Arora v. Sukriti Arora, (2017) 3 SCC 726."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 82,
+          "question": "The natural guardian of an adopted child as per Hindu law is",
+          "options": {
+            "A": "Adoptive father.",
+            "B": "Adoptive mother.",
+            "C": "Adoptive father and adoptive mother.",
+            "D": "Neither adoptive father nor adoptive mother."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 83,
+          "question": "Which of the following is not correct regarding the parens patriae jurisdiction?",
+          "options": {
+            "A": "It is to secure the welfare of minor.",
+            "B": "Welfare of minor is of paramount consideration.",
+            "C": "It is not to secure the welfare of minor.",
+            "D": "Court is called upon in parens patriae to decide the best interest of the child."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 84,
+          "question": "Which of the following judgments relates to the concept of shared parenting?",
+          "options": {
+            "A": "Yashita Sahu v. State of Rajasthan, (2020) 3 SCC 67.",
+            "B": "Anurag Mittal v. Shaily Mishra Mittal, (2018) 9 SCC 691.",
+            "C": "Amardeep Singh v. Harveen Kaur, 2017 (8) SCC 746.",
+            "D": "Babu Ram v. Santokh Singh, (2019) 14 SCC 162."
+          },
+          "correct_answer": "A"
+        }
+      ]
+    },
+    {
+      "passage_id": 15,
+      "passage_title": "Companies Act and SFIO Investigation",
+      "passage_text": "A question regarding the scope of Section 212 of the Companies Act, 2013 was considered in Serious Fraud Investigation Office v. Rahul Modi, [2019 SCC OnLine SC 423]. The court observed that the Central Government is empowered under Section 212(1)(c) of the Companies Act, 2013 to order investigation into the affairs of a company in public interest by the Serious Fraud Investigation Office (SFIO). Section 212(3) of the Companies Act provides that the investigation orders are required to be completed within the specified time. If it not so done, what should be the consequences and whether further proceedings or investigations shall be unlawful. The provision has to be seen in the context in which it occurs in the statute. Therefore, the stipulation of Section 212(3) regarding submission of the report 'within such period as may be specified in the order' is not to be taken as mandatory, but as purely directory. On the objective interpretation of the statutory provision, it cannot be said that on the expiry of that period the mandate in favour of SFIO must come to an end. If it was to come to an end, the legislation would have contemplated certain results thereof. In the absence of any clear stipulation, an interpretation that with the expiry of the period, the investigation must come to an end, will cause great violence to the scheme of legislation and with the expiry of mandate SFIO would also be powerless which would lead to an incongruous situation that serious frauds would remain beyond investigation.",
+      "questions": [
+        {
+          "q_number": 85,
+          "question": "As per the provision of Section 211(3) of the of the Companies Act, 2013, Director of Serious Fraud Investigation Office, shall be an officer not below the rank of a Joint Secretary to the Government of India having knowledge and experience in dealing with matters relating to corporate affairs. The nature of the provision is",
+          "options": {
+            "A": "Mandatory",
+            "B": "Purely directory",
+            "C": "Elective",
+            "D": "Non-binding"
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 86,
+          "question": "Which principle of interpretation has been adopted by the court for the interpretation of Section 212(3) of the Companies Act, 2013?",
+          "options": {
+            "A": "Literal",
+            "B": "Liberal",
+            "C": "Strict",
+            "D": "Both (A) and (C)."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 87,
+          "question": "The court has considered that the investigation beyond the time prescribed in the order of investigation shall be",
+          "options": {
+            "A": "Void",
+            "B": "Valid",
+            "C": "Irregular",
+            "D": "Unconstitutional"
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 88,
+          "question": "As per the given excerpt, a strict interpretation of expression 'within such period as may be specified in the order' will",
+          "options": {
+            "A": "Attain the intention of the legislation.",
+            "B": "Defeat the intention of the legislation.",
+            "C": "Not prejudice the functions of the Serious Fraud Investigation Office.",
+            "D": "Both (A) and (C)."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 89,
+          "question": "Considering the expression of Section 212(6) of the Companies Act, 2013, an offence under Section 447 of the Companies Act, 2013 shall be",
+          "options": {
+            "A": "Cognizable",
+            "B": "Non-cognizable",
+            "C": "Non-bailable",
+            "D": "Both (A) and (C)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 90,
+          "question": "The expression 'officers and employees' under Section 212(5) of the of the Companies Act, 2013 denotes",
+          "options": {
+            "A": "Existing employees of the company.",
+            "B": "Person who has been in employment of the company.",
+            "C": "Persons who are or who have been in employment of the company.",
+            "D": "Only directors of the company."
+          },
+          "correct_answer": "C"
+        }
+      ]
+    },
+    {
+      "passage_id": 16,
+      "passage_title": "Public Interest Litigation (PIL)",
+      "passage_text": "The Supreme Court judgment in B. Singh v. Union of India, [(2004) 3 SCC 363] held, when there is material to show that a petition styled as a public interest litigation is nothing but a camouflage to foster personal disputes, the said petition is to be thrown out. Public interest litigation (PIL) which has now come to occupy an important field in the administration of law should not be 'publicity interest litigation' or 'private interest litigation' or 'politics interest litigation' or the latest trend 'paise income litigation'. If not properly regulated and abuse averted, it may become a tool in unscrupulous hands to release vendetta and wreak vengeance, as well. There must be real and genuine public interest involved in the litigation and not merely an adventure of a knight errant borne out of wishful thinking. It cannot be invoked by a person or a body of persons to further his or their personal causes or satisfy his or their personal grudge and enmity. A person acting bona fide and having sufficient interest in the proceeding of public interest litigation will alone have a locus standi and can approach the court to wipe out violation of fundamental rights and genuine infraction of statutory provisions, but not for personal gain or private profit or political motive or any oblique consideration. The expression 'PIL' means a legal action initiated in a court of law for the enforcement of public interest or general interest in which the public or a class of the community have pecuniary interest or some interest by which their legal rights or liabilities are affected. Public interest litigation is a weapon which has to be used with great care and circumspection and the judiciary has to be extremely careful to see that behind the beautiful veil of public interest an ugly private malice, vested interest and/or publicity-seeking is not lurking.",
+      "questions": [
+        {
+          "q_number": 91,
+          "question": "Which of the following is not correct in relation to a Public Interest Litigation?",
+          "options": {
+            "A": "It contemplates legal proceedings for vindication or enforcement of fundamental rights of a group of persons or community which are not able to enforce their fundamental rights on account of their incapacity, poverty or ignorance of law.",
+            "B": "A person invoking the jurisdiction of the Supreme Court under Article 32 must approach the court for the vindication of the fundamental rights of affected persons.",
+            "C": "Recourse to a proceeding under Article 32 may or may not be taken by a genuinely interested person in protection of society on behalf of community.",
+            "D": "Personal interest, grudge or enmity cannot be enforced through the process of the court, preventing speedy remedy to the other genuine petitioners from the court."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 92,
+          "question": "In which of the following judgments, the public trust doctrine was discussed by the Supreme Court of India?",
+          "options": {
+            "A": "Charu Khurana v. Union of India, (2015) 1 SCC 192.",
+            "B": "Vishaka v. State of Rajasthan, (1997) 6 SCC 241.",
+            "C": "Ashok Kumar Pandey v. State of West Bengal, (2004) 3 SCC 349.",
+            "D": "M.C. Mehta v. Union of India, (1997) 1 SCC 388."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 93,
+          "question": "Which of the following issues of public interest is raised in Dipika Jagatram Sahani v. Union of India, [(2021) 2 SCC 740]?",
+          "options": {
+            "A": "Challenge to election symbol of a political party.",
+            "B": "Reopening and providing services of Anganwadi Centres in India.",
+            "C": "Working conditions of children in factories.",
+            "D": "Pollution caused by industries."
+          },
+          "correct_answer": "B"
+        },
+        {
+          "q_number": 94,
+          "question": "Which of the following is not correct regarding the locus standi in a Public Interest Litigation?",
+          "options": {
+            "A": "Only an affected and vulnerable person can approach the court for remedy.",
+            "B": "The principle of dominus litus does not apply to a public interest litigation.",
+            "C": "The public interest litigation is strictly not adversarial since the emphasis is on public good.",
+            "D": "A public interest litigation can be filed by any member of the society for larger public interest."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 95,
+          "question": "\"If a citizen is no more than a wayfarer or officious intervener without any interest or concern beyond what belongs to any one of the 660 million people of this country, the door of the court will not be ajar for him. But, if he belongs to an organisation which has special interest in the subject-matter, if he has some concern deeper than that of a busybody, he cannot be told off at the gates, although whether the issue raised by him is justiciable may still remain to be considered.\" In context of this statement, which of the following judgments stated this regarding the rights of workers in India?",
+          "options": {
+            "A": "Malik Brothers v. Narendra Dadhich, (1999) 6 SCC 552.",
+            "B": "Rural Litigation and Entitlement Kendra v. State of Uttar Pradesh, 1989 Supp (1) SCC 504.",
+            "C": "Fertilizer Corpn. Kamgar Union v. Union of India, (1981) 1 SCC 568.",
+            "D": "Sheela Barse v. Union of India, (1988) 4 SCC 226."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 96,
+          "question": "Which of the following public interest litigations is related to proper maintenance of cultural heritage of India as also the ecology in the surrounding areas of Taj Mahal?",
+          "options": {
+            "A": "M.C. Mehta v. Union of India, (1999) 6 SCC 237.",
+            "B": "M.C. Mehta v. Union of India, (2008) 1 SCC 407.",
+            "C": "M.C. Mehta v. Union of India, (1991) 2 SCC 137.",
+            "D": "M.C. Mehta v. Union of India, (2016) 4 SCC 269."
+          },
+          "correct_answer": "B"
+        }
+      ]
+    },
+    {
+      "passage_id": 17,
+      "passage_title": "Equality and Rights of Persons with Disabilities",
+      "passage_text": "The Supreme Court has observed that in international human rights law, equality is founded upon two complementary principles: non-discrimination and reasonable differentiation. The principle of non-discrimination seeks to ensure that all persons can equally enjoy and exercise all their rights and freedoms. Discrimination occurs due to arbitrary denial of opportunities for equal participation. Equality not only implies preventing discrimination (example, the protection of individuals against unfavourable treatment by introducing anti-discrimination laws), but goes beyond in remedying discrimination against groups suffering systematic discrimination in society. In concrete terms, it means embracing the notion of positive rights, affirmative action and reasonable accommodation. The move from the patronising and paternalistic approach to persons with disabilities represented by the medical model to viewing them as members of the community with equal rights has also been reflected in the evolution of international standards relating specifically to disabilities, as well as in moves to place the rights of persons with disabilities within the category of universal human rights. Disabled people no longer see their physical or mental limitations as a source of shame or as something to overcome in order to inspire others. What non-disabled people do not understand is that people with disabilities also have some rights, hopes and aspirations as everyone else. They do not want to depend on others. For this they want the proper environment to grow. It is the thinking of Disability Rights Movement, USA that it is not so much the disabled individual who needs to change, but the society.",
+      "questions": [
+        {
+          "q_number": 97,
+          "question": "A 'person with disability' as per the Rights of Persons with Disabilities Act, 2016 means",
+          "options": {
+            "A": "A person with long term physical, intellectual or sensory impairment which, in interaction with barriers, hinders his full and effective participation in society equally with others.",
+            "B": "A person with long term physical, mental, or sensory impairment which, in interaction with barriers, hinders his full and effective participation in society equally with others.",
+            "C": "A person with long term mental, intellectual or sensory impairment which, in interaction with barriers, hinders his full and effective participation in society equally with others.",
+            "D": "A person with long term physical, mental, intellectual or sensory impairment which, in interaction with barriers, hinders his full and effective participation in society equally with others."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 98,
+          "question": "Which of the following judgments held that heart ailment is not a disability covered under the ambit of Rights of Persons with Disabilities Act, 2016?",
+          "options": {
+            "A": "Shanti Devi v. Union of India, (2020) 19 SCC 766.",
+            "B": "Rachna v. Union of India, 2021 SCC OnLine SC 140.",
+            "C": "Nawal Kishore Sharma v. Union of India, 2021 SCC OnLine SC 74.",
+            "D": "Harshit Agarwal v. Union of India, (2021) 2 SCC 710."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 99,
+          "question": "Based on the given excerpt, which of the following judgments deals with the rights of disabled persons?",
+          "options": {
+            "A": "Jeeja Ghosh v. Union of India, (2016) 7 SCC 761.",
+            "B": "Bharatha Matha v. R. Vijaya Renganathan, (2010) 11 SCC 483.",
+            "C": "Seema v. Ashwani Kumar, (2006) 2 SCC 578.",
+            "D": "Vidyadhari v. Sukharana Bai, (2008) 2 SCC 238."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 100,
+          "question": "Which of the following is not correct as per the Supreme Court judgment in Vikash Kumar v. Union Public Service Commission, [2020 SCC OnLine SC 1119]?",
+          "options": {
+            "A": "In India, as reflected by the policy disconnect in this case, there is often a lack of involvement of the disabled in such decision making processes, leading to their voice not being heard and their grievances remaining unaddressed.",
+            "B": "Consultation with persons with disabilities and their involvement in decision making about matters affecting their lives is necessary to bring about any meaningful change in the realization of their rights.",
+            "C": "Broader directions were provided to the Ministry of Social Justice and Empowerment of the Union Government to ensure the framing of proper guidelines which would regulate and facilitate the grant of a facility of a scribe to persons with disability.",
+            "D": "Persons with disability are required to bear the costs of the accommodation."
+          },
+          "correct_answer": "D"
+        }
+      ]
+    },
+    {
+      "passage_id": 18,
+      "passage_title": "Post-Conviction Bail and Suspension of Sentence",
+      "passage_text": "There is a difference between grant of bail under Section 439 of the Code of Criminal Procedure in case of pre-trial arrest and suspension of sentence under Section 389 of the Code of Criminal Procedure and grant of bail, post-conviction. In the earlier case, there may be presumption of innocence, which is a fundamental postulate of criminal jurisprudence, and the courts may be liberal, depending on the facts and circumstances of the case, on the principle that bail is the rule and jail is an exception, as held by the Court in Dataram Singh v. State of UP, [(2018) 3 SCC 22]. However, in case of post-conviction bail, by suspension of operation of the sentence, there is a finding of guilt and the question of presumption of innocence does not arise. Nor is the principle of bail being the rule and jail an exception attracted, once there is conviction upon trial. Rather, the court considering an application for suspension of sentence and grant of bail, is to consider the prima facie merits of the appeal, coupled with other factors. There should be strong compelling reasons for grant of bail, notwithstanding an order of conviction, by suspension of sentence, and this strong and compelling reason must be recorded in the order granting bail, as mandated in Section 389(1) of the Code of Criminal Procedure.",
+      "questions": [
+        {
+          "q_number": 103,
+          "question": "Which court is competent to grant bail under Section 439 of the Code of Criminal Procedure?",
+          "options": {
+            "A": "Court of Magistrate.",
+            "B": "Court of Sessions.",
+            "C": "High Court.",
+            "D": "Both (B) and (C)."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 104,
+          "question": "Who can file application for cancellation of bail?",
+          "options": {
+            "A": "Public Prosecutor.",
+            "B": "Complainant.",
+            "C": "Both (A) and (B).",
+            "D": "None of these."
+          },
+          "correct_answer": "C"
+        },
+        {
+          "q_number": 105,
+          "question": "In which court can application for bail be filed?",
+          "options": {
+            "A": "In the appellate court if the accused is convicted and he prefers appeal against conviction.",
+            "B": "Revisional court when the accused has filed a revision petition.",
+            "C": "Court of Sessions.",
+            "D": "All of these."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 106,
+          "question": "Expression 'any person accused of offence and in custody' used in Section 439 of the Code of Criminal Procedure means",
+          "options": {
+            "A": "A person who has been arrested and remanded to police custody.",
+            "B": "A person who has been arrested and remanded to judicial custody.",
+            "C": "A person who is accused of bailable offence and surrenders before the Sessions court for the purposes of bail.",
+            "D": "All of these."
+          },
+          "correct_answer": "D"
+        },
+        {
+          "q_number": 107,
+          "question": "Condition embodied in Section 439(1A) regarding the presence of informant at the time of hearing of bail application in certain sexual offences was inserted by",
+          "options": {
+            "A": "Criminal Law (Amendment) Act, 2018.",
+            "B": "Criminal Law (Amendment) Act, 2013.",
+            "C": "Code of Criminal Procedure (Amendment) Act, 2008.",
+            "D": "Criminal Law (Amendment) Act, 2005."
+          },
+          "correct_answer": "A"
+        },
+        {
+          "q_number": 108,
+          "question": "Which of the following is correct regarding bail under Section 439?",
+          "options": {
+            "A": "Court is mandatorily required to give a notice to the informant within 15 days of the receipt of application in certain sexual offences mentioned in Section 439.",
+            "B": "Court is required to give a notice to Public Prosecutor within 15 days of the receipt of application in certain sexual offences mentioned in Section 439.",
+            "C": "Court is not required to give any notice to the Public Prosecutor before granting bail in case of offences punishable with imprisonment for life.",
+            "D": "Sessions Court has no power to cancel the bail."
+          },
+          "correct_answer": "B"
+        }
+      ]
+    }
+  ]
+}
