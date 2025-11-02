@@ -9,7 +9,9 @@ from collections import defaultdict
 from openai import OpenAI
 
 
+
 st.set_page_config(page_title="CLAT PG Mock Test", page_icon="⚖️", layout="wide", initial_sidebar_state="collapsed")
+
 
 
 st.markdown("""
@@ -38,11 +40,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+
 LETTERS = ["A", "B", "C", "D"]
 DEFAULT_DURATION_MIN = 120
 MARKS_CORRECT = 1.0
 MARKS_NEGATIVE = 0.25
 MODEL = "gpt-4o-mini"
+
 
 
 SUBJECT_KEYWORDS = {
@@ -59,8 +63,10 @@ SUBJECT_KEYWORDS = {
 }
 
 
+
 CLAT_INSTRUCTIONS = """
 ### 📋 CLAT PG Mock Test - Instructions
+
 
 
 1. **Duration:** Configurable (default 2 hours)
@@ -69,8 +75,10 @@ CLAT_INSTRUCTIONS = """
 4. **Instant Feedback:** After you answer, see the correct option and an AI-generated explanation
 
 
+
 **Good Luck! 🎓**
 """
+
 
 
 def classify_subject(text):
@@ -80,6 +88,7 @@ def classify_subject(text):
         if score>0: scores[subject]=score
     if scores: return max(scores,key=scores.get)
     return "Other Laws"
+
 
 
 @st.cache_data(show_spinner=False,ttl=3600)
@@ -103,40 +112,49 @@ def extract_pool_from_folder(use_ocr=None):
             with open(json_file, 'r', encoding='utf-8') as f:
                 json_data = json.load(f)
 
-            if isinstance(json_data, dict) and "passages" in json_data:
-                for passage in json_data["passages"]:
-                    passage_text = passage.get("passage_text", "")
-                    passage_number = passage.get("passage_number", "")
+            # Handle both "passages" and "passages_with_questions" keys
+            passages_list = []
+            if isinstance(json_data, dict):
+                if "passages" in json_data:
+                    passages_list = json_data["passages"]
+                elif "passages_with_questions" in json_data:
+                    passages_list = json_data["passages_with_questions"]
 
-                    if "questions" in passage:
-                        for q in passage["questions"]:
-                            options_list = []
-                            options_dict = q.get("options", {})
-                            for letter in LETTERS:
-                                if letter in options_dict:
-                                    options_list.append(options_dict[letter])
+            for passage in passages_list:
+                passage_text = passage.get("passage_text", "")
+                passage_number = passage.get("passage_number", "")
 
-                            if len(options_list) == 4:
-                                answer_idx = None
-                                correct_answer = q.get("correct_answer", "")
-                                if correct_answer in LETTERS:
-                                    answer_idx = LETTERS.index(correct_answer)
+                if "questions" in passage:
+                    for q in passage["questions"]:
+                        options_list = []
+                        options_dict = q.get("options", {})
+                        for letter in LETTERS:
+                            if letter in options_dict:
+                                options_list.append(options_dict[letter])
 
-                                combined_text = (passage_text or "") + " " + q.get("question_text", "")
+                        if len(options_list) == 4:
+                            answer_idx = None
+                            correct_answer = q.get("correct_answer", "")
+                            if correct_answer in LETTERS:
+                                answer_idx = LETTERS.index(correct_answer)
 
-                                question_obj = {
-                                    "passage": passage_text if len(passage_text) > 80 else None,
-                                    "passage_number": f"Passage {passage_number}" if passage_number else None,
-                                    "question": q.get("question_text", ""),
-                                    "options": options_list,
-                                    "answer_index": answer_idx,
-                                    "subject": classify_subject(combined_text),
-                                    "source": os.path.basename(json_file),
-                                    "debug_text": None
-                                }
+                            # Handle both "question_text" and "question" keys
+                            question_text = q.get("question_text") or q.get("question", "")
+                            combined_text = (passage_text or "") + " " + question_text
 
-                                if len(question_obj["question"]) > 10:
-                                    pool.append(question_obj)
+                            question_obj = {
+                                "passage": passage_text if len(passage_text) > 80 else None,
+                                "passage_number": f"Passage {passage_number}" if passage_number else None,
+                                "question": question_text,
+                                "options": options_list,
+                                "answer_index": answer_idx,
+                                "subject": classify_subject(combined_text),
+                                "source": os.path.basename(json_file),
+                                "debug_text": None
+                            }
+
+                            if len(question_obj["question"]) > 10:
+                                pool.append(question_obj)
 
         except Exception as e:
             st.warning(f"Error loading {os.path.basename(json_file)}: {str(e)}")
@@ -153,8 +171,10 @@ def extract_pool_from_folder(use_ocr=None):
     return uniq
 
 
+
 def prepare_exam_set_sequential(pool):
     return pool
+
 
 
 def test_openai_key(api_key):
@@ -164,6 +184,7 @@ def test_openai_key(api_key):
         return True, "Valid key"
     except Exception as e:
         return False, str(e)
+
 
 
 def llm_explain_after_answer(q, api_key):
@@ -177,8 +198,10 @@ def llm_explain_after_answer(q, api_key):
 {passage}
 
 
+
 Question:
 {stem}
+
 
 
 Options:
@@ -188,7 +211,9 @@ C) {opts[2]}
 D) {opts[3]}
 
 
+
 Correct option (from official key): {correct_letter}
+
 
 
 Task: In 4–7 sentences, explain the legal reasoning/doctrines/case-law that make the correct option right, then give one-line reasons for why each of the other options is not best. Output JSON only."""
@@ -201,6 +226,7 @@ Task: In 4–7 sentences, explain the legal reasoning/doctrines/case-law that ma
             content = response.choices[0].message.content; data = json.loads(content); return data
         except Exception as e2:
             raise RuntimeError(f"OpenAI API error: {str(e2)}")
+
 
 
 def ensure_state():
@@ -216,10 +242,13 @@ def ensure_state():
     st.session_state.setdefault("openai_api_key","")
 
 
+
 ensure_state()
 
 
+
 st.title("⚖️ CLAT PG Mock Test 2026")
+
 
 
 with st.sidebar:
@@ -254,7 +283,9 @@ with st.sidebar:
     reset_clicked=st.button("🔁 Reset",use_container_width=True)
 
 
+
 if reset_clicked: st.session_state.update(stage="idle",questions=[],answers={},current=0,end_ts=None,show_palette=False,explanations={}); st.rerun()
+
 
 
 if prep_clicked:
@@ -272,14 +303,17 @@ if prep_clicked:
     st.rerun()
 
 
+
 def remaining_seconds():
     if not st.session_state.get("end_ts"): return None
     return max(0,int(st.session_state["end_ts"]-time.time()))
 
 
+
 if st.session_state["stage"]=="started":
     rem=remaining_seconds()
     if rem is not None and rem<=0: st.warning("⏰ Time's up!"); st.session_state["stage"]="submitted"; st.rerun()
+
 
 
 col1,col2,col3,col4=st.columns(4)
@@ -294,10 +328,13 @@ with col3:
 with col4: attempted=sum(1 for v in st.session_state["answers"].values() if v is not None); st.metric("✓ Done",f"{attempted}")
 
 
+
 st.markdown("---")
 
 
+
 if st.session_state["stage"]=="idle": st.info("👋 Click 'Load All Questions' in sidebar to start")
+
 
 
 elif st.session_state["stage"]=="instructions":
@@ -306,6 +343,7 @@ elif st.session_state["stage"]=="instructions":
     col1,col2,col3=st.columns([1,2,1])
     with col2:
         if st.button("▶️ Start Now",type="primary",use_container_width=True): st.session_state["end_ts"]=(datetime.now()+timedelta(minutes=st.session_state["duration_min"])).timestamp(); st.session_state["stage"]="started"; st.rerun()
+
 
 
 elif st.session_state["stage"]=="started":
@@ -365,6 +403,7 @@ elif st.session_state["stage"]=="started":
                     elif chosen is not None: label=f"✓{k+1}"; btn_type="secondary"
                     else: label=f"⊗{k+1}"; btn_type="secondary"
                     if cols[c].button(label,key=f"j_{k}",use_container_width=True,type=btn_type): st.session_state["current"]=k; st.rerun()
+
 
 
 elif st.session_state["stage"]=="submitted":
