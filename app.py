@@ -4,14 +4,13 @@ import glob
 import os
 import json
 import time
+import random
 from datetime import datetime, timedelta
 from collections import defaultdict
 from openai import OpenAI
 
 
-
 st.set_page_config(page_title="CLAT PG Mock Test", page_icon="⚖️", layout="wide", initial_sidebar_state="collapsed")
-
 
 
 st.markdown("""
@@ -40,13 +39,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-
 LETTERS = ["A", "B", "C", "D"]
 DEFAULT_DURATION_MIN = 120
 MARKS_CORRECT = 1.0
 MARKS_NEGATIVE = 0.25
 MODEL = "gpt-4o-mini"
-
 
 
 SUBJECT_KEYWORDS = {
@@ -63,22 +60,17 @@ SUBJECT_KEYWORDS = {
 }
 
 
-
 CLAT_INSTRUCTIONS = """
 ### 📋 CLAT PG Mock Test - Instructions
 
-
-
 1. **Duration:** Configurable (default 2 hours)
-2. **Questions:** All questions from JSON files in exact sequence
+2. **Questions:** All questions from JSON files
 3. **Marking Scheme:** +1 for correct, -0.25 for wrong, 0 for unattempted
 4. **Instant Feedback:** After you answer, see the correct option and an AI-generated explanation
-
-
+5. **Randomization:** Questions are randomly shuffled each time you load
 
 **Good Luck! 🎓**
 """
-
 
 
 def classify_subject(text):
@@ -90,10 +82,49 @@ def classify_subject(text):
     return "Other Laws"
 
 
+def randomize_questions(pool, seed=None):
+    """
+    Randomize questions while keeping passage-based questions together.
+    """
+    if seed is not None:
+        random.seed(seed)
+    
+    # Separate passage-based and standalone questions
+    passage_groups = defaultdict(list)
+    standalone = []
+    
+    for q in pool:
+        if q.get("passage") and len(q["passage"]) > 80:
+            # Group by passage text
+            passage_key = q["passage"][:200]
+            passage_groups[passage_key].append(q)
+        else:
+            standalone.append(q)
+    
+    # Shuffle standalone questions
+    random.shuffle(standalone)
+    
+    # Convert passage groups to list and shuffle
+    passage_list = list(passage_groups.values())
+    random.shuffle(passage_list)
+    
+    # Build final randomized list
+    randomized = []
+    
+    # Interleave passage groups and standalone questions
+    max_len = max(len(passage_list), len(standalone)) if (passage_list or standalone) else 0
+    
+    for i in range(max_len):
+        if i < len(passage_list):
+            randomized.extend(passage_list[i])
+        if i < len(standalone):
+            randomized.append(standalone[i])
+    
+    return randomized
 
-@st.cache_data(show_spinner=False,ttl=3600)
-def extract_pool_from_folder(use_ocr=None):
-    """Load questions from JSON files in questions_scripts folder"""
+
+def load_questions_from_folder():
+    """Load questions from JSON files - NOT CACHED"""
     json_folder = "questions_scripts"
     pool = []
 
@@ -112,7 +143,6 @@ def extract_pool_from_folder(use_ocr=None):
             with open(json_file, 'r', encoding='utf-8') as f:
                 json_data = json.load(f)
 
-            # Handle both "passages" and "passages_with_questions" keys
             passages_list = []
             if isinstance(json_data, dict):
                 if "passages" in json_data:
@@ -138,7 +168,6 @@ def extract_pool_from_folder(use_ocr=None):
                             if correct_answer in LETTERS:
                                 answer_idx = LETTERS.index(correct_answer)
 
-                            # Handle both "question_text" and "question" keys
                             question_text = q.get("question_text") or q.get("question", "")
                             combined_text = (passage_text or "") + " " + question_text
 
@@ -160,21 +189,17 @@ def extract_pool_from_folder(use_ocr=None):
             st.warning(f"Error loading {os.path.basename(json_file)}: {str(e)}")
             continue
 
+    # Remove duplicates using a more robust method
     seen = set()
-    uniq = []
+    unique = []
     for q in pool:
+        # Create a unique key based on question and first option
         key = (q["question"][:160].lower(), q["options"][0][:80].lower() if q["options"] else "")
         if key not in seen:
             seen.add(key)
-            uniq.append(q)
+            unique.append(q)
 
-    return uniq
-
-
-
-def prepare_exam_set_sequential(pool):
-    return pool
-
+    return unique
 
 
 def test_openai_key(api_key):
@@ -184,7 +209,6 @@ def test_openai_key(api_key):
         return True, "Valid key"
     except Exception as e:
         return False, str(e)
-
 
 
 def llm_explain_after_answer(q, api_key):
@@ -197,12 +221,8 @@ def llm_explain_after_answer(q, api_key):
     user_prompt = f"""Passage (if any):
 {passage}
 
-
-
 Question:
 {stem}
-
-
 
 Options:
 A) {opts[0]}
@@ -210,11 +230,7 @@ B) {opts[1]}
 C) {opts[2]}
 D) {opts[3]}
 
-
-
 Correct option (from official key): {correct_letter}
-
-
 
 Task: In 4–7 sentences, explain the legal reasoning/doctrines/case-law that make the correct option right, then give one-line reasons for why each of the other options is not best. Output JSON only."""
     try:
@@ -228,7 +244,6 @@ Task: In 4–7 sentences, explain the legal reasoning/doctrines/case-law that ma
             raise RuntimeError(f"OpenAI API error: {str(e2)}")
 
 
-
 def ensure_state():
     st.session_state.setdefault("stage","idle")
     st.session_state.setdefault("questions",[])
@@ -240,20 +255,34 @@ def ensure_state():
     st.session_state.setdefault("explanations",{})
     st.session_state.setdefault("show_debug",False)
     st.session_state.setdefault("openai_api_key","")
-
+    st.session_state.setdefault("use_seed", False)
+    st.session_state.setdefault("seed_value", 42)
 
 
 ensure_state()
 
 
-
 st.title("⚖️ CLAT PG Mock Test 2026")
-
 
 
 with st.sidebar:
     st.markdown("### ⚙️ Test Settings")
     duration_min=st.number_input("⏱️ Duration (minutes)",10,480,st.session_state["duration_min"],5)
+    
+    st.markdown("---")
+    st.markdown("### 🎲 Randomization")
+    st.info("✨ Questions are ALWAYS randomized each time you load!")
+    
+    use_seed = st.toggle("🔒 Lock Order (Use Seed)", value=st.session_state.get("use_seed", False),
+                        help="Enable to get same random order - useful for review")
+    st.session_state["use_seed"] = use_seed
+    
+    if use_seed:
+        seed_val = st.number_input("Seed Value", min_value=1, max_value=99999, 
+                                  value=st.session_state.get("seed_value", 42),
+                                  help="Same seed = same question order")
+        st.session_state["seed_value"] = int(seed_val)
+    
     st.markdown("---")
     st.markdown("### 🔐 OpenAI API Key")
     api_key_input = st.text_input("Enter your OpenAI API key",type="password",value=st.session_state["openai_api_key"],help="Get your key from https://platform.openai.com/api-keys",placeholder="sk-proj-...")
@@ -266,6 +295,7 @@ with st.sidebar:
                 if valid: st.success("✅ API key is valid!")
                 else: st.error(f"❌ Invalid key: {msg}")
     else: st.warning("⚠️ No API key - explanations disabled"); st.info("💡 Get key from: https://platform.openai.com/api-keys")
+    
     st.markdown("---")
     st.markdown("### 🐛 Debug")
     st.session_state["show_debug"]=st.toggle("Show debug",value=st.session_state["show_debug"])
@@ -277,31 +307,58 @@ with st.sidebar:
         if q.get("answer_index") is None:
             st.error("❌ No key")
         else: st.success(f"✅ {LETTERS[q['answer_index']]}")
+    
     st.markdown("---")
     st.markdown("### 🎯 Actions")
-    prep_clicked=st.button("🔄 Load All Questions",use_container_width=True,disabled=st.session_state["stage"] in ["started","instructions"])
-    reset_clicked=st.button("🔁 Reset",use_container_width=True)
+    prep_clicked=st.button("🔄 Load Questions (Randomized)",use_container_width=True,disabled=st.session_state["stage"] in ["started","instructions"])
+    reset_clicked=st.button("🔁 Reset Test",use_container_width=True)
 
 
-
-if reset_clicked: st.session_state.update(stage="idle",questions=[],answers={},current=0,end_ts=None,show_palette=False,explanations={}); st.rerun()
-
+if reset_clicked: 
+    st.session_state.update(stage="idle",questions=[],answers={},current=0,end_ts=None,show_palette=False,explanations={})
+    st.rerun()
 
 
 if prep_clicked:
     st.session_state["duration_min"]=int(duration_min)
-    with st.status("🔍 Loading all questions...",expanded=True) as status:
-        pool=extract_pool_from_folder(); subset=prepare_exam_set_sequential(pool)
-        if not subset: st.error("❌ No questions"); status.update(label="❌ Failed",state="error")
+    with st.status("🔍 Loading and randomizing questions...",expanded=True) as status:
+        # Load fresh questions (no cache)
+        pool = load_questions_from_folder()
+        
+        if not pool:
+            st.error("❌ No questions loaded")
+            status.update(label="❌ Failed",state="error")
         else:
-            st.session_state["questions"]=subset; st.session_state["answers"]={}; st.session_state["current"]=0; st.session_state["stage"]="instructions"
+            # Always randomize, but use seed if enabled
+            seed = st.session_state.get("seed_value") if st.session_state.get("use_seed") else None
+            
+            if seed:
+                st.info(f"🔒 Using seed {seed} - order will be reproducible")
+            else:
+                st.success(f"🎲 Questions randomized with new order!")
+            
+            subset = randomize_questions(pool, seed)
+            
+            st.session_state["questions"]=subset
+            st.session_state["answers"]={}
+            st.session_state["current"]=0
+            st.session_state["stage"]="instructions"
+            
+            # Stats
             by_subj=defaultdict(int)
             for q in subset: by_subj[q["subject"]]+=1
-            breakdown=", ".join([f"{s}: {c}" for s,c in sorted(by_subj.items())]); with_passages=sum(1 for q in subset if q.get("passage")); with_answers=sum(1 for q in subset if q.get("answer_index") is not None)
-            st.success(f"✅ {len(subset)} questions"); st.info(f"📖 Passages: {with_passages}"); st.info(f"✓ Keys: {with_answers}"); st.info(f"📊 {breakdown}")
-            status.update(label=f"✅ {len(subset)} loaded",state="complete")
+            breakdown=", ".join([f"{s}: {c}" for s,c in sorted(by_subj.items())])
+            with_passages=sum(1 for q in subset if q.get("passage"))
+            with_answers=sum(1 for q in subset if q.get("answer_index") is not None)
+            
+            st.success(f"✅ {len(subset)} questions loaded")
+            st.info(f"📖 Passages: {with_passages}")
+            st.info(f"✓ Answer keys: {with_answers}")
+            st.info(f"📊 {breakdown}")
+            
+            status.update(label=f"✅ {len(subset)} questions randomized",state="complete")
+    
     st.rerun()
-
 
 
 def remaining_seconds():
@@ -309,11 +366,12 @@ def remaining_seconds():
     return max(0,int(st.session_state["end_ts"]-time.time()))
 
 
-
 if st.session_state["stage"]=="started":
     rem=remaining_seconds()
-    if rem is not None and rem<=0: st.warning("⏰ Time's up!"); st.session_state["stage"]="submitted"; st.rerun()
-
+    if rem is not None and rem<=0: 
+        st.warning("⏰ Time's up!")
+        st.session_state["stage"]="submitted"
+        st.rerun()
 
 
 col1,col2,col3,col4=st.columns(4)
@@ -322,112 +380,227 @@ with col2: st.metric("📝 Questions",f"{len(st.session_state.get('questions',[]
 with col3:
     if st.session_state["stage"]=="started":
         rem=remaining_seconds()
-        if rem is not None: mins,secs=divmod(rem,60); timer_icon="🔴" if rem<600 else "⏱️"; st.metric(f"{timer_icon} Time",f"{mins:02d}:{secs:02d}")
+        if rem is not None: 
+            mins,secs=divmod(rem,60)
+            timer_icon="🔴" if rem<600 else "⏱️"
+            st.metric(f"{timer_icon} Time",f"{mins:02d}:{secs:02d}")
         else: st.metric("⏱️ Time","--:--")
     else: st.metric("⏱️ Time","--:--")
-with col4: attempted=sum(1 for v in st.session_state["answers"].values() if v is not None); st.metric("✓ Done",f"{attempted}")
-
+with col4: 
+    attempted=sum(1 for v in st.session_state["answers"].values() if v is not None)
+    st.metric("✓ Done",f"{attempted}")
 
 
 st.markdown("---")
 
 
-
-if st.session_state["stage"]=="idle": st.info("👋 Click 'Load All Questions' in sidebar to start")
-
+if st.session_state["stage"]=="idle": 
+    st.info("👋 Click 'Load Questions' in sidebar to start with randomized questions")
 
 
 elif st.session_state["stage"]=="instructions":
-    st.markdown('<div class="instructions-panel">',unsafe_allow_html=True); st.markdown(CLAT_INSTRUCTIONS); total_q = len(st.session_state.get("questions", []))
-    st.info(f"📝 This test contains **{total_q} questions** from all JSON files in exact sequence."); st.markdown('</div>',unsafe_allow_html=True)
+    st.markdown('<div class="instructions-panel">',unsafe_allow_html=True)
+    st.markdown(CLAT_INSTRUCTIONS)
+    
+    total_q = len(st.session_state.get("questions", []))
+    
+    if st.session_state.get("use_seed", False):
+        st.success(f"🔒 Questions randomized with seed: {st.session_state.get('seed_value', 42)}")
+        st.info("Same seed = same order for review purposes")
+    else:
+        st.success("🎲 Questions are in a unique random order!")
+        st.info("Each new load will give different order")
+    
+    st.info(f"📝 This test contains **{total_q} questions**")
+    st.markdown('</div>',unsafe_allow_html=True)
+    
     col1,col2,col3=st.columns([1,2,1])
     with col2:
-        if st.button("▶️ Start Now",type="primary",use_container_width=True): st.session_state["end_ts"]=(datetime.now()+timedelta(minutes=st.session_state["duration_min"])).timestamp(); st.session_state["stage"]="started"; st.rerun()
-
+        if st.button("▶️ Start Test Now",type="primary",use_container_width=True): 
+            st.session_state["end_ts"]=(datetime.now()+timedelta(minutes=st.session_state["duration_min"])).timestamp()
+            st.session_state["stage"]="started"
+            st.rerun()
 
 
 elif st.session_state["stage"]=="started":
-    qs=st.session_state["questions"]; idx=st.session_state["current"]; q=qs[idx]
+    qs=st.session_state["questions"]
+    idx=st.session_state["current"]
+    q=qs[idx]
+    
     st.markdown(f'<div class="subject-badge">📚 {q["subject"]}</div>',unsafe_allow_html=True)
-    if q.get("passage") and len(q["passage"])>80: title=f"📖 {q.get('passage_number','Passage')}"; st.markdown(f'<div class="passage-box"><h4>{title}</h4><p>{q["passage"]}</p></div>',unsafe_allow_html=True)
+    
+    if q.get("passage") and len(q["passage"])>80:
+        title=f"📖 {q.get('passage_number','Passage')}"
+        st.markdown(f'<div class="passage-box"><h4>{title}</h4><p>{q["passage"]}</p></div>',unsafe_allow_html=True)
+    
     st.markdown(f'<div class="question-box"><span class="question-number">Q{idx+1}/{len(qs)}</span><div class="question-text">{q["question"]}</div></div>',unsafe_allow_html=True)
-    opts=[f"{LETTERS[i]}) {txt}" for i,txt in enumerate(q["options"])]; saved=st.session_state["answers"].get(idx,None); default=0 if saved is None else (saved+1)
-    choice=st.radio("Answer:",["⊗ Skip"]+opts,index=default,key=f"q_{idx}"); chosen_idx=None if choice=="⊗ Skip" else LETTERS.index(choice[0]); st.session_state["answers"][idx]=chosen_idx
+    
+    opts=[f"{LETTERS[i]}) {txt}" for i,txt in enumerate(q["options"])]
+    saved=st.session_state["answers"].get(idx,None)
+    default=0 if saved is None else (saved+1)
+    
+    choice=st.radio("Answer:",["⊗ Skip"]+opts,index=default,key=f"q_{idx}")
+    chosen_idx=None if choice=="⊗ Skip" else LETTERS.index(choice[0])
+    st.session_state["answers"][idx]=chosen_idx
+    
     true_idx=q.get("answer_index",None)
+    
     if chosen_idx is not None and true_idx is not None:
-        if chosen_idx==true_idx: st.success(f"✅ Correct! +{MARKS_CORRECT}")
-        else: st.error(f"❌ Wrong! Correct: **{LETTERS[true_idx]})** {q['options'][true_idx]}"); st.info(f"*-{MARKS_NEGATIVE}*")
+        if chosen_idx==true_idx:
+            st.success(f"✅ Correct! +{MARKS_CORRECT}")
+        else:
+            st.error(f"❌ Wrong! Correct: **{LETTERS[true_idx]})** {q['options'][true_idx]}")
+            st.info(f"*-{MARKS_NEGATIVE}*")
+        
         if idx not in st.session_state["explanations"]:
             if st.session_state["openai_api_key"]:
-                with st.spinner("Generating..."):
-                    try: st.session_state["explanations"][idx]=llm_explain_after_answer(q, st.session_state["openai_api_key"])
-                    except Exception as e: st.session_state["explanations"][idx]={"error":str(e)}
-            else: st.session_state["explanations"][idx]={"error":"No API key provided"}
+                with st.spinner("Generating explanation..."):
+                    try:
+                        st.session_state["explanations"][idx]=llm_explain_after_answer(q, st.session_state["openai_api_key"])
+                    except Exception as e:
+                        st.session_state["explanations"][idx]={"error":str(e)}
+            else:
+                st.session_state["explanations"][idx]={"error":"No API key provided"}
+        
         expl=st.session_state["explanations"].get(idx)
-        if isinstance(expl,dict) and "error" in expl: st.warning(f"AI: {expl['error']}")
-        elif isinstance(expl,dict): 
-            st.markdown("### 🧠 Explanation"); st.write(expl.get("explanation","")); st.markdown("#### Why correct"); st.write(expl.get("why_correct","")); st.markdown("#### Why others wrong"); why_others=expl.get("why_others",{})
-            for L in LETTERS: st.write(f"{L}) {why_others.get(L,'')}")
+        if isinstance(expl,dict) and "error" in expl:
+            st.warning(f"AI: {expl['error']}")
+        elif isinstance(expl,dict):
+            st.markdown("### 🧠 Explanation")
+            st.write(expl.get("explanation",""))
+            st.markdown("#### Why correct")
+            st.write(expl.get("why_correct",""))
+            st.markdown("#### Why others wrong")
+            why_others=expl.get("why_others",{})
+            for L in LETTERS:
+                st.write(f"{L}) {why_others.get(L,'')}")
+    
     elif chosen_idx is not None and true_idx is None:
         st.warning("⚠️ No answer key for this question")
-        with st.expander("🔧 Override"): 
+        with st.expander("🔧 Manual Override"):
             mcols=st.columns(4)
             for i,L in enumerate(LETTERS):
                 with mcols[i]:
-                    if st.button(f"{L}",key=f"m_{idx}_{L}",use_container_width=True): st.session_state["questions"][idx]["answer_index"]=i; st.rerun()
-    st.markdown("---"); nav=st.columns([2,2,2])
+                    if st.button(f"Set {L}",key=f"m_{idx}_{L}",use_container_width=True):
+                        st.session_state["questions"][idx]["answer_index"]=i
+                        st.rerun()
+    
+    st.markdown("---")
+    nav=st.columns([2,2,2])
     with nav[0]:
-        if st.button("⬅️ Prev",disabled=idx==0,use_container_width=True): st.session_state["current"]=idx-1; st.rerun()
+        if st.button("⬅️ Previous",disabled=idx==0,use_container_width=True):
+            st.session_state["current"]=idx-1
+            st.rerun()
     with nav[1]:
-        if st.button("🔢 Palette",use_container_width=True): st.session_state["show_palette"]=not st.session_state.get("show_palette",False); st.rerun()
+        if st.button("🔢 Question Palette",use_container_width=True):
+            st.session_state["show_palette"]=not st.session_state.get("show_palette",False)
+            st.rerun()
     with nav[2]:
-        if st.button("Next ➡️",disabled=idx>=len(qs)-1,use_container_width=True): st.session_state["current"]=idx+1; st.rerun()
-    st.markdown("---"); col1,col2,col3=st.columns([1,2,1])
+        if st.button("Next ➡️",disabled=idx>=len(qs)-1,use_container_width=True):
+            st.session_state["current"]=idx+1
+            st.rerun()
+    
+    st.markdown("---")
+    col1,col2,col3=st.columns([1,2,1])
     with col2:
-        if st.button("✓ Submit",type="primary",use_container_width=True): st.session_state["stage"]="submitted"; st.rerun()
+        if st.button("✓ Submit Test",type="primary",use_container_width=True):
+            st.session_state["stage"]="submitted"
+            st.rerun()
+    
     if st.session_state.get("show_palette",False):
-        st.markdown("### 🔢 Palette"); by_subject=defaultdict(list)
-        for i,qx in enumerate(qs): by_subject[qx["subject"]].append(i)
+        st.markdown("### 🔢 Question Palette")
+        by_subject=defaultdict(list)
+        for i,qx in enumerate(qs):
+            by_subject[qx["subject"]].append(i)
+        
         for subject in sorted(by_subject.keys()):
-            indices=by_subject[subject]; st.markdown(f'<div class="subject-header">{subject} ({len(indices)})</div>',unsafe_allow_html=True); per_row=10; rows=(len(indices)+per_row-1)//per_row
+            indices=by_subject[subject]
+            st.markdown(f'<div class="subject-header">{subject} ({len(indices)})</div>',unsafe_allow_html=True)
+            
+            per_row=10
+            rows=(len(indices)+per_row-1)//per_row
+            
             for r in range(rows):
                 cols=st.columns(per_row)
                 for c in range(per_row):
                     pos=r*per_row+c
                     if pos>=len(indices): continue
-                    k=indices[pos]; chosen=st.session_state["answers"].get(k,None); true=qs[k].get("answer_index",None); is_current=(k==idx)
-                    if is_current: label=f"🟡{k+1}"; btn_type="primary"
+                    
+                    k=indices[pos]
+                    chosen=st.session_state["answers"].get(k,None)
+                    true=qs[k].get("answer_index",None)
+                    is_current=(k==idx)
+                    
+                    if is_current:
+                        label=f"🟡{k+1}"
+                        btn_type="primary"
                     elif chosen is not None and true is not None:
-                        if chosen==true: label=f"✅{k+1}"; btn_type="secondary"
-                        else: label=f"❌{k+1}"; btn_type="secondary"
-                    elif chosen is not None: label=f"✓{k+1}"; btn_type="secondary"
-                    else: label=f"⊗{k+1}"; btn_type="secondary"
-                    if cols[c].button(label,key=f"j_{k}",use_container_width=True,type=btn_type): st.session_state["current"]=k; st.rerun()
-
+                        if chosen==true:
+                            label=f"✅{k+1}"
+                            btn_type="secondary"
+                        else:
+                            label=f"❌{k+1}"
+                            btn_type="secondary"
+                    elif chosen is not None:
+                        label=f"✓{k+1}"
+                        btn_type="secondary"
+                    else:
+                        label=f"⊗{k+1}"
+                        btn_type="secondary"
+                    
+                    if cols[c].button(label,key=f"j_{k}",use_container_width=True,type=btn_type):
+                        st.session_state["current"]=k
+                        st.rerun()
 
 
 elif st.session_state["stage"]=="submitted":
-    qs=st.session_state["questions"]; ans=st.session_state["answers"]; correct=wrong=unattempt=0; score=0.0
+    qs=st.session_state["questions"]
+    ans=st.session_state["answers"]
+    
+    correct=wrong=unattempt=0
+    score=0.0
     subject_stats=defaultdict(lambda:{"correct":0,"wrong":0,"unattempt":0,"total":0})
-    for i,q in enumerate(qs): 
-        chosen=ans.get(i,None); true_idx=q.get("answer_index",None); subj=q["subject"]; subject_stats[subj]["total"]+=1
-        if chosen is None: unattempt+=1; subject_stats[subj]["unattempt"]+=1
-        elif true_idx is None: pass
-        elif chosen==true_idx: correct+=1; score+=MARKS_CORRECT; subject_stats[subj]["correct"]+=1
-        else: wrong+=1; score-=MARKS_NEGATIVE; subject_stats[subj]["wrong"]+=1
-    st.balloons(); st.markdown(f'<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem; border-radius: 16px; color: white; text-align: center;"><h1 style="margin: 0; font-size: 56px;">{score:.2f}</h1><p style="margin: 0.5rem 0 0 0; font-size: 24px;">Final Score</p></div>',unsafe_allow_html=True)
-    st.markdown("### 📊 Performance"); col1,col2,col3=st.columns(3)
+    
+    for i,q in enumerate(qs):
+        chosen=ans.get(i,None)
+        true_idx=q.get("answer_index",None)
+        subj=q["subject"]
+        subject_stats[subj]["total"]+=1
+        
+        if chosen is None:
+            unattempt+=1
+            subject_stats[subj]["unattempt"]+=1
+        elif true_idx is None:
+            pass
+        elif chosen==true_idx:
+            correct+=1
+            score+=MARKS_CORRECT
+            subject_stats[subj]["correct"]+=1
+        else:
+            wrong+=1
+            score-=MARKS_NEGATIVE
+            subject_stats[subj]["wrong"]+=1
+    
+    st.balloons()
+    st.markdown(f'<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 3rem; border-radius: 16px; color: white; text-align: center;"><h1 style="margin: 0; font-size: 56px;">{score:.2f}</h1><p style="margin: 0.5rem 0 0 0; font-size: 24px;">Final Score</p></div>',unsafe_allow_html=True)
+    
+    st.markdown("### 📊 Overall Performance")
+    col1,col2,col3=st.columns(3)
     with col1: st.metric("✅ Correct",correct)
     with col2: st.metric("❌ Wrong",wrong)
     with col3: st.metric("⊗ Skipped",unattempt)
-    st.markdown("### 📚 By Subject")
+    
+    st.markdown("### 📚 Subject-wise Breakdown")
     for subj in sorted(subject_stats.keys()):
         stats=subject_stats[subj]
-        with st.expander(f"{subj} - {stats['correct']}/{stats['total']}"): 
+        with st.expander(f"{subj} - {stats['correct']}/{stats['total']} correct"):
             c1,c2,c3=st.columns(3)
             with c1: st.metric("Correct",stats["correct"])
             with c2: st.metric("Wrong",stats["wrong"])
             with c3: st.metric("Skipped",stats["unattempt"])
+    
     c1,c2,c3=st.columns([1,2,1])
     with c2:
-        if st.button("🔄 New Test",type="primary",use_container_width=True): st.session_state.update(stage="idle",questions=[],answers={},current=0,end_ts=None,show_palette=False,explanations={}); st.rerun()
+        if st.button("🔄 Start New Test",type="primary",use_container_width=True):
+            st.session_state.update(stage="idle",questions=[],answers={},current=0,end_ts=None,show_palette=False,explanations={})
+            st.rerun()
